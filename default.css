@@ -1,0 +1,42 @@
+/*custom font*/
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans);
+
+
+
+.dropbtn {
+	color: rgb(0, 0, 0);
+	padding: 12px 30px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	border: 1px solid #e11e26;
+ }
+
+ .dropbtn:hover,
+ .dropbtn:focus {
+	background-color: #e11e26;
+	color: #fff;
+ }
+
+ .dropdown {
+	position: relative;
+	display: inline-block;
+ }
+
+ .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: white;
+	min-width: 160px;
+	z-index: 1;
+ }
+
+ .dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+ }
+
+ .show {
+	display: block;
+ }
