@@ -1,1089 +1,784 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>|! XCUTS !|</title>
-    <link rel="icon" type="image/ico" sizes="16x16" href="images/favicon.ico">
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <!-- Tailwind Elements styles-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
-
-    <link rel="stylesheet" href="default.css">
-    <link rel="stylesheet" href="style.css">
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>|! XCUTS !|</title>
+<link rel="icon" type="image/ico" sizes="16x16" href="images/favicon.ico">
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<!-- Tailwind Elements styles-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+<link rel="stylesheet" href="default.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <!-- Header -->
-   <header>
-    <div class="topHder bg-neutral-300">
-        <div class="px-4 sm:container flex justify-center sm:justify-end p-2 relative">
-            <a href="#" class="text-sm sm:text-base/3 text-white px-2 sm:px-3 z-50 py-1 sm:py-3 relative after:border-r-2 after:absolute after:w-1 after:h-3 sm:after:h-4 after:right-0 after:top-2 sm:after:inset-y-2/4 sm:after:-mt-2 hover:before:bg-primary hover:before:absolute hover:before:top-0 hover:before:bottom-0 hover:before:contents hover:before:skew-y-[0deg] hover:before:skew-x-[30deg] hover:before:right-4 hover:before:left-4 hover:before:-z-50 before:transition before:duration-700">DELIVERY</a>
-            <a href="#" class="text-sm sm:text-base/3 text-white px-2 sm:px-3 z-50 py-1 sm:py-3 relative after:border-r-2 after:absolute after:w-1 after:h-3 sm:after:h-4 after:right-0 after:top-2 sm:after:inset-y-2/4 sm:after:-mt-2 hover:before:bg-primary hover:before:absolute hover:before:top-0 hover:before:bottom-0 hover:before:contents hover:before:skew-y-[0deg] hover:before:skew-x-[30deg] hover:before:right-4 hover:before:left-4 hover:before:-z-50 before:transition before:duration-700">CONTACT</a>
-            <a href="#" class="text-sm sm:text-base/3 text-white px-2 sm:px-3 z-50 py-1 sm:py-3 relative after:border-r-2 after:absolute after:w-1 after:h-3 sm:after:h-4 after:right-0 after:top-2 sm:after:inset-y-2/4 sm:after:-mt-2 hover:before:bg-primary hover:before:absolute hover:before:top-0 hover:before:bottom-0 hover:before:contents hover:before:skew-y-[0deg] hover:before:skew-x-[30deg] hover:before:right-4 hover:before:left-4 hover:before:-z-50 before:transition before:duration-700">SAMPLES</a>
-            <a href="#" class="text-sm sm:text-base/3 text-white px-2 sm:px-3 z-50 py-1 sm:py-3 relative hover:before:bg-primary hover:before:absolute hover:before:top-0 hover:before:bottom-0 hover:before:contents hover:before:skew-y-[0deg] hover:before:skew-x-[30deg] hover:before:right-4 hover:before:left-4 hover:before:-z-50 before:transition before:duration-700">MY ACCOUNT</a>
+<!-- Header -->
+<header>
+  <div class="topHder bg-neutral-300">
+    <div class="px-4 sm:container flex justify-center sm:justify-end p-2 relative"> <a href="#" class="text-sm sm:text-base/3 text-white px-2 sm:px-3 z-50 py-1 sm:py-3 relative after:border-r-2 after:absolute after:w-1 after:h-3 sm:after:h-4 after:right-0 after:top-2 sm:after:inset-y-2/4 sm:after:-mt-2 hover:before:bg-primary hover:before:absolute hover:before:top-0 hover:before:bottom-0 hover:before:contents hover:before:skew-y-[0deg] hover:before:skew-x-[30deg] hover:before:right-4 hover:before:left-4 hover:before:-z-50 before:transition before:duration-700">DELIVERY</a> <a href="#" class="text-sm sm:text-base/3 text-white px-2 sm:px-3 z-50 py-1 sm:py-3 relative after:border-r-2 after:absolute after:w-1 after:h-3 sm:after:h-4 after:right-0 after:top-2 sm:after:inset-y-2/4 sm:after:-mt-2 hover:before:bg-primary hover:before:absolute hover:before:top-0 hover:before:bottom-0 hover:before:contents hover:before:skew-y-[0deg] hover:before:skew-x-[30deg] hover:before:right-4 hover:before:left-4 hover:before:-z-50 before:transition before:duration-700">CONTACT</a> <a href="#" class="text-sm sm:text-base/3 text-white px-2 sm:px-3 z-50 py-1 sm:py-3 relative after:border-r-2 after:absolute after:w-1 after:h-3 sm:after:h-4 after:right-0 after:top-2 sm:after:inset-y-2/4 sm:after:-mt-2 hover:before:bg-primary hover:before:absolute hover:before:top-0 hover:before:bottom-0 hover:before:contents hover:before:skew-y-[0deg] hover:before:skew-x-[30deg] hover:before:right-4 hover:before:left-4 hover:before:-z-50 before:transition before:duration-700">SAMPLES</a> <a href="#" class="text-sm sm:text-base/3 text-white px-2 sm:px-3 z-50 py-1 sm:py-3 relative hover:before:bg-primary hover:before:absolute hover:before:top-0 hover:before:bottom-0 hover:before:contents hover:before:skew-y-[0deg] hover:before:skew-x-[30deg] hover:before:right-4 hover:before:left-4 hover:before:-z-50 before:transition before:duration-700">MY ACCOUNT</a> </div>
+  </div>
+  <div class="mainHder bg-white py-5">
+    <div class="px-4 sm:container flex justify-between place-items-center"> <a href="#"><img src="images/logo.webp" alt="" class=" w-28 md:w-48"> </a>
+      <div class="tp-phone flex place-items-center"> <img src="images/phone-icon.webp" alt="" class="w-9 h-9">
+        <div class="phoneDtls ml-3">
+          <p class="text-sm md:text-lg">MON - FRI <span class="text-primary">8AM - 5PM</span></p>
+          <a href="#" class="text-xl md:text-2xl leading-4">0170 790 7000</a> </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- Header End--> 
 
+<!-- Navbar -->
+<nav class="bg-black relative py-3">
+  <div class="px-4 sm:container flex justify-between flex-grow items-center">
+    <div class="">
+      <div class="flex items-center justify-start">
+        <input type="checkbox" name="hamburger" id="hamburger" class="peer" hidden>
+        <label for="hamburger" class="peer-checked:hamburger block relative z-20 p-0 -mr-6 cursor-pointer md:hidden">
+        <div aria-hidden="true" class="m-auto h-0.5 w-6 rounded bg-white transition duration-300"></div>
+        <div aria-hidden="true" class="m-auto mt-2 h-0.5 w-6 rounded bg-white transition duration-300"></div>
+        </label>
+        <div class="peer-checked:block hidden md:block md:pt-0">
+          <ul class="flex flex-col gap-y-4 md:gap-y-0 md:flex-row md:gap-x-2 transition duration-300 md:transition-none absolute md:relative w-[100%] left-0 top-[100%] bg-neutral-400 md:bg-transparent md:text-white space-y-0 px-2 md:px-0 pb-3 pt-2 md:pb-0 md:pt-0 z-50">
+            <li class="md:mt-0"> <a href="#" class="text-base md:text-base block md:inline-block text-white px-2 sm:px-2 z-50 md:py-3 py-1.5 relative hover:before:bg-primary hover:before:absolute hover:before:top-0 hover:before:bottom-0 hover:before:contents hover:before:md:skew-y-[0deg] hover:before:md:skew-x-[30deg] hover:md:before:right-6 hover:before:right-0 hover:before:md:left-6 hover:before:left-0 hover:before:-z-50 before:transition before:duration-700 hover:before:md:rounded-none hover:before:rounded">Decor collections +</a> </li>
+            <li class="md:mt-0"> <a href="#" class="text-base md:text-base block md:inline-block text-white px-2 sm:px-2 z-50 md:py-3 py-1.5 relative hover:before:bg-primary hover:before:absolute hover:before:top-0 hover:before:bottom-0 hover:before:contents hover:before:md:skew-y-[0deg] hover:before:md:skew-x-[30deg] hover:md:before:right-6 hover:before:right-0 hover:before:md:left-6 hover:before:left-0 hover:before:-z-50 before:transition before:duration-700 hover:before:md:rounded-none hover:before:rounded">Services +</a> </li>
+            <li class="md:mt-0"> <a href="#" class="text-base md:text-base block md:inline-block text-white px-2 sm:px-2 z-50 md:py-3 py-1.5 relative hover:before:bg-primary hover:before:absolute hover:before:top-0 hover:before:bottom-0 hover:before:contents hover:before:md:skew-y-[0deg] hover:before:md:skew-x-[30deg] hover:md:before:right-6 hover:before:right-0 hover:before:md:left-6 hover:before:left-0 hover:before:-z-50 before:transition before:duration-700 hover:before:md:rounded-none hover:before:rounded">Products +</a> </li>
+            <li class="md:mt-0"> <a href="#" class="text-base md:text-base block md:inline-block text-white px-2 sm:px-2 z-50 md:py-3 py-1.5 relative hover:before:bg-primary hover:before:absolute hover:before:top-0 hover:before:bottom-0 hover:before:contents hover:before:md:skew-y-[0deg] hover:before:md:skew-x-[30deg] hover:md:before:right-6 hover:before:right-0 hover:before:md:left-6 hover:before:left-0 hover:before:-z-50 before:transition before:duration-700 hover:before:md:rounded-none hover:before:rounded">Showroom +</a> </li>
+            <li class="md:mt-0"> <a href="#" class="text-base md:text-base block md:inline-block text-white px-2 sm:px-2 z-50 md:py-3 py-1.5 relative hover:before:bg-primary hover:before:absolute hover:before:top-0 hover:before:bottom-0 hover:before:contents hover:before:md:skew-y-[0deg] hover:before:md:skew-x-[30deg] hover:md:before:right-6 hover:before:right-0 hover:before:md:left-6 hover:before:left-0 hover:before:-z-50 before:transition before:duration-700 hover:before:md:rounded-none hover:before:rounded">Shop online +</a> </li>
+          </ul>
         </div>
+      </div>
     </div>
-    <div class="mainHder bg-white py-5">
-        <div class="px-4 sm:container flex justify-between place-items-center">
-            <a href="#"><img src="images/logo.webp" alt="" class=" w-28 md:w-48"> </a>
-            <div class="tp-phone flex place-items-center">
-                <img src="images/phone-icon.webp" alt="" class="w-9 h-9">
-                <div class="phoneDtls ml-3">
-                    <p class="text-sm md:text-lg">MON - FRI <span class="text-primary">8AM - 5PM</span></p>
-                    <a href="#" class="text-xl md:text-2xl leading-4">0170 790 7000</a>
-                </div>
-            </div>
-        </div>
-    </div>
-   </header>
-   <!-- Header End-->
-   
-   <!-- Navbar -->
-   <nav class="bg-black relative py-3">
-        <div class="px-4 sm:container flex justify-between flex-grow items-center">
-            
-            <div class="">
-                <div class="flex items-center justify-start">
-                    <input type="checkbox" name="hamburger" id="hamburger" class="peer" hidden>
-                    <label for="hamburger" class="peer-checked:hamburger block relative z-20 p-0 -mr-6 cursor-pointer md:hidden">
-                      <div aria-hidden="true" class="m-auto h-0.5 w-6 rounded bg-white transition duration-300"></div>
-                      <div aria-hidden="true" class="m-auto mt-2 h-0.5 w-6 rounded bg-white transition duration-300"></div>
-                    </label>
-                    <div class="peer-checked:block hidden md:block md:pt-0">
-                        <ul class="flex flex-col gap-y-4 md:gap-y-0 md:flex-row md:gap-x-2 transition duration-300 md:transition-none absolute md:relative w-[100%] left-0 top-[100%] bg-neutral-400 md:bg-transparent md:text-white space-y-0 px-2 md:px-0 pb-3 pt-2 md:pb-0 md:pt-0 z-50">
-                            <li class="md:mt-0">
-                                <a href="#" class="text-base md:text-base block md:inline-block text-white px-2 sm:px-2 z-50 md:py-3 py-1.5 relative hover:before:bg-primary hover:before:absolute hover:before:top-0 hover:before:bottom-0 hover:before:contents hover:before:md:skew-y-[0deg] hover:before:md:skew-x-[30deg] hover:md:before:right-6 hover:before:right-0 hover:before:md:left-6 hover:before:left-0 hover:before:-z-50 before:transition before:duration-700 hover:before:md:rounded-none hover:before:rounded">Decor collections +</a>
-                            </li>
-                            <li class="md:mt-0">
-                                <a href="#" class="text-base md:text-base block md:inline-block text-white px-2 sm:px-2 z-50 md:py-3 py-1.5 relative hover:before:bg-primary hover:before:absolute hover:before:top-0 hover:before:bottom-0 hover:before:contents hover:before:md:skew-y-[0deg] hover:before:md:skew-x-[30deg] hover:md:before:right-6 hover:before:right-0 hover:before:md:left-6 hover:before:left-0 hover:before:-z-50 before:transition before:duration-700 hover:before:md:rounded-none hover:before:rounded">Services +</a>
-                            </li>
-                            <li class="md:mt-0">
-                                <a href="#" class="text-base md:text-base block md:inline-block text-white px-2 sm:px-2 z-50 md:py-3 py-1.5 relative hover:before:bg-primary hover:before:absolute hover:before:top-0 hover:before:bottom-0 hover:before:contents hover:before:md:skew-y-[0deg] hover:before:md:skew-x-[30deg] hover:md:before:right-6 hover:before:right-0 hover:before:md:left-6 hover:before:left-0 hover:before:-z-50 before:transition before:duration-700 hover:before:md:rounded-none hover:before:rounded">Products +</a>
-                            </li>
-                            <li class="md:mt-0">
-                                <a href="#" class="text-base md:text-base block md:inline-block text-white px-2 sm:px-2 z-50 md:py-3 py-1.5 relative hover:before:bg-primary hover:before:absolute hover:before:top-0 hover:before:bottom-0 hover:before:contents hover:before:md:skew-y-[0deg] hover:before:md:skew-x-[30deg] hover:md:before:right-6 hover:before:right-0 hover:before:md:left-6 hover:before:left-0 hover:before:-z-50 before:transition before:duration-700 hover:before:md:rounded-none hover:before:rounded">Showroom +</a>
-                            </li>
-                            <li class="md:mt-0">
-                                <a href="#" class="text-base md:text-base block md:inline-block text-white px-2 sm:px-2 z-50 md:py-3 py-1.5 relative hover:before:bg-primary hover:before:absolute hover:before:top-0 hover:before:bottom-0 hover:before:contents hover:before:md:skew-y-[0deg] hover:before:md:skew-x-[30deg] hover:md:before:right-6 hover:before:right-0 hover:before:md:left-6 hover:before:left-0 hover:before:-z-50 before:transition before:duration-700 hover:before:md:rounded-none hover:before:rounded">Shop online +</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="flex">
-                <!-- <form action="" class="relative mx-auto w-max">
+    <div class="flex"> 
+      <!-- <form action="" class="relative mx-auto w-max">
                     <input type="search" 
                           class="peer cursor-pointer relative p-0 z-10 h-12 w-12 rounded-full text-white  bg-transparent pl-9 outline-none focus:w-full focus:cursor-text focus:border focus:border-primary focus:pl-16 focus:pr-4" />
                           <img src="images/search-icon.webp" alt="" class="absolute inset-y-0 my-auto left-6 h-5 w-5">
-                  </form> -->
-                <a href="#" class="mr-6">
-                    <img src="images/search-icon.webp" alt="" class="">
-                </a>
-                <a href="#">
-                    <img src="images/cart-icon.webp" alt="">
-                </a>
-            </div>
-        </div>
-        
-   </nav>
-   <!-- Navbar End-->
+                  </form> --> 
+      <a href="#" class="mr-6"> <img src="images/search-icon.webp" alt="" class=""> </a> <a href="#"> <img src="images/cart-icon.webp" alt=""> </a> </div>
+  </div>
+</nav>
+<!-- Navbar End--> 
 
-   <!-- Inner Banner Section -->
-   <div class="relative">
-    <img src="images/order-banner.webp" alt="" class="h-[240px] md:h-auto object-cover">
-    <div class="absolute top-1/2 w-full -translate-y-1/2 text-center">
-        <span class="font-semibold text-white text-2xl md:text-4xl lg:text-6xl uppercase underline mb-2 inline-block">Order1</span> <br>
-        <a href="#" class="text-xl text-white underline hover:no-underline">Order name</a>
-        <p class="text-xl text-center text-white leading-9 mt-4">Order number: 104175-DEF <br>
-            Order status: Saved <br>
-            Created on: 22 Sep 2023</p>
-    </div>
-   </div>
-   <section class="pt-20 pb-20 bg-left-top bg-cover" style="background-image: url('images/order-bg.webp');">
-    <div class="xl:max-w-[1545px] mx-auto">
-        <div class="">
+<!-- Inner Banner Section -->
+<div class="relative"> <img src="images/order-banner.webp" alt="" class="h-[240px] md:h-auto object-cover">
+  <div class="absolute top-1/2 w-full -translate-y-1/2 text-center"> <span class="font-semibold text-white text-2xl md:text-4xl lg:text-6xl uppercase underline mb-2 inline-block">Order1</span> <br>
+    <a href="#" class="text-xl text-white underline hover:no-underline">Order name</a>
+    <p class="text-xl text-center text-white leading-9 mt-4">Order number: 104175-DEF <br>
+      Order status: Saved <br>
+      Created on: 22 Sep 2023</p>
+  </div>
+</div>
+<section class="pt-20 pb-20 bg-left-top bg-cover" style="background-image: url('images/order-bg.webp');">
+  <div class="2xl:max-w-[1530px] xl:max-w-[1170px] lg:max-w-ful px-4 xl:px-0 mx-auto">
+    <div class="">
+      <div class="px-5 overflow-x-hidden"> 
         <!--Tabs navigation-->
-       
-<ul class="mb-5 list-none justify-center border-b-0 pl-0 tabs-box flex flex-row flex-wrap gap-x-5"
-role="tablist"
-data-te-nav-ref>
-<li role="presentation" class="tab">
-  <a
-    href="#tabs-cutedge"
-    class="my-2 block hover:bg-white data-[te-nav-active]:bg-white hover:shadow-[-4px_3px_6px_-1px_rgba(0,0,0,0.3)] data-[te-nav-active]:shadow-[-4px_3px_6px_-1px_rgba(0,0,0,0.3)] text-lg font-medium text-black leading-tight hover:isolate hover:border-transparent bg-[#bab9b9] transition-all skew-x-[45deg] group"
-    data-te-toggle="pill"
-    data-te-target="#tabs-cutedge"
-    data-te-nav-active
-    role="tab"
-    aria-controls="tabs-cutedge"
-    aria-selected="true" >
-    <div class="-skew-x-[45deg] bg-no-repeat bg-[left_27px_top_1px]" style="background-image: url('images/order-x-icon.webp');">
-        <span class="inline-block px-8">Cut, edge & spray</span> <span class="inline-block group-hover:bg-primary bg-[#7c7c7c] px-6 py-5 skew-x-[45deg] data-active"><span class="-skew-x-[45deg] text-white inline-block">£0.00</span></span>
-    </div>
-</a>
-</li>
-<li role="presentation" class="tab">
-    <a
-      href="#tabs-cnc-cutting"
-      class="my-2 block hover:bg-white data-[te-nav-active]:bg-white hover:shadow-[-4px_3px_6px_-1px_rgba(0,0,0,0.3)] data-[te-nav-active]:shadow-[-4px_3px_6px_-1px_rgba(0,0,0,0.3)] text-lg font-medium text-black leading-tight hover:isolate hover:border-transparent bg-[#bab9b9] transition-all skew-x-[45deg] group"
-      data-te-toggle="pill"
-      data-te-target="#tabs-cnc-cutting"
-      role="tab"
-      aria-controls="tabs-cnc-cutting"
-      aria-selected="true" >
-      <div class="-skew-x-[45deg] bg-no-repeat bg-[left_27px_top_1px]" style="background-image: url('images/order-x-icon.webp');">
-          <span class="inline-block px-8">CNC cutting</span> <span class="inline-block group-hover:bg-primary bg-[#7c7c7c] px-6 py-5 skew-x-[45deg] data-active"><span class="-skew-x-[45deg] text-white inline-block">£0.00</span></span>
+        
+        <ul class="mb-5 list-none justify-center border-b-0 pl-0 tabs-box flex flex-row flex-wrap gap-x-5"
+      role="tablist"
+      data-te-nav-ref>
+          <li role="presentation" class="tab"> <a
+          href="#tabs-cutedge"
+          class="my-2 block hover:bg-white data-[te-nav-active]:bg-white hover:shadow-[-4px_3px_6px_-1px_rgba(0,0,0,0.3)] data-[te-nav-active]:shadow-[-4px_3px_6px_-1px_rgba(0,0,0,0.3)] text-lg font-medium text-black leading-tight hover:isolate hover:border-transparent bg-[#bab9b9] transition-all skew-x-[45deg] group"
+          data-te-toggle="pill"
+          data-te-target="#tabs-cutedge"
+          data-te-nav-active
+          role="tab"
+          aria-controls="tabs-cutedge"
+          aria-selected="true" >
+            <div class="-skew-x-[45deg] bg-no-repeat bg-[left_27px_top_1px]" style="background-image: url('images/order-x-icon.webp');"> <span class="inline-block md:px-8 px-5">Cut, edge & spray</span> <span class="inline-block group-hover:bg-primary bg-[#7c7c7c] md:px-6 px-4 py-5 skew-x-[45deg] data-active"><span class="-skew-x-[45deg] text-white inline-block">£0.00</span></span> </div>
+            </a> </li>
+          <li role="presentation" class="tab"> <a
+          href="#tabs-cnc-cutting"
+          class="my-2 block hover:bg-white data-[te-nav-active]:bg-white hover:shadow-[-4px_3px_6px_-1px_rgba(0,0,0,0.3)] data-[te-nav-active]:shadow-[-4px_3px_6px_-1px_rgba(0,0,0,0.3)] text-lg font-medium text-black leading-tight hover:isolate hover:border-transparent bg-[#bab9b9] transition-all skew-x-[45deg] group"
+          data-te-toggle="pill"
+          data-te-target="#tabs-cnc-cutting"
+          role="tab"
+          aria-controls="tabs-cnc-cutting"
+          aria-selected="true" >
+            <div class="-skew-x-[45deg] bg-no-repeat bg-[left_27px_top_1px]" style="background-image: url('images/order-x-icon.webp');"> <span class="inline-block md:px-8 px-5">CNC cutting</span> <span class="inline-block group-hover:bg-primary bg-[#7c7c7c] md:px-6 px-4 py-5 skew-x-[45deg] data-active"><span class="-skew-x-[45deg] text-white inline-block">£0.00</span></span> </div>
+            </a> </li>
+          <li role="presentation" class="tab"> <a
+          href="#tabs-sliding"
+          class="my-2 block hover:bg-white data-[te-nav-active]:bg-white hover:shadow-[-4px_3px_6px_-1px_rgba(0,0,0,0.3)] data-[te-nav-active]:shadow-[-4px_3px_6px_-1px_rgba(0,0,0,0.3)] text-lg font-medium text-black leading-tight hover:isolate hover:border-transparent bg-[#bab9b9] transition-all skew-x-[45deg] group"
+          data-te-toggle="pill"
+          data-te-target="#tabs-sliding"
+          role="tab"
+          aria-controls="tabs-sliding"
+          aria-selected="true" >
+            <div class="-skew-x-[45deg] bg-no-repeat bg-[left_27px_top_1px]" style="background-image: url('images/order-x-icon.webp');"> <span class="inline-block md:px-8 px-5">Sliding doors</span> <span class="inline-block group-hover:bg-primary bg-[#7c7c7c] md:px-6 px-4 py-5 skew-x-[45deg] data-active"><span class="-skew-x-[45deg] text-white inline-block">£0.00</span></span> </div>
+            </a> </li>
+          <li role="presentation" class="tab"> <a
+          href="#tabs-furniture"
+          class="my-2 block hover:bg-white data-[te-nav-active]:bg-white hover:shadow-[-4px_3px_6px_-1px_rgba(0,0,0,0.3)] data-[te-nav-active]:shadow-[-4px_3px_6px_-1px_rgba(0,0,0,0.3)] text-lg font-medium text-black leading-tight hover:isolate hover:border-transparent bg-[#bab9b9] transition-all skew-x-[45deg] group"
+          data-te-toggle="pill"
+          data-te-target="#tabs-furniture"
+          role="tab"
+          aria-controls="tabs-furniture"
+          aria-selected="true" >
+            <div class="-skew-x-[45deg] bg-no-repeat bg-[left_27px_top_1px]" style="background-image: url('images/order-x-icon.webp');"> <span class="inline-block md:px-8 px-5">Furniture fittings</span> <span class="inline-block group-hover:bg-primary bg-[#7c7c7c] md:px-6 px-4 py-5 skew-x-[45deg] data-active"><span class="-skew-x-[45deg] text-white inline-block">£0.00</span></span> </div>
+            </a> </li>
+        </ul>
       </div>
-  </a>
-  </li>
-  <li role="presentation" class="tab">
-    <a
-      href="#tabs-sliding"
-      class="my-2 block hover:bg-white data-[te-nav-active]:bg-white hover:shadow-[-4px_3px_6px_-1px_rgba(0,0,0,0.3)] data-[te-nav-active]:shadow-[-4px_3px_6px_-1px_rgba(0,0,0,0.3)] text-lg font-medium text-black leading-tight hover:isolate hover:border-transparent bg-[#bab9b9] transition-all skew-x-[45deg] group"
-      data-te-toggle="pill"
-      data-te-target="#tabs-sliding"
-      role="tab"
-      aria-controls="tabs-sliding"
-      aria-selected="true" >
-      <div class="-skew-x-[45deg] bg-no-repeat bg-[left_27px_top_1px]" style="background-image: url('images/order-x-icon.webp');">
-          <span class="inline-block px-8">Sliding doors</span> <span class="inline-block group-hover:bg-primary bg-[#7c7c7c] px-6 py-5 skew-x-[45deg] data-active"><span class="-skew-x-[45deg] text-white inline-block">£0.00</span></span>
-      </div>
-  </a>
-  </li>
-  <li role="presentation" class="tab">
-    <a
-      href="#tabs-furniture"
-      class="my-2 block hover:bg-white data-[te-nav-active]:bg-white hover:shadow-[-4px_3px_6px_-1px_rgba(0,0,0,0.3)] data-[te-nav-active]:shadow-[-4px_3px_6px_-1px_rgba(0,0,0,0.3)] text-lg font-medium text-black leading-tight hover:isolate hover:border-transparent bg-[#bab9b9] transition-all skew-x-[45deg] group"
-      data-te-toggle="pill"
-      data-te-target="#tabs-furniture"
-      role="tab"
-      aria-controls="tabs-furniture"
-      aria-selected="true" >
-      <div class="-skew-x-[45deg] bg-no-repeat bg-[left_27px_top_1px]" style="background-image: url('images/order-x-icon.webp');">
-          <span class="inline-block px-8">Furniture fittings</span> <span class="inline-block group-hover:bg-primary bg-[#7c7c7c] px-6 py-5 skew-x-[45deg] data-active"><span class="-skew-x-[45deg] text-white inline-block">£0.00</span></span>
-      </div>
-  </a>
-  </li>
-
-
-
-</ul>
-
-</div>
-<!--Tabs content-->
-<div class="mb-6">
-<div
-  class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
-  id="tabs-cutedge"
-  role="tabpanel"
-  aria-labelledby="tabs-contact-tab"
-  data-te-tab-active>
-    <div class="accordion">
-        <div class="item">
-            <div class="accordion-header header flex items-center justify-between bg-white shadow-[0_15px_57px_rgba(93,93,93,0.18)] rounded-xl">
-                <span class="text-xl text-[#1b1a1a] font-medium">Cutting list</span>
-                <i class="fa-solid fa-angle-right text-xl"></i>
-            </div>
-            <div class="accordion-content bg-white rounded-xl transition-all duration-500 max-h-full">
-                <div class="cart-datatable">
-                    <table class="w-full table-fixed">
-                        <colgroup>
-                            <col span="1" class="col-index">
-                            <col span="1" class="col-material">
-                            <col span="1" class="col-thick">
-                            <col span="1" class="col-length">
-                            <col span="1" class="col-width">
-                            <col span="1" class="col-qty">
-                            <col span="1" class="col-desc">
-                            <col span="1" class="col-edge">
-                            <col span="1" class="col-edge">
-                            <col span="1" class="col-edge">
-                            <col span="1" class="col-edge">
-                            <col span="1" class="col-drilling">
-                            <col span="1" class="col-spraying">
-                            <col span="1" class="col-grain">
-                            <col span="1" class="col-actions">
-    
-                        </colgroup>
-                        <thead>
-                            <tr>
-                            <th colspan="7"></th>
-                            <th colspan="4" class="th-eb text-white text-lg uppercase pt-9 ">Edgebanding details <br>
-                                <div class="Switch mt-[15px] px-6">
-                                    <div class="Switch__bg w-full left-0 flex justify-between bg-[#6f6f6f] rounded-md py-4 px-[10px]">
-                                        <button class="text-white">
-                                          <input class="hidden" type="radio" id="Login21" name="row1" />
-                                          <label class="px-5 py-2" for="Login21">Standard</label>
-                                        </button>
-                                        <button class="text-white">
-                                          <input class="hidden" type="radio" id="Login22" name="row1" />
-                                          <label class="px-5 py-2" for="Login22">Expert</label>
-                                        </button>
-                                      </div>
-                                </div>
-                            </th>
-                            <th colspan="4"></th>
-                            </tr>
-                            <tr>
-                            <th class="th-index p-2 text-center">#</th>
-                            <th class="text-left p-2">Material decor code / name</th>
-                            <th class="text-center p-2">Thick<br>
-                                [mm]</th>
-                            <th class="text-center p-2">Length<br>
-                                [mm]</th>
-                            <th class="text-center p-2">Width<br>
-                                [mm]</th>
-                            <th class="text-center p-2">Qty</th>
-                            <th class="text-center p-2">Part description</th>
-                            <th class="th-eb text-white p-2" colspan="1">L1</th>
-                            <th class="th-eb text-white p-2" colspan="1">L2</th>
-                            <th class="th-eb text-white p-2" colspan="1">W1</th>
-                            <th class="th-eb text-white p-2" colspan="1">W2</th>
-                            <th class="text-left p-2">Additional<br>
-                                machining</th>
-                            <th class="text-center p-2">Spray<br>
-                                coating</th>
-                            <th class="text-center p-2">Grain<br>
-                                match</th>
-                            <th class="text-center th-actions p-2">Actions</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td align="center" class="td-index">
-                                    <span class="text-base">1</span>
-                                </td>
-                                <td class="td-index">
-                                    <div class="input-wrapper">
-                                        <input autocomplete="off" class="border shadow-2xl border-[#cacaca] text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" placeholder="Enter decor code or name" name="material_name" type="text" value="">
-                                    </div>
-                                </td>
-                                <td class="td-thic">
-                                    <div>
-                                        <input class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" type="text" name="thic" value="">
-                                    </div>
-                                </td>
-                                <td class="">
-                                    <input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" name="length" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="off" placeholder="" value="">
-                                </td>
-                                <td class="">
-                                    <input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" name="width" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="off" placeholder=""  value="">
-                                </td>
-                                <td class="">
-                                    <input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" name="qty" inputmode="numeric" pattern="[0-9]*" maxlength="3" autocomplete="off" placeholder="" value="">
-                                </td>
-                                <td class="">
-                                    <input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" name="description" autocomplete="off" placeholder="" value="">
-                                </td>
-                                <td class="td-eb">
-                                    <input type="text" name="" data-tab-index="L1" placeholder="" autocomplete="off" class="border border-[#cacaca] text-[15px] p-2 w-full bg-[#474747] text-white focus:border-primary focus:outline-none rounded" value="">
-                                </td>
-                                <td class="td-eb">
-                                    <input type="text" name="" data-tab-index="L2" placeholder="" autocomplete="off" class="border border-[#cacaca] text-[15px] p-2 w-full bg-[#474747] text-white focus:border-primary focus:outline-none rounded" value="">
-                                </td>
-                                <td class="td-eb">
-                                    <input type="text" name="" data-tab-index="W1" placeholder="" autocomplete="off" class="border border-[#cacaca] text-[15px] p-2 w-full bg-[#474747] text-white focus:border-primary focus:outline-none rounded" value="">
-                                </td>
-                                <td class="td-eb">
-                                    <input type="text" name="" data-tab-index="W2" placeholder="" autocomplete="off" class="border border-[#cacaca] text-[15px] p-2 w-full bg-[#474747] text-white focus:border-primary focus:outline-none rounded" value="">
-                                </td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td align="center" class="td-index">
-                                    <span class="text-base">2</span>
-                                </td>
-                                <td class="td-index">
-                                    <div class="input-wrapper">
-                                        <input autocomplete="off" class="border shadow-2xl border-[#cacaca] text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" placeholder="Enter decor code or name" name="material_name" type="text" value="">
-                                    </div>
-                                </td>
-                                <td class="td-thic">
-                                    <div>
-                                        <input class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" type="text" name="thic" value="">
-                                    </div>
-                                </td>
-                                <td class="">
-                                    <input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" name="length" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="off" placeholder="" value="">
-                                </td>
-                                <td class="">
-                                    <input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" name="width" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="off" placeholder=""  value="">
-                                </td>
-                                <td class="">
-                                    <input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" name="qty" inputmode="numeric" pattern="[0-9]*" maxlength="3" autocomplete="off" placeholder="" value="">
-                                </td>
-                                <td class="">
-                                    <input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" name="description" autocomplete="off" placeholder="" value="">
-                                </td>
-                                <td class="td-eb">
-                                    <input type="text" name="" data-tab-index="L1" placeholder="" autocomplete="off" class="border border-[#cacaca] text-[15px] p-2 w-full bg-[#474747] text-white focus:border-primary focus:outline-none rounded" value="">
-                                </td>
-                                <td class="td-eb">
-                                    <input type="text" name="" data-tab-index="L2" placeholder="" autocomplete="off" class="border border-[#cacaca] text-[15px] p-2 w-full bg-[#474747] text-white focus:border-primary focus:outline-none rounded" value="">
-                                </td>
-                                <td class="td-eb">
-                                    <input type="text" name="" data-tab-index="W1" placeholder="" autocomplete="off" class="border border-[#cacaca] text-[15px] p-2 w-full bg-[#474747] text-white focus:border-primary focus:outline-none rounded" value="">
-                                </td>
-                                <td class="td-eb">
-                                    <input type="text" name="" data-tab-index="W2" placeholder="" autocomplete="off" class="border border-[#cacaca] text-[15px] p-2 w-full bg-[#474747] text-white focus:border-primary focus:outline-none rounded" value="">
-                                </td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td align="center" class="td-index">
-                                    <span class="text-base">3</span>
-                                </td>
-                                <td class="td-index">
-                                    <div class="input-wrapper">
-                                        <input autocomplete="off" class="border shadow-2xl border-[#cacaca] text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" placeholder="Enter decor code or name" name="material_name" type="text" value="">
-                                    </div>
-                                </td>
-                                <td class="td-thic">
-                                    <div>
-                                        <input class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" type="text" name="thic" value="">
-                                    </div>
-                                </td>
-                                <td class="">
-                                    <input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" name="length" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="off" placeholder="" value="">
-                                </td>
-                                <td class="">
-                                    <input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" name="width" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="off" placeholder=""  value="">
-                                </td>
-                                <td class="">
-                                    <input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" name="qty" inputmode="numeric" pattern="[0-9]*" maxlength="3" autocomplete="off" placeholder="" value="">
-                                </td>
-                                <td class="">
-                                    <input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" name="description" autocomplete="off" placeholder="" value="">
-                                </td>
-                                <td class="td-eb">
-                                    <input type="text" name="" data-tab-index="L1" placeholder="" autocomplete="off" class="border border-[#cacaca] text-[15px] p-2 w-full bg-[#474747] text-white focus:border-primary focus:outline-none rounded" value="">
-                                </td>
-                                <td class="td-eb">
-                                    <input type="text" name="" data-tab-index="L2" placeholder="" autocomplete="off" class="border border-[#cacaca] text-[15px] p-2 w-full bg-[#474747] text-white focus:border-primary focus:outline-none rounded" value="">
-                                </td>
-                                <td class="td-eb">
-                                    <input type="text" name="" data-tab-index="W1" placeholder="" autocomplete="off" class="border border-[#cacaca] text-[15px] p-2 w-full bg-[#474747] text-white focus:border-primary focus:outline-none rounded" value="">
-                                </td>
-                                <td class="td-eb">
-                                    <input type="text" name="" data-tab-index="W2" placeholder="" autocomplete="off" class="border border-[#cacaca] text-[15px] p-2 w-full bg-[#474747] text-white focus:border-primary focus:outline-none rounded" value="">
-                                </td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td align="center" class="td-index">
-                                    <span class="text-base">4</span>
-                                </td>
-                                <td class="td-index">
-                                    <div class="input-wrapper">
-                                        <input autocomplete="off" class="border shadow-2xl border-[#cacaca] text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" placeholder="Enter decor code or name" name="material_name" type="text" value="">
-                                    </div>
-                                </td>
-                                <td class="td-thic">
-                                    <div>
-                                        <input class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" type="text" name="thic" value="">
-                                    </div>
-                                </td>
-                                <td class="">
-                                    <input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" name="length" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="off" placeholder="" value="">
-                                </td>
-                                <td class="">
-                                    <input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" name="width" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="off" placeholder=""  value="">
-                                </td>
-                                <td class="">
-                                    <input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" name="qty" inputmode="numeric" pattern="[0-9]*" maxlength="3" autocomplete="off" placeholder="" value="">
-                                </td>
-                                <td class="">
-                                    <input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" name="description" autocomplete="off" placeholder="" value="">
-                                </td>
-                                <td class="td-eb">
-                                    <input type="text" name="" data-tab-index="L1" placeholder="" autocomplete="off" class="border border-[#cacaca] text-[15px] p-2 w-full bg-[#474747] text-white focus:border-primary focus:outline-none rounded" value="">
-                                </td>
-                                <td class="td-eb">
-                                    <input type="text" name="" data-tab-index="L2" placeholder="" autocomplete="off" class="border border-[#cacaca] text-[15px] p-2 w-full bg-[#474747] text-white focus:border-primary focus:outline-none rounded" value="">
-                                </td>
-                                <td class="td-eb">
-                                    <input type="text" name="" data-tab-index="W1" placeholder="" autocomplete="off" class="border border-[#cacaca] text-[15px] p-2 w-full bg-[#474747] text-white focus:border-primary focus:outline-none rounded" value="">
-                                </td>
-                                <td class="td-eb">
-                                    <input type="text" name="" data-tab-index="W2" placeholder="" autocomplete="off" class="border border-[#cacaca] text-[15px] p-2 w-full bg-[#474747] text-white focus:border-primary focus:outline-none rounded" value="">
-                                </td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                            </tr>
-                            <tr class="mockup-row" style="">
-                                <td>&nbsp;</td>
-                                <td><button id="CLAddMoreRowsBtn" class="border w-full border-primary text-[15px] uppercase text-primary px-6 py-2 rounded hover:bg-primary hover:text-white transition-all">Add more rows
-                                  <div class="PlainLoader loader" style="display: none;">
-                                    <svg class="circular" viewBox="25 25 50 50">
-                                      <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle>
-                                    </svg>
-                                  </div>
-                                  </button></td>
-                                <td colspan="4"><button class="border w-full border-[#1b1a1a] text-[15px] uppercase text-[#1b1a1a] px-6 py-2 rounded hover:bg-[#1b1a1a] hover:text-white transition-all">Upload cutting list</button></td>
-                                <td><input style="visibility: hidden;" type="text" disabled=""></td>
-                                <td class="td-eb"><input style="visibility: hidden;" type="text" disabled=""></td>
-                                <td class="td-eb"><input style="visibility: hidden;" type="text" disabled=""></td>
-                                <td class="td-eb"><input style="visibility: hidden;" type="text" disabled=""></td>
-                                <td class="td-eb"><input style="visibility: hidden;" type="text" disabled=""></td>
-                                <td class=""><input style="visibility: hidden;" type="text" disabled=""></td>
-                                <td><input style="visibility: hidden;" type="text" disabled=""></td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                
-                            </tr>
-                            
-                        </tbody>
-                        <tfoot>
-                            <tr class="mockup-row" style="">
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td colspan="4">&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td class="td-eb"><input style="visibility: hidden;" type="text" disabled=""></td>
-                                <td class="td-eb"><input style="visibility: hidden;" type="text" disabled=""></td>
-                                <td class="td-eb"><input style="visibility: hidden;" type="text" disabled=""></td>
-                                <td class="td-eb"><input style="visibility: hidden;" type="text" disabled=""></td>
-                                <td class=""><input style="visibility: hidden;" type="text" disabled=""></td>
-                                <td><input style="visibility: hidden;" type="text" disabled=""></td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                            </tr>
-                            <tr class="mockup-row" style="">
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td colspan="4">&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td class="td-eb"><input style="visibility: hidden;" type="text" disabled=""></td>
-                                <td class="td-eb"><input style="visibility: hidden;" type="text" disabled=""></td>
-                                <td class="td-eb"><input style="visibility: hidden;" type="text" disabled=""></td>
-                                <td class="td-eb"><input style="visibility: hidden;" type="text" disabled=""></td>
-                                <td class=""><input style="visibility: hidden;" type="text" disabled=""></td>
-                                <td><input style="visibility: hidden;" type="text" disabled=""></td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                            </tr>
-                        </tfoot>
-                    </table>
+      <!--Tabs content-->
+      <div class="mb-6">
+        <div
+    class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+    id="tabs-cutedge"
+    role="tabpanel"
+    aria-labelledby="tabs-contact-tab"
+    data-te-tab-active>
+          <div class="accordion">
+            <div class="item">
+              <div class="accordion-header px-5 py-5 header flex items-center justify-between bg-white shadow-[0_15px_57px_rgba(93,93,93,0.18)] rounded-xl"> <span class="text-xl text-[#1b1a1a] font-medium">Cutting list</span> <i class="fa-solid fa-angle-right text-xl"></i> </div>
+              <div class="accordion-content bg-white rounded-xl transition-all duration-500 max-h-full">
+                <div class="cart-datatable overflow-auto">
+                  <table class="w-full table-fixed">
+                    <colgroup>
+                    <col span="1" class="col-index">
+                    <col span="1" class="col-material">
+                    <col span="1" class="col-thick">
+                    <col span="1" class="col-length">
+                    <col span="1" class="col-width">
+                    <col span="1" class="col-qty">
+                    <col span="1" class="col-desc">
+                    <col span="1" class="col-edge">
+                    <col span="1" class="col-edge">
+                    <col span="1" class="col-edge">
+                    <col span="1" class="col-edge">
+                    <col span="1" class="col-drilling">
+                    <col span="1" class="col-spraying">
+                    <col span="1" class="col-grain">
+                    <col span="1" class="col-actions">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th colspan="7"></th>
+                        <th colspan="4" class="th-eb text-white text-lg uppercase pt-9 ">Edgebanding details <br>
+                          <div class="Switch mt-[15px] px-6">
+                            <div class="Switch__bg w-full left-0 flex justify-between bg-[#6f6f6f] rounded-md py-4 px-[10px]">
+                              <button class="text-white">
+                              <input class="hidden" type="radio" id="Login21" name="row1" />
+                              <label class="px-5 py-2" for="Login21">Standard</label>
+                              </button>
+                              <button class="text-white">
+                              <input class="hidden" type="radio" id="Login22" name="row1" />
+                              <label class="px-5 py-2" for="Login22">Expert</label>
+                              </button>
+                            </div>
+                          </div>
+                        </th>
+                        <th colspan="4"></th>
+                      </tr>
+                      <tr>
+                        <th class="th-index p-2 text-center">#</th>
+                        <th class="text-left p-2">Material decor code / name</th>
+                        <th class="text-center p-2">Thick<br>
+                          [mm]</th>
+                        <th class="text-center p-2">Length<br>
+                          [mm]</th>
+                        <th class="text-center p-2">Width<br>
+                          [mm]</th>
+                        <th class="text-center p-2">Qty</th>
+                        <th class="text-center p-2">Part description</th>
+                        <th class="th-eb text-white p-2" colspan="1">L1</th>
+                        <th class="th-eb text-white p-2" colspan="1">L2</th>
+                        <th class="th-eb text-white p-2" colspan="1">W1</th>
+                        <th class="th-eb text-white p-2" colspan="1">W2</th>
+                        <th class="text-left p-2">Additional<br>
+                          machining</th>
+                        <th class="text-center p-2">Spray<br>
+                          coating</th>
+                        <th class="text-center p-2">Grain<br>
+                          match</th>
+                        <th class="text-center th-actions p-2">Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td align="center" class="td-index"><span class="text-base">1</span></td>
+                        <td class="td-index"><div class="input-wrapper">
+                            <input autocomplete="off" class="border shadow-2xl border-[#cacaca] text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" placeholder="Enter decor code or name" name="material_name" type="text" value="">
+                          </div></td>
+                        <td class="td-thic"><div>
+                            <input class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" type="text" name="thic" value="">
+                          </div></td>
+                        <td class=""><input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" name="length" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="off" placeholder="" value=""></td>
+                        <td class=""><input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" name="width" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="off" placeholder=""  value=""></td>
+                        <td class=""><input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" name="qty" inputmode="numeric" pattern="[0-9]*" maxlength="3" autocomplete="off" placeholder="" value=""></td>
+                        <td class=""><input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" name="description" autocomplete="off" placeholder="" value=""></td>
+                        <td class="td-eb"><input type="text" name="" data-tab-index="L1" placeholder="" autocomplete="off" class="border border-[#cacaca] text-[15px] p-2 w-full bg-[#474747] text-white focus:border-primary focus:outline-none rounded" value=""></td>
+                        <td class="td-eb"><input type="text" name="" data-tab-index="L2" placeholder="" autocomplete="off" class="border border-[#cacaca] text-[15px] p-2 w-full bg-[#474747] text-white focus:border-primary focus:outline-none rounded" value=""></td>
+                        <td class="td-eb"><input type="text" name="" data-tab-index="W1" placeholder="" autocomplete="off" class="border border-[#cacaca] text-[15px] p-2 w-full bg-[#474747] text-white focus:border-primary focus:outline-none rounded" value=""></td>
+                        <td class="td-eb"><input type="text" name="" data-tab-index="W2" placeholder="" autocomplete="off" class="border border-[#cacaca] text-[15px] p-2 w-full bg-[#474747] text-white focus:border-primary focus:outline-none rounded" value=""></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td align="center" class="td-index"><span class="text-base">2</span></td>
+                        <td class="td-index"><div class="input-wrapper">
+                            <input autocomplete="off" class="border shadow-2xl border-[#cacaca] text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" placeholder="Enter decor code or name" name="material_name" type="text" value="">
+                          </div></td>
+                        <td class="td-thic"><div>
+                            <input class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" type="text" name="thic" value="">
+                          </div></td>
+                        <td class=""><input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" name="length" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="off" placeholder="" value=""></td>
+                        <td class=""><input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" name="width" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="off" placeholder=""  value=""></td>
+                        <td class=""><input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" name="qty" inputmode="numeric" pattern="[0-9]*" maxlength="3" autocomplete="off" placeholder="" value=""></td>
+                        <td class=""><input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" name="description" autocomplete="off" placeholder="" value=""></td>
+                        <td class="td-eb"><input type="text" name="" data-tab-index="L1" placeholder="" autocomplete="off" class="border border-[#cacaca] text-[15px] p-2 w-full bg-[#474747] text-white focus:border-primary focus:outline-none rounded" value=""></td>
+                        <td class="td-eb"><input type="text" name="" data-tab-index="L2" placeholder="" autocomplete="off" class="border border-[#cacaca] text-[15px] p-2 w-full bg-[#474747] text-white focus:border-primary focus:outline-none rounded" value=""></td>
+                        <td class="td-eb"><input type="text" name="" data-tab-index="W1" placeholder="" autocomplete="off" class="border border-[#cacaca] text-[15px] p-2 w-full bg-[#474747] text-white focus:border-primary focus:outline-none rounded" value=""></td>
+                        <td class="td-eb"><input type="text" name="" data-tab-index="W2" placeholder="" autocomplete="off" class="border border-[#cacaca] text-[15px] p-2 w-full bg-[#474747] text-white focus:border-primary focus:outline-none rounded" value=""></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td align="center" class="td-index"><span class="text-base">3</span></td>
+                        <td class="td-index"><div class="input-wrapper">
+                            <input autocomplete="off" class="border shadow-2xl border-[#cacaca] text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" placeholder="Enter decor code or name" name="material_name" type="text" value="">
+                          </div></td>
+                        <td class="td-thic"><div>
+                            <input class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" type="text" name="thic" value="">
+                          </div></td>
+                        <td class=""><input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" name="length" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="off" placeholder="" value=""></td>
+                        <td class=""><input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" name="width" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="off" placeholder=""  value=""></td>
+                        <td class=""><input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" name="qty" inputmode="numeric" pattern="[0-9]*" maxlength="3" autocomplete="off" placeholder="" value=""></td>
+                        <td class=""><input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" name="description" autocomplete="off" placeholder="" value=""></td>
+                        <td class="td-eb"><input type="text" name="" data-tab-index="L1" placeholder="" autocomplete="off" class="border border-[#cacaca] text-[15px] p-2 w-full bg-[#474747] text-white focus:border-primary focus:outline-none rounded" value=""></td>
+                        <td class="td-eb"><input type="text" name="" data-tab-index="L2" placeholder="" autocomplete="off" class="border border-[#cacaca] text-[15px] p-2 w-full bg-[#474747] text-white focus:border-primary focus:outline-none rounded" value=""></td>
+                        <td class="td-eb"><input type="text" name="" data-tab-index="W1" placeholder="" autocomplete="off" class="border border-[#cacaca] text-[15px] p-2 w-full bg-[#474747] text-white focus:border-primary focus:outline-none rounded" value=""></td>
+                        <td class="td-eb"><input type="text" name="" data-tab-index="W2" placeholder="" autocomplete="off" class="border border-[#cacaca] text-[15px] p-2 w-full bg-[#474747] text-white focus:border-primary focus:outline-none rounded" value=""></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td align="center" class="td-index"><span class="text-base">4</span></td>
+                        <td class="td-index"><div class="input-wrapper">
+                            <input autocomplete="off" class="border shadow-2xl border-[#cacaca] text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" placeholder="Enter decor code or name" name="material_name" type="text" value="">
+                          </div></td>
+                        <td class="td-thic"><div>
+                            <input class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" type="text" name="thic" value="">
+                          </div></td>
+                        <td class=""><input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" name="length" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="off" placeholder="" value=""></td>
+                        <td class=""><input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" name="width" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="off" placeholder=""  value=""></td>
+                        <td class=""><input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" name="qty" inputmode="numeric" pattern="[0-9]*" maxlength="3" autocomplete="off" placeholder="" value=""></td>
+                        <td class=""><input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" name="description" autocomplete="off" placeholder="" value=""></td>
+                        <td class="td-eb"><input type="text" name="" data-tab-index="L1" placeholder="" autocomplete="off" class="border border-[#cacaca] text-[15px] p-2 w-full bg-[#474747] text-white focus:border-primary focus:outline-none rounded" value=""></td>
+                        <td class="td-eb"><input type="text" name="" data-tab-index="L2" placeholder="" autocomplete="off" class="border border-[#cacaca] text-[15px] p-2 w-full bg-[#474747] text-white focus:border-primary focus:outline-none rounded" value=""></td>
+                        <td class="td-eb"><input type="text" name="" data-tab-index="W1" placeholder="" autocomplete="off" class="border border-[#cacaca] text-[15px] p-2 w-full bg-[#474747] text-white focus:border-primary focus:outline-none rounded" value=""></td>
+                        <td class="td-eb"><input type="text" name="" data-tab-index="W2" placeholder="" autocomplete="off" class="border border-[#cacaca] text-[15px] p-2 w-full bg-[#474747] text-white focus:border-primary focus:outline-none rounded" value=""></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr class="mockup-row" style="">
+                        <td>&nbsp;</td>
+                        <td><button id="CLAddMoreRowsBtn" class="border w-full border-primary text-[15px] uppercase text-primary px-6 py-2 rounded hover:bg-primary hover:text-white transition-all">Add more rows
+                          <div class="PlainLoader loader" style="display: none;">
+                            <svg class="circular" viewBox="25 25 50 50">
+                              <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle>
+                            </svg>
+                          </div>
+                          </button></td>
+                        <td colspan="4"><button class="border w-full border-[#1b1a1a] text-[15px] uppercase text-[#1b1a1a] px-6 py-2 rounded hover:bg-[#1b1a1a] hover:text-white transition-all">Upload cutting list</button></td>
+                        <td><input style="visibility: hidden;" type="text" disabled=""></td>
+                        <td class="td-eb"><input style="visibility: hidden;" type="text" disabled=""></td>
+                        <td class="td-eb"><input style="visibility: hidden;" type="text" disabled=""></td>
+                        <td class="td-eb"><input style="visibility: hidden;" type="text" disabled=""></td>
+                        <td class="td-eb"><input style="visibility: hidden;" type="text" disabled=""></td>
+                        <td class=""><input style="visibility: hidden;" type="text" disabled=""></td>
+                        <td><input style="visibility: hidden;" type="text" disabled=""></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr class="mockup-row" style="">
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td colspan="4">&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="td-eb"><input style="visibility: hidden;" type="text" disabled=""></td>
+                        <td class="td-eb"><input style="visibility: hidden;" type="text" disabled=""></td>
+                        <td class="td-eb"><input style="visibility: hidden;" type="text" disabled=""></td>
+                        <td class="td-eb"><input style="visibility: hidden;" type="text" disabled=""></td>
+                        <td class=""><input style="visibility: hidden;" type="text" disabled=""></td>
+                        <td><input style="visibility: hidden;" type="text" disabled=""></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr class="mockup-row" style="">
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td colspan="4">&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="td-eb"><input style="visibility: hidden;" type="text" disabled=""></td>
+                        <td class="td-eb"><input style="visibility: hidden;" type="text" disabled=""></td>
+                        <td class="td-eb"><input style="visibility: hidden;" type="text" disabled=""></td>
+                        <td class="td-eb"><input style="visibility: hidden;" type="text" disabled=""></td>
+                        <td class=""><input style="visibility: hidden;" type="text" disabled=""></td>
+                        <td><input style="visibility: hidden;" type="text" disabled=""></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                    </tfoot>
+                  </table>
                 </div>
+              </div>
             </div>
-        </div>
-        <div class="item">
-            <div class="accordion-header header flex items-center justify-between bg-white shadow-[0_15px_57px_rgba(93,93,93,0.18)] rounded-xl">
-                <span class="text-xl text-[#1b1a1a] font-medium">Full Sheets</span>
-                <i class="fa-solid fa-angle-right text-xl"></i>
-            </div>
-            <div class="accordion-content bg-white rounded-xl transition-all duration-500">
-                <div class="cart-datatable pt-8">
-                    <table class="w-full table-fixed">
-                        <colgroup>
-                            <col span="1" class="col-index">
-                            <col span="1" class="col-material-wholesheet">
-                            <col span="1" class="col-thick">
-                            <col span="1" class="col-length">
-                            <col span="1" class="col-width">
-                            <col span="1" class="col-category">
-                            <col span="1" class="col-qty-wide">
-                            <col span="1" class="col-qty-afterspace">
-                            <col span="1" class="col-drilling">
-                            <col span="1" class="col-grain">
-                            <col span="1" class="col-actions">
-                        </colgroup>
-                        <thead class="border-bottom">
-                            <tr>
-                              <th class="th-index">#</th>
-                              <th class="text-left">Material decor code / name</th>
-                              <th class="text-left">Thick<br>
-                                [mm]</th>
-                              <th colspan="1" class="text-left">Length<br>
-                                [mm]</th>
-                              <th colspan="1" class="text-left">Width<br>
-                                [mm]</th>
-                              <th colspan="1" class="text-left">Brand</th>
-                              <th class="text-left">Qty</th>
-                              <th></th>
-                              <th colspan="1" class="text-left"></th>
-                              <th colspan="1"></th>
-                              <th class="text-center th-actions">Actions</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td align="center" class="td-index">
-                                    <span class="text-base">1</span>
-                                </td>
-                                <td class="td-index">
-                                    <div class="input-wrapper">
-                                        <input autocomplete="off" class="border shadow-2xl border-[#cacaca] text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" placeholder="Enter decor code or name" name="material_name" type="text" value="">
-                                    </div>
-                                </td>
-                                <td class="td-thic">
-                                    <div>
-                                        <input class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" type="text" name="thic" value="">
-                                    </div>
-                                </td>
-                                <td class="">
-                                    
-                                    <input type="text" class="border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded bg-transparent shadow-none border-none" name="length" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="off"placeholder="" disabled value="">
-                                </td>
-                                <td class="">
-                                    <input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded bg-transparent shadow-none border-none" name="width" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="off"placeholder="" disabled  value="">
-                                </td>
-                                <td class="">
-                                    <input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded bg-transparent shadow-none border-none" name="qty" inputmode="numeric" pattern="[0-9]*" maxlength="3" autocomplete="off" placeholder="" disabled value="">
-                                </td>
-                                <td class="">
-                                    <input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" name="description" autocomplete="off"  placeholder="" value="">
-                                </td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                
-                                <td class="actions">&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td align="center" class="td-index">
-                                    <span class="text-base">2</span>
-                                </td>
-                                <td class="td-index">
-                                    <div class="input-wrapper">
-                                        <input autocomplete="off" class="border shadow-2xl border-[#cacaca] text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" placeholder="Enter decor code or name" name="material_name" type="text" value="">
-                                    </div>
-                                </td>
-                                <td class="td-thic">
-                                    <div>
-                                        <input class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" type="text" name="thic" value="">
-                                    </div>
-                                </td>
-                                <td class="">
-                                    
-                                    <input type="text" class="border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded bg-transparent shadow-none border-none" name="length" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="off"placeholder="" disabled value="">
-                                </td>
-                                <td class="">
-                                    <input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded bg-transparent shadow-none border-none" name="width" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="off"placeholder="" disabled  value="">
-                                </td>
-                                <td class="">
-                                    <input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded bg-transparent shadow-none border-none" name="qty" inputmode="numeric" pattern="[0-9]*" maxlength="3" autocomplete="off" placeholder="" disabled value="">
-                                </td>
-                                <td class="">
-                                    <input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" name="description" autocomplete="off"  placeholder="" value="">
-                                </td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                
-                                <td class="actions">&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td align="center" class="td-index">
-                                    <span class="text-base">3</span>
-                                </td>
-                                <td class="td-index">
-                                    <div class="input-wrapper">
-                                        <input autocomplete="off" class="border shadow-2xl border-[#cacaca] text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" placeholder="Enter decor code or name" name="material_name" type="text" value="">
-                                    </div>
-                                </td>
-                                <td class="td-thic">
-                                    <div>
-                                        <input class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" type="text" name="thic" value="">
-                                    </div>
-                                </td>
-                                <td class="">
-                                    
-                                    <input type="text" class="border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded bg-transparent shadow-none border-none" name="length" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="off"placeholder="" disabled value="">
-                                </td>
-                                <td class="">
-                                    <input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded bg-transparent shadow-none border-none" name="width" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="off"placeholder="" disabled  value="">
-                                </td>
-                                <td class="">
-                                    <input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded bg-transparent shadow-none border-none" name="qty" inputmode="numeric" pattern="[0-9]*" maxlength="3" autocomplete="off" placeholder="" disabled value="">
-                                </td>
-                                <td class="">
-                                    <input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" name="description" autocomplete="off" placeholder="" value="">
-                                </td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                
-                                <td class="actions">&nbsp;</td>
-                            </tr>
-                            <tr class="mockup-row" style="">
-                                <td>&nbsp;</td>
-                                <td><button id="CLAddMoreRowsBtn" class="border w-full border-primary text-[15px] uppercase text-primary px-6 py-2 rounded hover:bg-primary hover:text-white transition-all">Add more rows
-                                  <div class="PlainLoader loader" style="display: none;">
-                                    <svg class="circular" viewBox="25 25 50 50">
-                                      <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle>
-                                    </svg>
-                                  </div>
-                                  </button></td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <td class="h-8"></td>
-                            </tr>
-                        </tfoot>
-                    </table>
+            <div class="item">
+              <div class="accordion-header px-5 py-5 header flex items-center justify-between bg-white shadow-[0_15px_57px_rgba(93,93,93,0.18)] rounded-xl"> <span class="text-xl text-[#1b1a1a] font-medium">Full Sheets</span> <i class="fa-solid fa-angle-right text-xl"></i> </div>
+              <div class="accordion-content bg-white rounded-xl transition-all duration-500">
+                <div class="cart-datatable pt-8 overflow-auto">
+                  <table class="w-full table-fixed">
+                    <colgroup>
+                    <col span="1" class="col-index">
+                    <col span="1" class="col-material-wholesheet">
+                    <col span="1" class="col-thick">
+                    <col span="1" class="col-length">
+                    <col span="1" class="col-width">
+                    <col span="1" class="col-category">
+                    <col span="1" class="col-qty-wide">
+                    <col span="1" class="col-qty-afterspace">
+                    <col span="1" class="col-drilling">
+                    <col span="1" class="col-grain">
+                    <col span="1" class="col-actions">
+                    </colgroup>
+                    <thead class="border-bottom">
+                      <tr>
+                        <th class="th-index">#</th>
+                        <th class="text-left">Material decor code / name</th>
+                        <th class="text-left">Thick<br>
+                          [mm]</th>
+                        <th colspan="1" class="text-left">Length<br>
+                          [mm]</th>
+                        <th colspan="1" class="text-left">Width<br>
+                          [mm]</th>
+                        <th colspan="1" class="text-left">Brand</th>
+                        <th class="text-left">Qty</th>
+                        <th></th>
+                        <th colspan="1" class="text-left"></th>
+                        <th colspan="1"></th>
+                        <th class="text-center th-actions">Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td align="center" class="td-index"><span class="text-base">1</span></td>
+                        <td class="td-index"><div class="input-wrapper">
+                            <input autocomplete="off" class="border shadow-2xl border-[#cacaca] text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" placeholder="Enter decor code or name" name="material_name" type="text" value="">
+                          </div></td>
+                        <td class="td-thic"><div>
+                            <input class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" type="text" name="thic" value="">
+                          </div></td>
+                        <td class=""><input type="text" class="border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded bg-transparent shadow-none border-none" name="length" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="off"placeholder="" disabled value=""></td>
+                        <td class=""><input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded bg-transparent shadow-none border-none" name="width" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="off"placeholder="" disabled  value=""></td>
+                        <td class=""><input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded bg-transparent shadow-none border-none" name="qty" inputmode="numeric" pattern="[0-9]*" maxlength="3" autocomplete="off" placeholder="" disabled value=""></td>
+                        <td class=""><input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" name="description" autocomplete="off"  placeholder="" value=""></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="actions">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td align="center" class="td-index"><span class="text-base">2</span></td>
+                        <td class="td-index"><div class="input-wrapper">
+                            <input autocomplete="off" class="border shadow-2xl border-[#cacaca] text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" placeholder="Enter decor code or name" name="material_name" type="text" value="">
+                          </div></td>
+                        <td class="td-thic"><div>
+                            <input class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" type="text" name="thic" value="">
+                          </div></td>
+                        <td class=""><input type="text" class="border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded bg-transparent shadow-none border-none" name="length" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="off"placeholder="" disabled value=""></td>
+                        <td class=""><input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded bg-transparent shadow-none border-none" name="width" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="off"placeholder="" disabled  value=""></td>
+                        <td class=""><input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded bg-transparent shadow-none border-none" name="qty" inputmode="numeric" pattern="[0-9]*" maxlength="3" autocomplete="off" placeholder="" disabled value=""></td>
+                        <td class=""><input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" name="description" autocomplete="off"  placeholder="" value=""></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="actions">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td align="center" class="td-index"><span class="text-base">3</span></td>
+                        <td class="td-index"><div class="input-wrapper">
+                            <input autocomplete="off" class="border shadow-2xl border-[#cacaca] text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" placeholder="Enter decor code or name" name="material_name" type="text" value="">
+                          </div></td>
+                        <td class="td-thic"><div>
+                            <input class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" type="text" name="thic" value="">
+                          </div></td>
+                        <td class=""><input type="text" class="border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded bg-transparent shadow-none border-none" name="length" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="off"placeholder="" disabled value=""></td>
+                        <td class=""><input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded bg-transparent shadow-none border-none" name="width" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="off"placeholder="" disabled  value=""></td>
+                        <td class=""><input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded bg-transparent shadow-none border-none" name="qty" inputmode="numeric" pattern="[0-9]*" maxlength="3" autocomplete="off" placeholder="" disabled value=""></td>
+                        <td class=""><input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" name="description" autocomplete="off" placeholder="" value=""></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="actions">&nbsp;</td>
+                      </tr>
+                      <tr class="mockup-row" style="">
+                        <td>&nbsp;</td>
+                        <td><button id="CLAddMoreRowsBtn" class="border w-full border-primary text-[15px] uppercase text-primary px-6 py-2 rounded hover:bg-primary hover:text-white transition-all">Add more rows
+                          <div class="PlainLoader loader" style="display: none;">
+                            <svg class="circular" viewBox="25 25 50 50">
+                              <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle>
+                            </svg>
+                          </div>
+                          </button></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <td class="h-8"></td>
+                      </tr>
+                    </tfoot>
+                  </table>
                 </div>
+              </div>
             </div>
-        </div>
-        <div class="item">
-            <div class="accordion-header header flex items-center justify-between bg-white shadow-[0_15px_57px_rgba(93,93,93,0.18)] rounded-xl">
-                <span class="text-xl text-[#1b1a1a] font-medium">Edging tape</span>
-                <i class="fa-solid fa-angle-right text-xl"></i>
-            </div>
-            <div class="accordion-content bg-white rounded-xl transition-all duration-500">
-                <div class="cart-datatable pt-8">
-                    <table class="w-full table-fixed">
-                        <colgroup>
-                            <col span="1" class="col-index">
-                            <col span="1" class="col-tape">
-                            <col span="1" class="col-name">
-                            <col span="1" class="col-size">
-                            <col span="1" class="col-space-1">
-                            <col span="1" class="col-qty-wide">
-                            <col span="1" class="col-actions">
-                        </colgroup>
-                        <thead class="border-bottom">
-                            <tr>
-                              <th class="th-index">#</th>
-                              <th class="text-left">Edging decor code</th>
-                              <th class="text-left">Product name - decor name</th>
-                              <th class="text-left">Size<br>
-                                [mm]</th>
-                              <th class="text-left"></th>
-                              <th class="text-left">Qty<br>
-                                [m]</th>
-                              <th class="text-right th-actions">Actions</th>
-                            </tr>
-                          </thead>
-                        <tbody>
-                           <tr>
-                                <td class="td-index">1</td>
-                                <td colspan="4" class="iotbe-text">
-                                    <select data-te-select-init data-te-select-visible-options="3" class="text-[14px]">
-                                        <option value="1">In order to buy edging tape it needs to be part of the cutting list above</option>
-                                      </select>
-                                </td>
-                                <td>
-                                    <input type="text" name="length" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" autocomplete="off" disabled="" inputmode="numeric" pattern="[0-9]*" placeholder="" value="">
-                                </td>
-                                <td>&nbsp;</td>
-                           </tr>
-                           
-                        </tbody>
-                        <tfoot>
-                            <tr class="mockup-row" style="">
-                                <td>&nbsp;</td>
-                                <td><button id="CLAddMoreRowsBtn" class="border w-full border-primary text-[15px] uppercase text-primary px-6 py-2 rounded hover:bg-primary hover:text-white transition-all">Add more rows
-                                  <div class="PlainLoader loader" style="display: none;">
-                                    <svg class="circular" viewBox="25 25 50 50">
-                                      <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle>
-                                    </svg>
-                                  </div>
-                                  </button></td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                
-                            </tr>
-                            <tr>
-                                <td class="h-8"></td>
-                            </tr>
-                        </tfoot>
-                    </table>
+            <div class="item">
+              <div class="accordion-header px-5 py-5 header flex items-center justify-between bg-white shadow-[0_15px_57px_rgba(93,93,93,0.18)] rounded-xl"> <span class="text-xl text-[#1b1a1a] font-medium">Edging tape</span> <i class="fa-solid fa-angle-right text-xl"></i> </div>
+              <div class="accordion-content bg-white rounded-xl transition-all duration-500">
+                <div class="cart-datatable pt-8 overflow-auto">
+                  <table class="w-full ">
+                    <colgroup>
+                    <col span="1" class="col-index ">
+                    <col span="1" class="col-tape ">
+                    <col span="1" class="col-name ">
+                    <col span="1" class="col-size ">
+                    <col span="1" class="col-space-1 ">
+                    <col span="1" class="col-qty-wide ">
+                    <col span="1" class="col-actions ">
+                    </colgroup>
+                    <thead class="border-bottom">
+                      <tr>
+                        <th class="th-index whitespace-nowrap">#</th>
+                        <th class="text-left whitespace-nowrap">Edging decor code</th>
+                        <th class="text-left whitespace-nowrap">Product name - decor name</th>
+                        <th class="text-left whitespace-nowrap">Size<br>
+                          [mm]</th>
+                        <th class="text-left whitespace-nowrap"></th>
+                        <th class="text-left whitespace-nowrap">Qty<br>
+                          [m]</th>
+                        <th class="text-right th-actions whitespace-nowrap">Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="td-index whitespace-nowrap">1</td>
+                        <td colspan="4" class="iotbe-text whitespace-nowrap"><select data-te-select-init data-te-select-visible-options="3" class="text-[14px] ">
+                            <option value="1">In order to buy edging tape it needs to be part of the cutting list above</option>
+                          </select></td>
+                        <td class="whitespace-nowrap"><input type="text" name="length" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" autocomplete="off" disabled="" inputmode="numeric" pattern="[0-9]*" placeholder="" value=""></td>
+                        <td>&nbsp;</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr class="mockup-row" style="">
+                        <td class="whitespace-nowrap">&nbsp;</td>
+                        <td colspan="1" class="whitespace-nowrap"><button id="CLAddMoreRowsBtn" class="border w-full border-primary text-[15px] uppercase text-primary px-6 py-2 rounded hover:bg-primary hover:text-white transition-all whitespace-nowrap">Add more rows
+                          <div class="PlainLoader loader" style="display: none;">
+                            <svg class="circular" viewBox="25 25 50 50">
+                              <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle>
+                            </svg>
+                          </div>
+                          </button></td>
+                        <td class="whitespace-nowrap">&nbsp;</td>
+                        <td class="whitespace-nowrap">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td class="h-8 whitespace-nowrap"></td>
+                      </tr>
+                    </tfoot>
+                  </table>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-
-
-
-
-    
-    
-</div>
-<div
-  class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
-  id="tabs-cnc-cutting"
-  role="tabpanel"
-  aria-labelledby="tabs-contact-tab">
-  <div class="accordion">
-    <div class="item">
-        <div class="accordion-header header flex items-center justify-between bg-white shadow-[0_15px_57px_rgba(93,93,93,0.18)] rounded-xl">
-            <span class="text-xl text-[#1b1a1a] font-medium">CNC cutting job</span>
-            <i class="fa-solid fa-angle-right text-xl"></i>
-        </div>
-        <div class="accordion-content bg-white rounded-xl transition-all duration-500 max-h-full">
-            <div>
-                <div class="sm:px-8 md:px-16 sm:py-8">
-                  <main class="h-full"> 
-                    <!-- file upload modal -->
-                    <article aria-label="File Upload Modal" class="relative h-full flex flex-col rounded-md" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);" ondragleave="dragLeaveHandler(event);" ondragenter="dragEnterHandler(event);"> 
-                      <!-- overlay --> 
-                      <!-- <div id="overlay" class="w-full h-full absolute top-0 left-0 pointer-events-none z-50 flex flex-col items-center justify-center rounded-md">
-                            <i>
-                              <svg class="fill-current w-12 h-12 mb-3 text-blue-700" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                <path d="M19.479 10.092c-.212-3.951-3.473-7.092-7.479-7.092-4.005 0-7.267 3.141-7.479 7.092-2.57.463-4.521 2.706-4.521 5.408 0 3.037 2.463 5.5 5.5 5.5h13c3.037 0 5.5-2.463 5.5-5.5 0-2.702-1.951-4.945-4.521-5.408zm-7.479-1.092l4 4h-3v4h-2v-4h-3l4-4z" />
-                              </svg>
-                            </i>
-                            <p class="text-lg text-blue-700">Drop files to upload</p>
-                          </div> --> 
-                      
-                      <!-- scroll area -->
-                      <section class="h-full overflow-auto w-full h-full flex md:flex-col ">
-                        <div class="w-1/2 p-5">
+        <div
+    class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+    id="tabs-cnc-cutting"
+    role="tabpanel"
+    aria-labelledby="tabs-contact-tab">
+          <div class="accordion">
+            <div class="item">
+              <div class="accordion-header p-5 header flex items-center justify-between bg-white shadow-[0_15px_57px_rgba(93,93,93,0.18)] rounded-xl"> <span class="text-xl text-[#1b1a1a] font-medium">CNC cutting job</span> <i class="fa-solid fa-angle-right text-xl"></i> </div>
+              <div class="accordion-content bg-white rounded-xl transition-all duration-500 max-h-full p-5 md:p-0">
+                <div>
+                  <div class="sm:px-8 md:px-16 sm:py-8">
+                    <main class="h-full"> 
+                      <!-- file upload modal -->
+                      <article aria-label="File Upload Modal" class="relative h-full flex flex-col rounded-md" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);" ondragleave="dragLeaveHandler(event);" ondragenter="dragEnterHandler(event);"> 
+                        <!-- overlay --> 
+                        <!-- <div id="overlay" class="w-full h-full absolute top-0 left-0 pointer-events-none z-50 flex flex-col items-center justify-center rounded-md">
+                              <i>
+                                <svg class="fill-current w-12 h-12 mb-3 text-blue-700" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                  <path d="M19.479 10.092c-.212-3.951-3.473-7.092-7.479-7.092-4.005 0-7.267 3.141-7.479 7.092-2.57.463-4.521 2.706-4.521 5.408 0 3.037 2.463 5.5 5.5 5.5h13c3.037 0 5.5-2.463 5.5-5.5 0-2.702-1.951-4.945-4.521-5.408zm-7.479-1.092l4 4h-3v4h-2v-4h-3l4-4z" />
+                                </svg>
+                              </i>
+                              <p class="text-lg text-blue-700">Drop files to upload</p>
+                            </div> --> 
+                        
+                        <!-- scroll area -->
+                        <section class="h-full w-full h-full flex md:flex-row flex-col md:gap-x-5 gap-x-5">
+                          <div class="md:w-1/2">
                             <h2 class="text-2xl font-semibold text-black mb-10">Upload drawings </h2>
                             <header class="border-dashed border-2 border-gray-400 py-12 flex flex-col justify-center items-center">
-                            <p class="mb-3 font-semibold text-gray-900 flex flex-wrap justify-center"> <span>Drag and drop your</span>&nbsp;<span>files anywhere or</span> </p>
-                            <input id="hidden-input" type="file" multiple class="hidden" />
-                            <button id="button" class="mt-2 rounded-sm px-3 py-1 bg-gray-200 hover:bg-gray-300 focus:shadow-outline focus:outline-none"> Upload a file </button>
+                              <p class="mb-3 font-semibold text-gray-900 flex flex-wrap justify-center"> <span>Drag and drop your</span>&nbsp;<span>files anywhere or</span> </p>
+                              <input id="hidden-input" type="file" multiple class="hidden" />
+                              <button id="button" class="mt-2 rounded-sm px-3 py-1 bg-gray-200 hover:bg-gray-300 focus:shadow-outline focus:outline-none"> Upload a file </button>
                             </header>
                             <h1 class="pt-8 pb-3 font-semibold sm:text-lg text-gray-900"> To Upload </h1>
                             <ul id="gallery" class="flex flex-1 flex-wrap -m-1">
-                            <li id="empty" class="h-full w-full text-center flex flex-col items-center justify-center items-center"> <img class="mx-auto w-32" src="https://user-images.githubusercontent.com/507615/54591670-ac0a0180-4a65-11e9-846c-e55ffce0fe7b.png" alt="no data" /> <span class="text-small text-gray-500">No files selected</span> </li>
+                              <li id="empty" class="h-full w-full text-center flex flex-col items-center justify-center items-center"> <img class="mx-auto w-32" src="https://user-images.githubusercontent.com/507615/54591670-ac0a0180-4a65-11e9-846c-e55ffce0fe7b.png" alt="no data" /> <span class="text-small text-gray-500">No files selected</span> </li>
                             </ul>
-                        </div>
-                        <div class="w-1/2 p-5">
+                          </div>
+                          <div class="md:w-1/2 mt-14 md:mt-0">
                             <h2 class="text-2xl font-semibold text-black mb-10">Provide additional details explaining your CNC job</h2>
                             <div class="input-wrapper ">
-                                <textarea placeholder="Describe in detail your CNC job including material decor code and name" name="description" id="description" cols="30" rows="8" class="border border-[#cacaca] text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded"></textarea>
+                              <textarea placeholder="Describe in detail your CNC job including material decor code and name" name="description" id="description" cols="30" rows="8" class="border border-[#cacaca] text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded"></textarea>
                             </div>
-                        </div>
-                      </section>
-                      
-                      <!-- sticky footer -->
-                      <footer class="flex justify-end px-8 pb-8 pt-4">
-                        <button id="submit" class="rounded-sm px-3 py-1 bg-primary text-white focus:shadow-outline focus:outline-none"> Submit </button>
-                        <button id="cancel" class="ml-3 rounded-sm px-3 py-1 hover:bg-gray-300 focus:shadow-outline focus:outline-none"> Cancel </button>
-                      </footer>
-                    </article>
-                  </main>
-                </div>
-                
-                <!-- using two similar templates for simplicity in js code -->
-                <template id="file-template">
-                  <li class="block p-1 w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8 h-24">
-                    <article tabindex="0" class="group w-full h-full rounded-md focus:outline-none focus:shadow-outline elative bg-gray-100 cursor-pointer relative shadow-sm"> <img alt="upload preview" class="img-preview hidden w-full h-full sticky object-cover rounded-md bg-fixed" />
-                      <section class="flex flex-col rounded-md text-xs break-words w-full h-full z-20 absolute top-0 py-2 px-3">
-                        <h1 class="flex-1 group-hover:text-blue-800"></h1>
-                        <div class="flex"> <span class="p-1 text-blue-800"> <i>
-                          <svg class="fill-current w-4 h-4 ml-auto pt-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                            <path d="M15 2v5h5v15h-16v-20h11zm1-2h-14v24h20v-18l-6-6z" />
-                          </svg>
-                          </i> </span>
-                          <p class="p-1 size text-xs text-gray-700"></p>
-                          <button class="delete ml-auto focus:outline-none hover:bg-gray-300 p-1 rounded-md text-gray-800">
-                          <svg class="pointer-events-none fill-current w-4 h-4 ml-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                            <path class="pointer-events-none" d="M3 6l3 18h12l3-18h-18zm19-4v2h-20v-2h5.711c.9 0 1.631-1.099 1.631-2h5.316c0 .901.73 2 1.631 2h5.711z" />
-                          </svg>
-                          </button>
-                        </div>
-                      </section>
-                    </article>
-                  </li>
-                </template>
-                <template id="image-template">
-                  <li class="block p-1 w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8 h-24">
-                    <article tabindex="0" class="group hasImage w-full h-full rounded-md focus:outline-none focus:shadow-outline bg-gray-100 cursor-pointer relative text-transparent hover:text-white shadow-sm"> <img alt="upload preview" class="img-preview w-full h-full sticky object-cover rounded-md bg-fixed" />
-                      <section class="flex flex-col group-hover:bg-primary rounded-md text-xs break-words w-full h-full z-20 absolute top-0 py-2 px-3">
-                        <h1 class="flex-1"></h1>
-                        <div class="flex"> <span class="p-1"> <i>
-                          <svg class="fill-current w-4 h-4 ml-auto pt-" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                            <path d="M5 8.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5zm9 .5l-2.519 4-2.481-1.96-4 5.96h14l-5-8zm8-4v14h-20v-14h20zm2-2h-24v18h24v-18z" />
-                          </svg>
-                          </i> </span>
-                          <p class="p-1 size text-xs"></p>
-                          <button class="delete ml-auto focus:outline-none p-1 rounded-md">
-                          <svg class="pointer-events-none fill-current w-4 h-4 ml-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                            <path class="pointer-events-none" d="M3 6l3 18h12l3-18h-18zm19-4v2h-20v-2h5.711c.9 0 1.631-1.099 1.631-2h5.316c0 .901.73 2 1.631 2h5.711z" />
-                          </svg>
-                          </button>
-                        </div>
-                      </section>
-                    </article>
-                  </li>
-                </template>
-              </div>
-        </div>
-    </div>
-   
-</div>   
-</div>
-  
-<div
-  class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
-  id="tabs-sliding"
-  role="tabpanel"
-  aria-labelledby="tabs-contact-tab">
-  <div class="accordion">
-    <div class="item">
-        <div class="accordion-header header flex items-center justify-between bg-white shadow-[0_15px_57px_rgba(93,93,93,0.18)] rounded-xl">
-            <span class="text-xl text-[#1b1a1a] font-medium">Sliding doors – Set 2</span>
-            <i class="fa-solid fa-angle-right text-xl"></i>
-        </div>
-        <div class="accordion-content bg-white rounded-xl transition-all duration-500 max-h-full">
-            <div class="px-8 pb-8">
-                <!--Tabs navigation-->
-                <ul class="mb-5 flex list-none flex-row flex-wrap border-b-0 pl-0" role="tablist" data-te-nav-ref>
-                    <li role="presentation"> 
-                        <a href="#tabs-Opening-size" class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xl font-medium leading-tight text-neutral-500 hover:isolate hover:border-transparent focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400" data-te-toggle="pill" data-te-target="#tabs-Opening-size" data-te-nav-active role="tab" aria-controls="tabs-Opening-size" aria-selected="true">Opening size</a>
-                    </li>
-                    <li role="presentation"> 
-                        <a href="#tabs-Frame-style" class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xl font-medium leading-tight text-neutral-500 hover:isolate hover:border-transparent focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400" data-te-toggle="pill" data-te-target="#tabs-Frame-style" role="tab" aria-controls="tabs-Frame-style" aria-selected="true">Frame style</a>
-                    </li>
-                    <li role="presentation"> 
-                        <a href="#tabs-Door-design" class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xl font-medium leading-tight text-neutral-500 hover:isolate hover:border-transparentfocus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400" data-te-toggle="pill" data-te-target="#tabs-Door-design" role="tab" aria-controls="tabs-Door-design" aria-selected="true">Door design</a>
-                    </li>
-                    <li role="presentation"> 
-                        <a href="#tabs-Panel-design" class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xl font-medium leading-tight text-neutral-500 hover:isolate hover:border-transparent focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400" data-te-toggle="pill" data-te-target="#tabs-Panel-design" role="tab" aria-controls="tabs-Panel-design" aria-selected="true">Frame style</a>
-                    </li>
-                </ul>
-                <!--Tabs content-->
-                <div class="">
-                    <div class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block" id="tabs-Opening-size"
-                        role="tabpanel" aria-labelledby="tabs-Opening-size-tab" data-te-tab-active>
-                       <div class="grid grid-cols-2">
-                            <div class="grid grid-cols-3 gap-4">
-                                <div>
-                                    <div class="input-wrapper input-wrapper--filled">
-                                        <label for="" class="text-[15px] mb-3 block">Opening width [mm]</label>
-                                        <div class=" input-error-wrapper">
-                                          <div class="input-error-tooltip"></div>
-                                          <input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" name="tmpWidth" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="off" placeholder="Enter size" value="1100">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="input-wrapper input-wrapper--filled">
-                                        <label for="" class="text-[15px] mb-3 block">Opening height [mm]</label>
-                                        <div class=" input-error-wrapper">
-                                          <div class="input-error-tooltip"></div>
-                                          <input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" name="tmpHeight" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="off" placeholder="Enter size" value="1000">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="input-wrapper input-wrapper--filled">
-                                        <label for="" class="text-[15px] mb-3 block">Door number</label>
-                                        <div class=" input-error-wrapper">
-                                            <select id="texture" name="texture" class="lock w-full border-0 py-2 px-2.5 text-black shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary text-sm leading-6 focus:outline-none bg-white rounded">
-                                                <option class="text-gray-500" value="1">1</option>
-                                                <option class="text-gray-500" value="2">2</option>
-                                                <option class="text-gray-500" value="3">3</option>
-                                                <option class="text-gray-500" value="4">4</option>
-                                                <option class="text-gray-500" value="5">5</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text-right flex items-center justify-end">
-                                <div class="flex items-center justify-between">
-                                    <div>
-                                        <label for="">&nbsp;</label>
-                                        <a href="#" class="rounded-sm px-5 py-3 bg-primary text-white focus:shadow-outline focus:outline-none"> Measuring guide </a>
-                                        
-                                    </div>
-                                    <div>
-                                        <label for="">&nbsp;</label>
-                                        <div class="dropdown">
-                                            <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-                                            <div id="myDropdown" class="dropdown-content">
-                                               <a href="#home">Home</a>
-                                               <a href="#about">About</a>
-                                            </div>
-                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                       </div>
-
-
-                       <div class="pt-9">
-                        <div class="w-[600px] mx-auto">
-                            <p class="text-center flex flex-row space-x-6">
-                                <button id="CLAddMoreRowsBtn" class="border w-full border-primary text-[15px] uppercase text-primary px-6 py-2 rounded hover:bg-primary hover:text-white transition-all">Delete this set of doors</button>
-                                <button class="border w-full border-[#1b1a1a] text-[15px] uppercase text-[#1b1a1a] px-6 py-2 rounded hover:bg-[#1b1a1a] hover:text-white transition-all">Add new set of doors</button>
-                                
-                            </p>
-                           </div>
-                       </div>
+                          </div>
+                        </section>
                         
-                    </div> 
-                    <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block" id="tabs-Frame-style" role="tabpanel" aria-labelledby="tabs-Frame-style-tab"> 
-                        Tab 2 content 
-                    </div> 
+                        <!-- sticky footer -->
+                        <footer class="flex justify-end px-8 pb-8 pt-4">
+                          <button id="submit" class="rounded-sm px-3 py-1 bg-primary text-white focus:shadow-outline focus:outline-none"> Submit </button>
+                          <button id="cancel" class="ml-3 rounded-sm px-3 py-1 hover:bg-gray-300 focus:shadow-outline focus:outline-none"> Cancel </button>
+                        </footer>
+                      </article>
+                    </main>
+                  </div>
+                  
+                  <!-- using two similar templates for simplicity in js code -->
+                  <template id="file-template">
+                    <li class="block p-1 w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8 h-24">
+                      <article tabindex="0" class="group w-full h-full rounded-md focus:outline-none focus:shadow-outline elative bg-gray-100 cursor-pointer relative shadow-sm"> <img alt="upload preview" class="img-preview hidden w-full h-full sticky object-cover rounded-md bg-fixed" />
+                        <section class="flex flex-col rounded-md text-xs break-words w-full h-full z-20 absolute top-0 py-2 px-3">
+                          <h1 class="flex-1 group-hover:text-blue-800"></h1>
+                          <div class="flex"> <span class="p-1 text-blue-800"> <i>
+                            <svg class="fill-current w-4 h-4 ml-auto pt-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                              <path d="M15 2v5h5v15h-16v-20h11zm1-2h-14v24h20v-18l-6-6z" />
+                            </svg>
+                            </i> </span>
+                            <p class="p-1 size text-xs text-gray-700"></p>
+                            <button class="delete ml-auto focus:outline-none hover:bg-gray-300 p-1 rounded-md text-gray-800">
+                            <svg class="pointer-events-none fill-current w-4 h-4 ml-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                              <path class="pointer-events-none" d="M3 6l3 18h12l3-18h-18zm19-4v2h-20v-2h5.711c.9 0 1.631-1.099 1.631-2h5.316c0 .901.73 2 1.631 2h5.711z" />
+                            </svg>
+                            </button>
+                          </div>
+                        </section>
+                      </article>
+                    </li>
+                  </template>
+                  <template id="image-template">
+                    <li class="block p-1 w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8 h-24">
+                      <article tabindex="0" class="group hasImage w-full h-full rounded-md focus:outline-none focus:shadow-outline bg-gray-100 cursor-pointer relative text-transparent hover:text-white shadow-sm"> <img alt="upload preview" class="img-preview w-full h-full sticky object-cover rounded-md bg-fixed" />
+                        <section class="flex flex-col group-hover:bg-primary rounded-md text-xs break-words w-full h-full z-20 absolute top-0 py-2 px-3">
+                          <h1 class="flex-1"></h1>
+                          <div class="flex"> <span class="p-1"> <i>
+                            <svg class="fill-current w-4 h-4 ml-auto pt-" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                              <path d="M5 8.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5zm9 .5l-2.519 4-2.481-1.96-4 5.96h14l-5-8zm8-4v14h-20v-14h20zm2-2h-24v18h24v-18z" />
+                            </svg>
+                            </i> </span>
+                            <p class="p-1 size text-xs"></p>
+                            <button class="delete ml-auto focus:outline-none p-1 rounded-md">
+                            <svg class="pointer-events-none fill-current w-4 h-4 ml-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                              <path class="pointer-events-none" d="M3 6l3 18h12l3-18h-18zm19-4v2h-20v-2h5.711c.9 0 1.631-1.099 1.631-2h5.316c0 .901.73 2 1.631 2h5.711z" />
+                            </svg>
+                            </button>
+                          </div>
+                        </section>
+                      </article>
+                    </li>
+                  </template>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+    class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+    id="tabs-sliding"
+    role="tabpanel"
+    aria-labelledby="tabs-contact-tab">
+          <div class="accordion">
+            <div class="item">
+              <div class="accordion-header p-5 header flex items-center justify-between bg-white shadow-[0_15px_57px_rgba(93,93,93,0.18)] rounded-xl"> <span class="text-xl text-[#1b1a1a] font-medium">Sliding doors – Set 2</span> <i class="fa-solid fa-angle-right text-xl"></i> </div>
+              <div class="accordion-content bg-white rounded-xl transition-all duration-500 max-h-full">
+                <div class="px-8 pb-8"> 
+                  <!--Tabs navigation-->
+                  <ul class="mb-5 flex list-none flex-row flex-wrap border-b-0 pl-0 justify-center" role="tablist" data-te-nav-ref>
+                    <li role="presentation"> <a href="#tabs-Opening-size" class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xl font-medium leading-tight text-neutral-500 hover:isolate hover:border-transparent focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400" data-te-toggle="pill" data-te-target="#tabs-Opening-size" data-te-nav-active role="tab" aria-controls="tabs-Opening-size" aria-selected="true">Opening size</a> </li>
+                    <li role="presentation"> <a href="#tabs-Frame-style" class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xl font-medium leading-tight text-neutral-500 hover:isolate hover:border-transparent focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400" data-te-toggle="pill" data-te-target="#tabs-Frame-style" role="tab" aria-controls="tabs-Frame-style" aria-selected="true">Frame style</a> </li>
+                    <li role="presentation"> <a href="#tabs-Door-design" class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xl font-medium leading-tight text-neutral-500 hover:isolate hover:border-transparentfocus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400" data-te-toggle="pill" data-te-target="#tabs-Door-design" role="tab" aria-controls="tabs-Door-design" aria-selected="true">Door design</a> </li>
+                    <li role="presentation"> <a href="#tabs-Panel-design" class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xl font-medium leading-tight text-neutral-500 hover:isolate hover:border-transparent focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400" data-te-toggle="pill" data-te-target="#tabs-Panel-design" role="tab" aria-controls="tabs-Panel-design" aria-selected="true">Frame style</a> </li>
+                  </ul>
+                  <!--Tabs content-->
+                  <div class="">
+                    <div class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block" id="tabs-Opening-size"
+                          role="tabpanel" aria-labelledby="tabs-Opening-size-tab" data-te-tab-active>
+                      <div class="grid md:grid-cols-2">
+                        <div class="grid md:grid-cols-3 gap-4">
+                          <div>
+                            <div class="input-wrapper input-wrapper--filled">
+                              <label for="" class="text-[15px] mb-3 block">Opening width [mm]</label>
+                              <div class=" input-error-wrapper">
+                                <div class="input-error-tooltip"></div>
+                                <input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" name="tmpWidth" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="off" placeholder="Enter size" value="1100">
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="input-wrapper input-wrapper--filled">
+                              <label for="" class="text-[15px] mb-3 block">Opening height [mm]</label>
+                              <div class=" input-error-wrapper">
+                                <div class="input-error-tooltip"></div>
+                                <input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" name="tmpHeight" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="off" placeholder="Enter size" value="1000">
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="input-wrapper input-wrapper--filled">
+                              <label for="" class="text-[15px] mb-3 block">Door number</label>
+                              <div class=" input-error-wrapper">
+                                <select id="texture" name="texture" class="lock w-full border-0 py-2 px-2.5 text-black shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary text-sm leading-6 focus:outline-none bg-white rounded">
+                                  <option class="text-gray-500" value="1">1</option>
+                                  <option class="text-gray-500" value="2">2</option>
+                                  <option class="text-gray-500" value="3">3</option>
+                                  <option class="text-gray-500" value="4">4</option>
+                                  <option class="text-gray-500" value="5">5</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="text-right flex items-center justify-center md:justify-end">
+                          <div class="flex flex-row items-center md:justify-between mt-6 md:mt-0">
+                            <div class="">
+                              <label for="">&nbsp;</label>
+                              <a href="#" class="rounded-sm px-5 py-3 bg-primary text-white focus:shadow-outline focus:outline-none"> Measuring guide </a> </div>
+                            <div>
+                              <label for="">&nbsp;</label>
+                              <div class="dropdown">
+                                <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                                <div id="myDropdown" class="dropdown-content"> <a href="#home">Home</a> <a href="#about">About</a> </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pt-9">
+                        <div class="md:w-[600px] mx-auto">
+                          <p class="text-center flex flex-row space-x-6">
+                            <button id="CLAddMoreRowsBtn" class="border w-full border-primary text-[15px] uppercase text-primary px-6 py-2 rounded hover:bg-primary hover:text-white transition-all">Delete this set of doors</button>
+                            <button class="border w-full border-[#1b1a1a] text-[15px] uppercase text-[#1b1a1a] px-6 py-2 rounded hover:bg-[#1b1a1a] hover:text-white transition-all">Add new set of doors</button>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block" id="tabs-Frame-style" role="tabpanel" aria-labelledby="tabs-Frame-style-tab"> Tab 2 content </div>
                     <div class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block" id="tabs-Door-design"
-                        role="tabpanel" aria-labelledby="tabs-Door-design-tab">
-                        Tab 1 content
-                    </div> 
-                    <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block" id="tabs-Panel-design" role="tabpanel" aria-labelledby="tabs-Frame-Panel-design"> 
-                        Tab 2 content 
-                    </div>   
+                          role="tabpanel" aria-labelledby="tabs-Door-design-tab"> Tab 1 content </div>
+                    <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block" id="tabs-Panel-design" role="tabpanel" aria-labelledby="tabs-Frame-Panel-design"> Tab 2 content </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+        <div
+    class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+    id="tabs-furniture"
+    role="tabpanel"
+    aria-labelledby="tabs-contact-tab"> Tab 4 content </div>
+      </div>
     </div>
-   
-</div>
-
-
-
-
-    
-
-</div>
-<div
-  class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
-  id="tabs-furniture"
-  role="tabpanel"
-  aria-labelledby="tabs-contact-tab">
-  Tab 4 content
-</div>
-</div>
-    </div>
-   </section>
-   <!-- Footer -->
-    <footer class="bg-neutral-500">
-        <div class="px-4 sm:container">
-            <div class="ftr__title__grid relative pt-20 pb-10">
-                <h4 class="text-2xl font-semibold text-white mb-8">Contact Details</h4>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="bg-neutral-400 text-center px-3 lg:p-5 flex flex-col justify-center align-middle min-h-[213px]">
-                        <img class="w-[39px] h-[49px] ml-auto mr-auto mb-6" src="images/map-icon.webp" alt="">
-                        <p class="text-white xxl:px-16">Unit 33 The IO Centre,
-                            Hearle Way, Hatfield, AL10 9EW</p>
-                    </div>
-                    <div class="bg-neutral-400 text-center lg:p-5 flex flex-col justify-center align-middle min-h-[213px]">
-                        <img class="w-[43px] h-[43px] ml-auto mr-auto mb-6" src="images/phone-ftr-icon.webp" alt="">
-                        <a href="tel:+44(0)1707907000" class="text-white xxl:px-16">+44 (0) 170 790 7000</a>
-                    </div>
-                    <div class="bg-neutral-400 text-center lg:p-5 flex flex-col justify-center align-middle min-h-[213px]">
-                        <img class="w-[57px] h-[41px] ml-auto mr-auto mb-6" src="images/envelop-icon.webp" alt="">
-                        <a href="mailto:hello@xcuts.co.uk" class="text-white xxl:px-16">hello@xcuts.co.uk</a>
-                    </div>
-                </div>
-            </div>
-            <div class="ftr__links flex flex-col md:flex-row space-y-14 md:space-y-0  md:space-x-6">
-                <div class="basis-full md:basis-[28%]">
-                    <h5 class="text-2xl font-semibold text-white mb-4">Collections</h5>
-                    <div class="flex justify-between space-x-6">
-                        <div class="mt-4 space-y-2 flex flex-col">
-                            <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Egger</a>
-                            <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Kronospan</a>
-                            <a href="#" class="text-white hover:text-primary font-light text-base transition-all">XyloCleaf</a>
-                            <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Saviola</a>
-                            <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Swiss Krono</a>
-                            <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Alvic</a>
-                        </div>
-                        <div class="mt-4 space-y-2 flex flex-col">
-                            <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Senoplast</a>
-                            <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Serica</a>
-                            <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Grooved boards</a>
-                            <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Veneered boards</a>
-                            <a href="#" class="text-white hover:text-primary font-light text-base transition-all">MDF boards</a>
-                            <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Plywood</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="basis-full md:basis-[19%]">
-                    <h5 class="text-2xl font-semibold text-white mb-4">Services</h5>
-                    <div class="flex gap-x-14">
-                        <div class="mt-4 space-y-2 flex flex-col">
-                            <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Board cutting</a>
-                            <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Panel edgebanding</a>
-                            <a href="#" class="text-white hover:text-primary font-light text-base transition-all">CNC cutting</a>
-                            <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Spray painting</a>
-                            <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Delivery</a>
-                            <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Samples</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="basis-full md:basis-[19%]">
-                    <h5 class="text-2xl font-semibold text-white mb-4">Products</h5>
-                    <div class="flex gap-x-14">
-                        <div class="mt-4 space-y-2 flex flex-col">
-                            <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Sliding wardrobe doors</a>
-                            <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Shaker style doors</a>
-                            <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Furniture fittings</a>
-                      
-                        </div>
-                    </div>
-                </div>
-                <div class="basis-full md:basis-[19%]">
-                    <h5 class="text-2xl font-semibold text-white mb-4">Company</h5>
-                    <div class="flex gap-x-14">
-                        <div class="mt-4 space-y-2 flex flex-col">
-                            <a href="#" class="text-white hover:text-primary font-light text-base  transition-all">About us</a>
-                            <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Showroom</a>
-                            <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Our guarantee</a>
-                            <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Privacy notice</a>
-                            <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Terms and conditions</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="basis-full md:basis-[15%]">
-                    <h5 class="text-2xl font-semibold text-white mb-4">Resources</h5>
-                    <div class="flex gap-x-14">
-                        <div class="mt-4 space-y-2 flex flex-col">
-                            <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Inspiration hub</a>
-                            <a href="#" class="text-white hover:text-primary font-light text-base transition-all">How to</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="ftr__copy__right flex flex-col md:flex-row md:justify-between items-center py-8">
-                <div class="order-1 md:order-none">
-                    <a href="#" class="text-white text-base">Copyright © 2023 xcuts.co.uk. All rights reserved.</a>
-                </div>
-                <div class="mb-6 md:mb-0">
-                    <a href="#"><img src="images/ftr-logo.webp" alt=""></a>
-                </div>
-            </div>
-            
-
+  </div>
+</section>
+<!-- Footer -->
+<footer class="bg-neutral-500">
+  <div class="px-4 sm:container">
+    <div class="ftr__title__grid relative pt-20 pb-10">
+      <h4 class="text-2xl font-semibold text-white mb-8">Contact Details</h4>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-neutral-400 text-center px-3 lg:p-5 flex flex-col justify-center align-middle min-h-[213px]"> <img class="w-[39px] h-[49px] ml-auto mr-auto mb-6" src="images/map-icon.webp" alt="">
+          <p class="text-white xxl:px-16">Unit 33 The IO Centre,
+            Hearle Way, Hatfield, AL10 9EW</p>
         </div>
-    </footer>
-   <!-- Footer End-->
+        <div class="bg-neutral-400 text-center lg:p-5 flex flex-col justify-center align-middle min-h-[213px]"> <img class="w-[43px] h-[43px] ml-auto mr-auto mb-6" src="images/phone-ftr-icon.webp" alt=""> <a href="tel:+44(0)1707907000" class="text-white xxl:px-16">+44 (0) 170 790 7000</a> </div>
+        <div class="bg-neutral-400 text-center lg:p-5 flex flex-col justify-center align-middle min-h-[213px]"> <img class="w-[57px] h-[41px] ml-auto mr-auto mb-6" src="images/envelop-icon.webp" alt=""> <a href="mailto:hello@xcuts.co.uk" class="text-white xxl:px-16">hello@xcuts.co.uk</a> </div>
+      </div>
+    </div>
+    <div class="ftr__links flex flex-col md:flex-row space-y-14 md:space-y-0  md:space-x-6">
+      <div class="basis-full md:basis-[28%]">
+        <h5 class="text-2xl font-semibold text-white mb-4">Collections</h5>
+        <div class="flex justify-between space-x-6">
+          <div class="mt-4 space-y-2 flex flex-col"> <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Egger</a> <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Kronospan</a> <a href="#" class="text-white hover:text-primary font-light text-base transition-all">XyloCleaf</a> <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Saviola</a> <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Swiss Krono</a> <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Alvic</a> </div>
+          <div class="mt-4 space-y-2 flex flex-col"> <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Senoplast</a> <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Serica</a> <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Grooved boards</a> <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Veneered boards</a> <a href="#" class="text-white hover:text-primary font-light text-base transition-all">MDF boards</a> <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Plywood</a> </div>
+        </div>
+      </div>
+      <div class="basis-full md:basis-[19%]">
+        <h5 class="text-2xl font-semibold text-white mb-4">Services</h5>
+        <div class="flex gap-x-14">
+          <div class="mt-4 space-y-2 flex flex-col"> <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Board cutting</a> <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Panel edgebanding</a> <a href="#" class="text-white hover:text-primary font-light text-base transition-all">CNC cutting</a> <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Spray painting</a> <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Delivery</a> <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Samples</a> </div>
+        </div>
+      </div>
+      <div class="basis-full md:basis-[19%]">
+        <h5 class="text-2xl font-semibold text-white mb-4">Products</h5>
+        <div class="flex gap-x-14">
+          <div class="mt-4 space-y-2 flex flex-col"> <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Sliding wardrobe doors</a> <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Shaker style doors</a> <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Furniture fittings</a> </div>
+        </div>
+      </div>
+      <div class="basis-full md:basis-[19%]">
+        <h5 class="text-2xl font-semibold text-white mb-4">Company</h5>
+        <div class="flex gap-x-14">
+          <div class="mt-4 space-y-2 flex flex-col"> <a href="#" class="text-white hover:text-primary font-light text-base  transition-all">About us</a> <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Showroom</a> <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Our guarantee</a> <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Privacy notice</a> <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Terms and conditions</a> </div>
+        </div>
+      </div>
+      <div class="basis-full md:basis-[15%]">
+        <h5 class="text-2xl font-semibold text-white mb-4">Resources</h5>
+        <div class="flex gap-x-14">
+          <div class="mt-4 space-y-2 flex flex-col"> <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Inspiration hub</a> <a href="#" class="text-white hover:text-primary font-light text-base transition-all">How to</a> </div>
+        </div>
+      </div>
+    </div>
+    <div class="ftr__copy__right flex flex-col md:flex-row md:justify-between items-center py-8">
+      <div class="order-1 md:order-none"> <a href="#" class="text-white text-base">Copyright © 2023 xcuts.co.uk. All rights reserved.</a> </div>
+      <div class="mb-6 md:mb-0"> <a href="#"><img src="images/ftr-logo.webp" alt=""></a> </div>
+    </div>
+  </div>
+</footer>
+<!-- Footer End--> 
 
+<!-- Prefixfree --> 
+<script src="https://thecodeplayer.com/uploads/js/prefixfree-1.0.7.js"></script> 
 
-
-
-
-
-
-   
-<!-- Prefixfree -->
-<script src="https://thecodeplayer.com/uploads/js/prefixfree-1.0.7.js"></script>
-
-<!-- Tailwind Elements JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  <script src="main.js"></script>
-
+<!-- Tailwind Elements JavaScript --> 
+<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script> 
+<!-- Swiper JS --> 
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> 
+<script src="main.js"></script>
 </body>
 </html>
