@@ -40,3 +40,62 @@
  .show {
 	display: block;
  }
+ .lgtgmbox .swiper {
+	width: 100%;
+	height: 100%;
+  }
+
+  .lgtgmbox .swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+
+  .lgtgmbox .swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
+
+  .lgtgmbox .swiper {
+	width: 362px;
+	height: auto;
+	margin: 0;
+  }
+
+  .lgtgmbox .swiper-slide {
+	background-size: cover;
+	background-position: center;
+  }
+
+  .glrSwiper2 {
+	height: 80%;
+	width: 100%;
+  }
+
+  .glrSwiper {
+	height: 20%;
+	box-sizing: border-box;
+	padding: 10px 0;
+  }
+
+  .glrSwiper .swiper-slide {
+	width: 25%;
+	height: 100%;
+	opacity: 1;
+  }
+
+  .glrSwiper .swiper-slide-thumb-active {
+	opacity: 1;
+  }
+
+  .lgtgmbox .swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }

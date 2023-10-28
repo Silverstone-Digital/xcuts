@@ -10,6 +10,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 <!-- Tailwind Elements styles-->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+<link rel='stylesheet' href='all.min.css'>
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 <link rel="stylesheet" href="default.css">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -283,7 +286,7 @@
                         <td>&nbsp;</td>
                         <td>&nbsp;</td>
                       </tr>
-                      <tr class="mockup-row" style="">
+                      <tr class="mockup-row">
                         <td>&nbsp;</td>
                         <td><button id="CLAddMoreRowsBtn" class="border w-full border-primary text-[15px] uppercase text-primary px-6 py-2 rounded hover:bg-primary hover:text-white transition-all">Add more rows
                           <div class="PlainLoader loader" style="display: none;">
@@ -305,7 +308,7 @@
                       </tr>
                     </tbody>
                     <tfoot>
-                      <tr class="mockup-row" style="">
+                      <tr class="mockup-row">
                         <td>&nbsp;</td>
                         <td>&nbsp;</td>
                         <td colspan="4">&nbsp;</td>
@@ -319,7 +322,7 @@
                         <td>&nbsp;</td>
                         <td>&nbsp;</td>
                       </tr>
-                      <tr class="mockup-row" style="">
+                      <tr class="mockup-row">
                         <td>&nbsp;</td>
                         <td>&nbsp;</td>
                         <td colspan="4">&nbsp;</td>
@@ -426,7 +429,7 @@
                         <td>&nbsp;</td>
                         <td class="actions">&nbsp;</td>
                       </tr>
-                      <tr class="mockup-row" style="">
+                      <tr class="mockup-row">
                         <td>&nbsp;</td>
                         <td><button id="CLAddMoreRowsBtn" class="border w-full border-primary text-[15px] uppercase text-primary px-6 py-2 rounded hover:bg-primary hover:text-white transition-all">Add more rows
                           <div class="PlainLoader loader" style="display: none;">
@@ -493,7 +496,7 @@
                       </tr>
                     </tbody>
                     <tfoot>
-                      <tr class="mockup-row" style="">
+                      <tr class="mockup-row">
                         <td class="whitespace-nowrap">&nbsp;</td>
                         <td colspan="1" class="whitespace-nowrap"><button id="CLAddMoreRowsBtn" class="border w-full border-primary text-[15px] uppercase text-primary px-6 py-2 rounded hover:bg-primary hover:text-white transition-all whitespace-nowrap">Add more rows
                           <div class="PlainLoader loader" style="display: none;">
@@ -675,15 +678,18 @@
                           </div>
                         </div>
                         <div class="text-right flex items-center justify-center md:justify-end">
-                          <div class="flex flex-row items-center md:justify-between mt-6 md:mt-0">
-                            <div class="">
-                              <label for="">&nbsp;</label>
-                              <a href="#" class="rounded-sm px-5 py-3 bg-primary text-white focus:shadow-outline focus:outline-none"> Measuring guide </a> </div>
-                            <div>
-                              <label for="">&nbsp;</label>
-                              <div class="dropdown">
-                                <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-                                <div id="myDropdown" class="dropdown-content"> <a href="#home">Home</a> <a href="#about">About</a> </div>
+                          <div class="w-full flex flex-row items-center md:justify-between mt-6 md:mt-0">
+                            <div class="w-1/2 justify-end flex">
+                              <!-- <label for="">&nbsp;</label> -->
+                              <a href="#" class="text-center rounded-sm px-5 py-3 bg-primary text-white focus:shadow-outline focus:outline-none w-[70%] block"> Measuring guide </a> </div>
+                            <div class="w-1/2">
+                              <!-- <label for="">&nbsp;</label> -->
+                              <div class="dropdown justify-end flex">
+                                <button onclick="myFunction()" class="dropbtn w-[70%]">Dropdown</button>
+                                <div id="myDropdown" class="dropdown-content top-full"> 
+                                  <a href="#home" class="block text-[15px]">Installation Manual.pdf</a> 
+                                  <a href="#about" class="block text-[15px]">Soft-Closer Installation Manual.pdf</a> 
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -698,7 +704,110 @@
                         </div>
                       </div>
                     </div>
-                    <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block" id="tabs-Frame-style" role="tabpanel" aria-labelledby="tabs-Frame-style-tab"> Tab 2 content </div>
+                    <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block" id="tabs-Frame-style" role="tabpanel" aria-labelledby="tabs-Frame-style-tab">
+                      <div class="swiper LightBoxSwiper" id="swiperbxes">
+                        <div data-te-lightbox-init class="swiper-wrapper">
+                            <div class="swiper-slide relative group">
+                              <div class="ProductCard p-[1px]">
+                                <div class="ProductCard__inside relative border border-[#A5A7AA]">
+                                  <div class="ProductCard__title"></div>
+                                  <div class="ProductCard__image "><img src="images/lightbox_img-01.jpg" alt="Shaker"></div>
+                                  <div class="ProductCard__footer bg-primary px-5 py-4">
+                                    <div class="top text-white text-center uppercase">Shaker</div>
+                                  </div>
+                                  <div class="ProductCard__overlay absolute top-0 bottom-0 left-0 right-0 bg-primary bg-opacity-70 hidden">
+                                    <div class="details flex grow items-center justify-center">
+                                      <div class="overlay-title text-white">Shaker</div>
+                                    </div>
+                                    <div class="buttons text-center">
+                                      <a class="popup-modal bg-black px-6 py-1.5 rounded text-white text-[15px] uppercase hover:text-white hover:no-underline" href="#shaker-modal">Select</a>
+                                      
+                                    </div>
+                                  </div>
+                                </div>
+                                <div id="shaker-modal" class="white-popup-block 2xl:max-w-[1200px] mfp-hide relative">
+                                  <a class="popup-modal-dismiss absolute top-0 right-2" href="#"><i class="fa-solid fa-xmark"></i></a>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                            <div class="swiper-slide relative group">
+                              <div class="ProductCard p-[1px]">
+                                <div class="ProductCard__inside relative border border-[#A5A7AA]">
+                                  <div class="ProductCard__title"></div>
+                                  <div class="ProductCard__image "><img src="images/lightbox_img-02.jpg" alt="Shaker"></div>
+                                  <div class="ProductCard__footer bg-primary px-5 py-4">
+                                    <div class="top text-white text-center uppercase">Palermo</div>
+                                  </div>
+                                  <div class="ProductCard__overlay absolute top-0 bottom-0 left-0 right-0 bg-primary bg-opacity-70 hidden">
+                                    <div class="details flex grow items-center justify-center">
+                                      <div class="overlay-title text-white">Palermo</div>
+                                    </div>
+                                    <div class="buttons text-center">
+                                      <a class="popup-modal bg-black px-6 py-1.5 rounded text-white text-[15px] uppercase hover:text-white hover:no-underline" href="#palermo-modal">Select</a>
+                                      
+                                    </div>
+                                  </div>
+                                </div>
+                                <div id="palermo-modal" class="white-popup-block 2xl:max-w-[1200px] mfp-hide relative">
+                                  <a class="popup-modal-dismiss absolute top-0 right-2" href="#"><i class="fa-solid fa-xmark"></i></a>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                            <div class="swiper-slide relative group">
+                              <div class="ProductCard p-[1px]">
+                                <div class="ProductCard__inside relative border border-[#A5A7AA]">
+                                  <div class="ProductCard__title"></div>
+                                  <div class="ProductCard__image "><img src="images/lightbox_img-02.jpg" alt="Shaker"></div>
+                                  <div class="ProductCard__footer bg-primary px-5 py-4">
+                                    <div class="top text-white text-center uppercase">Supreme</div>
+                                  </div>
+                                  <div class="ProductCard__overlay absolute top-0 bottom-0 left-0 right-0 bg-primary bg-opacity-70 hidden">
+                                    <div class="details flex grow items-center justify-center">
+                                      <div class="overlay-title text-white">Supreme</div>
+                                    </div>
+                                    <div class="buttons text-center">
+                                      <a class="popup-modal bg-black px-6 py-1.5 rounded text-white text-[15px] uppercase hover:text-white hover:no-underline" href="#supreme-modal">Select</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div id="supreme-modal" class="white-popup-block 2xl:max-w-[1200px] mfp-hide relative">
+                                  <a class="popup-modal-dismiss absolute top-0 right-2" href="#"><i class="fa-solid fa-xmark"></i></a>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                            <div class="swiper-slide relative group">
+                              <div class="ProductCard p-[1px]">
+                                <div class="ProductCard__inside relative border border-[#A5A7AA]">
+                                  <div class="ProductCard__title"></div>
+                                  <div class="ProductCard__image "><img src="images/lightbox_img-02.jpg" alt="Shaker"></div>
+                                  <div class="ProductCard__footer bg-primary px-5 py-4">
+                                    <div class="top text-white text-center uppercase">Prestige</div>
+                                  </div>
+                                  <div class="ProductCard__overlay absolute top-0 bottom-0 left-0 right-0 bg-primary bg-opacity-70 hidden">
+                                    <div class="details flex grow items-center justify-center">
+                                      <div class="overlay-title text-white">Prestige</div>
+                                    </div>
+                                    <div class="buttons text-center">
+                                      <a class="popup-modal bg-black px-6 py-1.5 rounded text-white text-[15px] uppercase hover:text-white hover:no-underline" href="#prestige-modal">Select</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div id="prestige-modal" class="white-popup-block 2xl:max-w-[1200px] mfp-hide relative">
+                                  <a class="popup-modal-dismiss absolute top-0 right-2" href="#"><i class="fa-solid fa-xmark"></i></a>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next after:text-black after:bg-white after:rounded-sm after:px-2 after:py-2 after:text-xl after:font-bold after:content-['next']"></div>
+                        <div class="swiper-button-prev after:text-black after:bg-white after:rounded-sm after:px-2 after:py-2 after:text-xl after:font-bold after:content-['prev']"></div>   
+                            
+                    </div>
+                      
+                    </div>
                     <div class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block" id="tabs-Door-design"
                           role="tabpanel" aria-labelledby="tabs-Door-design-tab"> Tab 1 content </div>
                     <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block" id="tabs-Panel-design" role="tabpanel" aria-labelledby="tabs-Frame-Panel-design"> Tab 2 content </div>
@@ -717,6 +826,7 @@
     </div>
   </div>
 </section>
+
 <!-- Footer -->
 <footer class="bg-neutral-500">
   <div class="px-4 sm:container">
@@ -772,13 +882,157 @@
 </footer>
 <!-- Footer End--> 
 
-<!-- Prefixfree --> 
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
 <script src="https://thecodeplayer.com/uploads/js/prefixfree-1.0.7.js"></script> 
+<script src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js'></script>
+
 
 <!-- Tailwind Elements JavaScript --> 
 <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script> 
 <!-- Swiper JS --> 
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> 
 <script src="main.js"></script>
+<script>
+   jQuery('.popup-modal').magnificPopup({
+  type: 'inline',
+  preloader: false,
+  focus: '#username',
+  modal: true,
+  callbacks: {
+    open: function() {
+      var swiper = new Swiper('.swiper-container', {
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    },
+    close: function() {
+      // Will fire when popup is closed
+    }
+  }
+});
+$(document).on('click', '.popup-modal-dismiss', function (e) {
+  e.preventDefault();
+  $.magnificPopup.close();
+});
+
+const fileTempl = document.getElementById("file-template"),
+    imageTempl = document.getElementById("image-template"),
+    empty = document.getElementById("empty");
+  
+  // use to store pre selected files
+  let FILES = {};
+  
+  // check if file is of type image and prepend the initialied
+  // template to the target element
+  function addFile(target, file) {
+    const isImage = file.type.match("image.*"),
+      objectURL = URL.createObjectURL(file);
+  
+    const clone = isImage
+      ? imageTempl.content.cloneNode(true)
+      : fileTempl.content.cloneNode(true);
+  
+    clone.querySelector("h1").textContent = file.name;
+    clone.querySelector("li").id = objectURL;
+    clone.querySelector(".delete").dataset.target = objectURL;
+    clone.querySelector(".size").textContent =
+      file.size > 1024
+        ? file.size > 1048576
+          ? Math.round(file.size / 1048576) + "mb"
+          : Math.round(file.size / 1024) + "kb"
+        : file.size + "b";
+  
+    isImage &&
+      Object.assign(clone.querySelector("img"), {
+        src: objectURL,
+        alt: file.name
+      });
+  
+    empty.classList.add("hidden");
+    target.prepend(clone);
+  
+    FILES[objectURL] = file;
+  }
+  
+  const gallery = document.getElementById("gallery"),
+    overlay = document.getElementById("overlay");
+  
+  // click the hidden input of type file if the visible button is clicked
+  // and capture the selected files
+  const hidden = document.getElementById("hidden-input");
+  document.getElementById("button").onclick = () => hidden.click();
+  hidden.onchange = (e) => {
+    for (const file of e.target.files) {
+      addFile(gallery, file);
+    }
+  };
+  
+  // use to check if a file is being dragged
+  const hasFiles = ({ dataTransfer: { types = [] } }) =>
+    types.indexOf("Files") > -1;
+  
+  // use to drag dragenter and dragleave events.
+  // this is to know if the outermost parent is dragged over
+  // without issues due to drag events on its children
+  let counter = 0;
+  
+  // reset counter and append file to gallery when file is dropped
+  function dropHandler(ev) {
+    ev.preventDefault();
+    for (const file of ev.dataTransfer.files) {
+      addFile(gallery, file);
+      overlay.classList.remove("draggedover");
+      counter = 0;
+    }
+  }
+  
+  // only react to actual files being dragged
+  function dragEnterHandler(e) {
+    e.preventDefault();
+    if (!hasFiles(e)) {
+      return;
+    }
+    ++counter && overlay.classList.add("draggedover");
+  }
+  
+  function dragLeaveHandler(e) {
+    1 > --counter && overlay.classList.remove("draggedover");
+  }
+  
+  function dragOverHandler(e) {
+    if (hasFiles(e)) {
+      e.preventDefault();
+    }
+  }
+  
+  // event delegation to caputre delete events
+  // fron the waste buckets in the file preview cards
+  gallery.onclick = ({ target }) => {
+    if (target.classList.contains("delete")) {
+      const ou = target.dataset.target;
+      document.getElementById(ou).remove(ou);
+      gallery.children.length === 1 && empty.classList.remove("hidden");
+      delete FILES[ou];
+    }
+  };
+  
+  // // print all selected files
+  // document.getElementById("submit").onclick = () => {
+  //   alert(`Submitted Files:\n${JSON.stringify(FILES)}`);
+  //   console.log(FILES);
+  // };
+  
+  // clear entire selection
+  document.getElementById("cancel").onclick = () => {
+    while (gallery.children.length > 0) {
+      gallery.lastChild.remove();
+    }
+    FILES = {};
+    empty.classList.remove("hidden");
+    gallery.append(empty);
+  };
+</script>
 </body>
 </html>
