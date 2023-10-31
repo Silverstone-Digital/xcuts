@@ -12,7 +12,7 @@ var swiper = new Swiper(".LightBoxSwiper", {
   slidesPerView: 4,
   spaceBetween: 10,
   loop: true,
-  centerSlide:'true',
+  centerSlide:'false',
   fade:'true',
   gragCursor: 'true',
   navigation: {
@@ -58,11 +58,63 @@ var swiper = new Swiper("#swiperbxes", {
       slidesPerView:3
     },
     992:{
-      slidesPerView:4,
-      navigation:false,
+      slidesPerView:4
     }
   }
 });
+
+var swiper = new Swiper("#swiperDoor", {
+  slidesPerView: 5,
+  spaceBetween: 10,
+  loop: false,
+  centerSlide:'false',
+  fade:'true',
+  gragCursor: 'true',
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints:{
+    0:{
+      slidesPerView:1
+    },
+    576:{
+      slidesPerView:2
+    },
+    768:{
+      slidesPerView:3
+    },
+    992:{
+      slidesPerView:4,
+    },
+    1200:{
+      slidesPerView:5
+    }
+  }
+});
+var swiper = new Swiper("#swiperPanel", {
+  slidesPerView: 3,
+  spaceBetween: 10,
+  loop: false,
+  centerSlide:'false',
+  fade:'true',
+  gragCursor: 'true',
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints:{
+    0:{
+      slidesPerView:1
+    },
+    576:{
+      slidesPerView:2
+    }
+  }
+});
+
 
 const accordionHeader= document.querySelectorAll('.accordion-header')
 
