@@ -11,7 +11,7 @@
 <!-- Tailwind Elements styles-->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
-<link rel='stylesheet' href='all.min.css'>
+<link rel="stylesheet" href="all.min.css">
 <!-- Link Swiper's CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 <link rel="stylesheet" href="default.css">
@@ -116,16 +116,17 @@
           aria-selected="true" >
             <div class="-skew-x-[45deg] bg-no-repeat bg-[left_27px_top_1px]" style="background-image: url('images/order-x-icon.webp');"> <span class="inline-block md:px-8 px-5">Sliding doors</span> <span class="inline-block group-hover:bg-primary bg-[#7c7c7c] md:px-6 px-4 py-5 skew-x-[45deg] data-active"><span class="-skew-x-[45deg] text-white inline-block">£0.00</span></span> </div>
             </a> </li>
-          <li role="presentation" class="tab"> <a
-          href="#tabs-furniture"
-          class="my-2 block hover:bg-white data-[te-nav-active]:bg-white hover:shadow-[-4px_3px_6px_-1px_rgba(0,0,0,0.3)] data-[te-nav-active]:shadow-[-4px_3px_6px_-1px_rgba(0,0,0,0.3)] text-lg font-medium text-black leading-tight hover:isolate hover:border-transparent bg-[#bab9b9] transition-all skew-x-[45deg] group"
-          data-te-toggle="pill"
-          data-te-target="#tabs-furniture"
-          role="tab"
-          aria-controls="tabs-furniture"
-          aria-selected="true" >
-            <div class="-skew-x-[45deg] bg-no-repeat bg-[left_27px_top_1px]" style="background-image: url('images/order-x-icon.webp');"> <span class="inline-block md:px-8 px-5">Furniture fittings</span> <span class="inline-block group-hover:bg-primary bg-[#7c7c7c] md:px-6 px-4 py-5 skew-x-[45deg] data-active"><span class="-skew-x-[45deg] text-white inline-block">£0.00</span></span> </div>
-            </a> </li>
+            <li role="presentation" class="tab"> <a
+              href="#tabs-furnitures"
+              class="my-2 block hover:bg-white data-[te-nav-active]:bg-white hover:shadow-[-4px_3px_6px_-1px_rgba(0,0,0,0.3)] data-[te-nav-active]:shadow-[-4px_3px_6px_-1px_rgba(0,0,0,0.3)] text-lg font-medium text-black leading-tight hover:isolate hover:border-transparent bg-[#bab9b9] transition-all skew-x-[45deg] group"
+              data-te-toggle="pill"
+              data-te-target="#tabs-furnitures"
+              role="tab"
+              aria-controls="tabs-furnitures"
+              aria-selected="true">
+                <div class="-skew-x-[45deg] bg-no-repeat bg-[left_27px_top_1px]" style="background-image: url('images/order-x-icon.webp');"> <span class="inline-block md:px-8 px-5">Furniture fittings</span> <span class="inline-block group-hover:bg-primary bg-[#7c7c7c] md:px-6 px-4 py-5 skew-x-[45deg] data-active"><span class="-skew-x-[45deg] text-white inline-block">£0.00</span></span> </div>
+                </a> </li>
+          
         </ul>
       </div>
       <!--Tabs content-->
@@ -705,6 +706,7 @@
                         </div>
                       </div>
                     </div>
+
                     <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block" id="tabs-Frame-style" role="tabpanel" aria-labelledby="tabs-Frame-style-tab">
                       <div class="swiper swiperbxes LightBoxSwiper" id="swiperbxes">
                         <div data-te-lightbox-init class="swiper-wrapper">
@@ -831,6 +833,7 @@
                                         <div class="swiper-wrapper">
                                           <div class="swiper-slide">
                                             <a data-fancybox="gallery-f12022" data-caption="Decor" href="images/lightbox_img-02.jpg">
+
                                                 <img src="images/lightbox_img-02.jpg" class="h-[252px] w-full object-cover sm:h-auto" />
                                                 <div class="bottom-0 absolute z-10 pb-[12px] pt-[2px] pl-5 pr-[75px] before:border-solid before:border-t-[bg-transparent] before:border-r-transparent before:border-b-[#f82f45] before:border-l-[bg-transparent] before:border-t-0 sm:before:border-r-[50px] before:border-b-[50px] before:border-l-0 before:absolute before:w-full before:h-full before:-top-2 before:md:bottom-0 before:left-0 before:-z-10 sm:w-[60%] lg:bottom-0 bottom-0 text-xl text-white">Decor</div>
                                             </a>
@@ -1142,26 +1145,110 @@
                                   
                                   <div class="md:flex sm:flex-nowrap flex-wrap gap-x-5">
                                     <div class="lg:w-2/5 md:w-1/2 bg-[#f1f1f1] px-[10px] py-10 md:p-10 flex items-center">
+                                      <div class="flex flex-col sm:flex-nowrap sm:flex-wrap gap-x-5 max-auto">
                                         <div>
-                                          <img src="images/single-door-img.png" alt="">
+                                          <a data-fancybox="gallery-f120223" href="images/panel-design-img-01.jpg">
+                                            <img src="images/panel-design-img-01.jpg" class="w-full object-cover sm:h-auto" />
+                                        </a>
                                         </div>
+                                        <div>
+                                          <h4 class="text-[34px] text-primary font-semibold mt-7 leading-8">Silver Mirror</h4>
+                                          <p>Square meter price: £15.00 plus VAT</p>
+                                        </div>
+                                      </div>
+                                        
                                     </div>
                                     <div class="lg:w-3/5 md:w-1/2 md:flex md:items-center md:justify-start">
                                       <div class="py-5 px-4">
-                                        <h3 class="text-black text-2xl font-semibold mb-3">Door size</h3>
+                                        <h3 class="text-black text-2xl font-semibold mb-3">Glass panels</h3>
+                                        <p>All our glass is 4mm backed with safety ﬁlm meeting BS EN 12600 2B2 safety class.
+                                          The biggest available single glass panel size is 2440mm in height.</p>
+                                        <h3 class="text-black text-2xl font-semibold mb-3 mt-10">Glass colour</h3>
+                                        <p class="text-black">You can specify each panel’s colour to suit your design.<p>
+                                        <p>Glass is divided into several different categories and is priced per square meter.</p>
                                         <div>
-                                          <div class="flex justify-between mb-2 gap-x-7">
-                                            <span class="text-black text-lg"> Height (openning height – 40mm):</span>	<span class="text-black">960mm</span>
-                                          </div>
-                                          <div class="flex justify-between mb-2">
-                                            <span class="text-black text-lg"> Width:</span>	<span class="text-black">585mm</span>
+                                          <!--Tabs navigation-->
+                                        <ul
+                                          class="mb-5 flex list-none flex-row flex-wrap border-b-0 pl-0"
+                                          role="tablist"
+                                          data-te-nav-ref>
+                                          <li role="presentation">
+                                            <a
+                                              href="#tabs-Mirrors"
+                                              class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-4 lg:px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400"
+                                              data-te-toggle="pill"
+                                              data-te-target="#tabs-Mirrors"
+                                              data-te-nav-active
+                                              role="tab"
+                                              aria-controls="tabs-Mirrors"
+                                              aria-selected="true"
+                                              >Mirrors</a>
+                                          </li>
+                                          <li role="presentation">
+                                            <a
+                                              href="#tabs-Colours"
+                                              class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-4 lg:px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400"
+                                              data-te-toggle="pill"
+                                              data-te-target="#tabs-Colours"
+                                              role="tab"
+                                              aria-controls="tabs-Colours"
+                                              aria-selected="false"
+                                              >Colours</a>
+                                          </li>
+                                          <li role="presentation">
+                                            <a
+                                              href="#tabs-Premium-colours"
+                                              class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-4 lg:px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400"
+                                              data-te-toggle="pill"
+                                              data-te-target="#tabs-Premium-colours"
+                                              role="tab"
+                                              aria-controls="tabs-Premium-colours"
+                                              aria-selected="false"
+                                              >Premium colours</a>
+                                          </li>
+                                          
+                                        </ul>
+
+                                        <!--Tabs content-->
+                                        <div class="mb-6">
+                                        <div
+                                          class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+                                          id="tabs-Mirrors"
+                                          role="tabpanel"
+                                          aria-labelledby="tabs-Mirrors-tab"
+                                          data-te-tab-active>
+                                          <div class="flex gap-4">
+                                            <div class="lg:w-[100px]"><img src="images/panel-design-img-01.jpg" alt=""><div class="text-[13px] text-center">Silver Mirror</div></div>
+                                            <div class="lg:w-[100px]"><img src="images/panel-design-img-02.jpg" alt=""><div class="text-[13px] text-center">Grey Mirror</div></div>
+                                            <div class="lg:w-[100px]"><img src="images/panel-design-img-03.jpg" alt=""><div class="text-[13px] text-center">Bronze Mirror</div></div>
                                           </div>
                                         </div>
-                                        <h3 class="text-black text-2xl font-semibold mb-3 mt-10">Panel size: </h3>
-                                        <p class="text-black">You can adjust each door panel size to better suit your design. </p>
-                                        <p class="text-black">Minimum panel height is 200mm.</p>
-                                        <p class="text-black">Maximum panel height is 2440mm.</p>
-                                        <p class="text-black">Minimum panel width is 100mm.</p>
+                                        <div
+                                          class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+                                          id="tabs-Colours"
+                                          role="tabpanel"
+                                          aria-labelledby="tabs-Colours-tab">
+                                          <div class="flex gap-4">
+                                            <div class="lg:w-[100px]"><img src="images/panel-color-img-01.jpg" alt=""><div class="text-[13px] text-center">Cashmere</div></div>
+                                            <div class="lg:w-[100px]"><img src="images/panel-color-img-02.jpg" alt=""><div class="text-[13px] text-center">Luminous Red</div></div>
+                                            <div class="lg:w-[100px]"><img src="images/panel-color-img-03.jpg" alt=""><div class="text-[13px] text-center">Classic Brown</div></div>
+                                            <div class="lg:w-[100px]"><img src="images/panel-color-img-04.jpg" alt=""><div class="text-[13px] text-center">Classic Black</div></div>
+                                          </div>
+                                        </div>
+                                        <div
+                                          class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+                                          id="tabs-Premium-colours"
+                                          role="tabpanel"
+                                          aria-labelledby="tabs-Premium-colours-tab">
+                                          <div class="flex gap-4">
+                                            <div class="lg:w-[100px]"><img src="images/panel-color-img-01.jpg" alt=""><div class="text-[13px] text-center">Cashmere</div></div>
+                                            <div class="lg:w-[100px]"><img src="images/panel-color-img-02.jpg" alt=""><div class="text-[13px] text-center">Luminous Red</div></div>
+                                            <div class="lg:w-[100px]"><img src="images/panel-color-img-03.jpg" alt=""><div class="text-[13px] text-center">Classic Brown</div></div>
+                                            <div class="lg:w-[100px]"><img src="images/panel-color-img-04.jpg" alt=""><div class="text-[13px] text-center">Classic Black</div></div>
+                                          </div>
+                                        </div>
+                                        </div>
+                                        </div>
                                         <div class="mt-10 lg:mr-5 sm:flex sm:justify-start">
                                           <button class="text-xl text-white bg-primary px-6 py-2">Save</button>
                                         </div>
@@ -1192,7 +1279,122 @@
                                 <div id="decorative-boards" class="white-popup-block md:max-w-[800px] lg:max-w-[1000px] 2xl:max-w-[1200px] p-0 mfp-hide relative">
                                   <a class="popup-modal-dismiss absolute top-0 right-2" href="#"><i class="fa-solid fa-xmark"></i></a>
                                   
-                                  
+                                  <div class="md:flex sm:flex-nowrap flex-wrap gap-x-5">
+                                    <div class="lg:w-2/5 md:w-1/2 bg-[#f1f1f1] px-[10px] py-10 md:p-10 flex items-center">
+                                      <div class="flex flex-col sm:flex-nowrap sm:flex-wrap gap-x-5 max-auto">
+                                        <div>
+                                          <a data-fancybox="gallery-f120224" href="images/F120-PM.jpg">
+                                            <img src="images/F120-PM.jpg" class="w-full object-cover sm:h-auto" />
+                                        </a>
+                                        </div>
+                                        <div>
+                                          <h4 class="text-[34px] text-primary font-semibold mt-7 mb-2 leading-8">Egger F120 PM</h4>
+                                          <div class="flex justify-between">
+                                            <p>Light Grey Metal Rock</p> <span><i class="fa-regular fa-circle text-[15px]"></i> 19mm</span>
+                                          </div>
+                                          <p>Sheet size: 2800 x 2070mm</p>
+                                          <p class="mt-6 mb-2">Sheet price: £263.00 plus VAT</p>
+                                          <h5 class="mb-2 font-semibold">Panel grain direction</h5>
+                                          <img src="images/cross-img.webp" alt="">
+                                        </div>
+                                      </div>
+                                        
+                                    </div>
+                                    <div class="lg:w-3/5 md:w-1/2 md:flex md:items-center md:justify-start">
+                                      <div class="py-5 px-4">
+                                        <h3 class="text-black text-2xl font-semibold mb-3">Decorative board panels</h3>
+                                        <p class="text-black">You can specify each panel’s decor to suit your design. <p>
+                                        <p>Panels are priced based on a number of sheets your design will require.</p>
+                                        <div class="mt-3">
+                                          <p class="mb-2">Browse decors by brand or search for a speciﬁc decor</p>
+                                          <input placeholder="Enter decor code or name" type="text" value="" class="w-full border border-[#f1f1f1] rounded-md text-[14px] px-6 py-3">
+                                        </div>
+                                        <div>
+                                          <!--Tabs navigation-->
+                                        <ul
+                                          class="mb-5 flex list-none flex-row flex-wrap border-b-0 pl-0"
+                                          role="tablist"
+                                          data-te-nav-ref>
+                                          <li role="presentation">
+                                            <a
+                                              href="#tabs-Mirrors"
+                                              class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-4 lg:px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400"
+                                              data-te-toggle="pill"
+                                              data-te-target="#tabs-Mirrors"
+                                              data-te-nav-active
+                                              role="tab"
+                                              aria-controls="tabs-Mirrors"
+                                              aria-selected="true"
+                                              >Mirrors</a>
+                                          </li>
+                                          <li role="presentation">
+                                            <a
+                                              href="#tabs-Colours"
+                                              class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-4 lg:px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400"
+                                              data-te-toggle="pill"
+                                              data-te-target="#tabs-Colours"
+                                              role="tab"
+                                              aria-controls="tabs-Colours"
+                                              aria-selected="false"
+                                              >Colours</a>
+                                          </li>
+                                          <li role="presentation">
+                                            <a
+                                              href="#tabs-Premium-colours"
+                                              class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-4 lg:px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400"
+                                              data-te-toggle="pill"
+                                              data-te-target="#tabs-Premium-colours"
+                                              role="tab"
+                                              aria-controls="tabs-Premium-colours"
+                                              aria-selected="false"
+                                              >Premium colours</a>
+                                          </li>
+                                          
+                                        </ul>
+
+                                        <!--Tabs content-->
+                                        <div class="mb-6">
+                                        <div
+                                          class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+                                          id="tabs-Mirrors"
+                                          role="tabpanel"
+                                          aria-labelledby="tabs-Mirrors-tab"
+                                          data-te-tab-active>
+                                          <div class="flex gap-4">
+                                            <div class="lg:w-[100px]"><img src="images/panel-design-img-01.jpg" alt=""><div class="text-[13px] text-center">Silver Mirror</div></div>
+                                            <div class="lg:w-[100px]"><img src="images/panel-design-img-02.jpg" alt=""><div class="text-[13px] text-center">Grey Mirror</div></div>
+                                            <div class="lg:w-[100px]"><img src="images/panel-design-img-03.jpg" alt=""><div class="text-[13px] text-center">Bronze Mirror</div></div>
+                                          </div>
+                                        </div>
+                                        <div
+                                          class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+                                          id="tabs-Colours"
+                                          role="tabpanel"
+                                          aria-labelledby="tabs-Colours-tab">
+                                          <div class="flex gap-4">
+                                            <div class="lg:w-[100px]"><img src="images/panel-color-img-01.jpg" alt=""><div class="text-[13px] text-center">Cashmere</div></div>
+                                            <div class="lg:w-[100px]"><img src="images/panel-color-img-02.jpg" alt=""><div class="text-[13px] text-center">Luminous Red</div></div>
+                                            <div class="lg:w-[100px]"><img src="images/panel-color-img-03.jpg" alt=""><div class="text-[13px] text-center">Classic Brown</div></div>
+                                            <div class="lg:w-[100px]"><img src="images/panel-color-img-04.jpg" alt=""><div class="text-[13px] text-center">Classic Black</div></div>
+                                          </div>
+                                        </div>
+                                        <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block" id="tabs-Premium-colours" role="tabpanel" aria-labelledby="tabs-Premium-colours-tab">
+                                          <div class="flex gap-4">
+                                            <div class="lg:w-[100px]"><img src="images/panel-color-img-01.jpg" alt=""><div class="text-[13px] text-center">Cashmere</div></div>
+                                            <div class="lg:w-[100px]"><img src="images/panel-color-img-02.jpg" alt=""><div class="text-[13px] text-center">Luminous Red</div></div>
+                                            <div class="lg:w-[100px]"><img src="images/panel-color-img-03.jpg" alt=""><div class="text-[13px] text-center">Classic Brown</div></div>
+                                            <div class="lg:w-[100px]"><img src="images/panel-color-img-04.jpg" alt=""><div class="text-[13px] text-center">Classic Black</div></div>
+                                          </div>
+                                        </div>
+                                        </div>
+                                        </div>
+                                        <div class="mt-10 lg:mr-5 sm:flex sm:justify-start">
+                                          <button class="text-xl text-white bg-primary px-6 py-2">Save</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
                                 </div>
                               </div>
                             </div>
@@ -1207,12 +1409,12 @@
         </div>
       <div
     class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
-    id="tabs-furniture"
+    id="tabs-furnitures"
     role="tabpanel"
-    aria-labelledby="tabs-contact-tab"> Tab 4 content </div>
+    aria-labelledby="tabs-furnitures-tab"> Tab 4 content </div>
       </div>
     </div>
-  </div>
+  </div></div></div>
 </section>
 
 <!-- Footer -->
@@ -1288,6 +1490,16 @@
       }
     });
     Fancybox.bind('[data-fancybox="gallery-f12022"]', {
+      Thumbs : {
+        type: "classic"
+      }
+    });
+    Fancybox.bind('[data-fancybox="gallery-f120223"]', {
+      Thumbs : {
+        type: "classic"
+      }
+    });
+    Fancybox.bind('[data-fancybox="gallery-f120224"]', {
       Thumbs : {
         type: "classic"
       }

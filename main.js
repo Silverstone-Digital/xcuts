@@ -107,7 +107,8 @@ var swiper = new Swiper("#swiperPanel", {
   },
   breakpoints:{
     0:{
-      slidesPerView:1
+      slidesPerView:1,
+      navigation:'true'
     },
     576:{
       slidesPerView:2
