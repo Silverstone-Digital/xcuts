@@ -1,0 +1,126 @@
+/*custom font*/
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans);
+
+
+
+.dropbtn {
+	color: rgb(0, 0, 0);
+	padding: 12px 30px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	border: 1px solid #e11e26;
+ }
+
+ .dropbtn:hover,
+ .dropbtn:focus {
+	background-color: #e11e26;
+	color: #fff;
+ }
+
+ .dropdown {
+	position: relative;
+	display: inline-block;
+ }
+
+ .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: white;
+	min-width: 160px;
+	z-index: 1;
+ }
+
+ .dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+ }
+
+ .show {
+	display: block;
+ }
+ .lgtgmbox .swiper {
+	width: 100%;
+	height: 100%;
+  }
+
+  .lgtgmbox .swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+
+  .lgtgmbox .swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
+
+  .lgtgmbox .swiper {
+	width: 100%;
+	height: auto;
+	margin: 0;
+  }
+
+  .lgtgmbox .swiper-slide {
+	background-size: cover;
+	background-position: center;
+  }
+
+  .glrSwiper2 {
+	height: 80%;
+	width: 100%;
+  }
+
+  .glrSwiper {
+	height: 20%;
+	box-sizing: border-box;
+	padding: 10px 0;
+  }
+
+  .glrSwiper .swiper-slide {
+	width: 25%;
+	height: 100%;
+	opacity: 1;
+  }
+
+  .glrSwiper .swiper-slide-thumb-active {
+	opacity: 1;
+  }
+
+  .lgtgmbox .swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
+
+  .mfrmsec #myform {
+    text-align: center;
+    padding: 5px;
+    border: 0px dotted #ccc;
+    margin:0;
+}
+.mfrmsec .qty {
+    width: 40px;
+    height: 25px;
+    text-align: center;
+}
+.mfrmsec input.qtyplus {
+	width: 37px;
+	height: 35px;
+	border: 1px solid #cccccc;
+	border-radius: 6px;
+  }
+  .mfrmsec input.qtyminus {
+	width: 37px;
+	height: 35px;
+	border: 1px solid #cccccc;
+	border-radius: 6px;
+  }
+
