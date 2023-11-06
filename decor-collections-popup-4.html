@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>|! XCUTS !|</title>
+<link rel="icon" type="image/ico" sizes="16x16" href="assets/images/favicon.ico">
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<!-- Tailwind Elements styles-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+<link rel='stylesheet' href='all.min.css'>
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+<link rel="stylesheet" href="default.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Header -->
+<header>
+  <div class="topHder bg-neutral-300">
+      <div class="px-4 sm:container flex justify-center sm:justify-end p-2 relative">
+          <a href="#" class="text-sm sm:text-base/3 text-white px-2 sm:px-3 z-50 py-1 sm:py-3 relative after:border-r-2 after:absolute after:w-1 after:h-3 sm:after:h-4 after:right-0 after:top-2 sm:after:inset-y-2/4 sm:after:-mt-2 hover:before:bg-primary hover:before:absolute hover:before:top-0 hover:before:bottom-0 hover:before:contents hover:before:skew-y-[0deg] hover:before:skew-x-[30deg] hover:before:right-4 hover:before:left-4 hover:before:-z-50 before:transition before:duration-700">DELIVERY</a>
+          <a href="#" class="text-sm sm:text-base/3 text-white px-2 sm:px-3 z-50 py-1 sm:py-3 relative after:border-r-2 after:absolute after:w-1 after:h-3 sm:after:h-4 after:right-0 after:top-2 sm:after:inset-y-2/4 sm:after:-mt-2 hover:before:bg-primary hover:before:absolute hover:before:top-0 hover:before:bottom-0 hover:before:contents hover:before:skew-y-[0deg] hover:before:skew-x-[30deg] hover:before:right-4 hover:before:left-4 hover:before:-z-50 before:transition before:duration-700">CONTACT</a>
+          <a href="#" class="text-sm sm:text-base/3 text-white px-2 sm:px-3 z-50 py-1 sm:py-3 relative after:border-r-2 after:absolute after:w-1 after:h-3 sm:after:h-4 after:right-0 after:top-2 sm:after:inset-y-2/4 sm:after:-mt-2 hover:before:bg-primary hover:before:absolute hover:before:top-0 hover:before:bottom-0 hover:before:contents hover:before:skew-y-[0deg] hover:before:skew-x-[30deg] hover:before:right-4 hover:before:left-4 hover:before:-z-50 before:transition before:duration-700">SAMPLES</a>
+          <a href="#" class="text-sm sm:text-base/3 text-white px-2 sm:px-3 z-50 py-1 sm:py-3 relative hover:before:bg-primary hover:before:absolute hover:before:top-0 hover:before:bottom-0 hover:before:contents hover:before:skew-y-[0deg] hover:before:skew-x-[30deg] hover:before:right-4 hover:before:left-4 hover:before:-z-50 before:transition before:duration-700">MY ACCOUNT</a>
+
+      </div>
+  </div>
+  <div class="mainHder bg-white py-5">
+      <div class="px-4 sm:container flex justify-between place-items-center">
+          <a href="#"><img src="assets/images/logo.webp" alt="" class=" w-28 md:w-48"> </a>
+          <div class="tp-phone flex place-items-center">
+              <img src="assets/images/phone-icon.webp" alt="" class="w-9 h-9">
+              <div class="phoneDtls ml-3">
+                  <p class="text-sm md:text-lg">MON - FRI <span class="text-primary">8AM - 5PM</span></p>
+                  <a href="#" class="text-xl md:text-2xl leading-4">0170 790 7000</a>
+              </div>
+          </div>
+      </div>
+  </div>
+ </header>
+ <!-- Header End-->
+ 
+ <!-- Navbar -->
+ <nav class="bg-black relative py-3">
+      <div class="px-4 sm:container flex justify-between flex-grow items-center">
+          
+          <div class="">
+              <div class="flex items-center justify-start">
+                  <input type="checkbox" name="hamburger" id="hamburger" class="peer" hidden>
+                  <label for="hamburger" class="peer-checked:hamburger block relative z-20 p-0 -mr-6 cursor-pointer md:hidden">
+                    <div aria-hidden="true" class="m-auto h-0.5 w-6 rounded bg-white transition duration-300"></div>
+                    <div aria-hidden="true" class="m-auto mt-2 h-0.5 w-6 rounded bg-white transition duration-300"></div>
+                  </label>
+                  <div class="peer-checked:block hidden md:block md:pt-0">
+                      <ul class="flex flex-col gap-y-4 md:gap-y-0 md:flex-row md:gap-x-2 transition duration-300 md:transition-none absolute md:relative w-[100%] left-0 top-[100%] bg-neutral-400 md:bg-transparent md:text-white space-y-0 px-2 md:px-0 pb-3 pt-2 md:pb-0 md:pt-0 z-50">
+                          <li class="md:mt-0">
+                              <a href="#" class="text-base md:text-base block md:inline-block text-white px-2 sm:px-2 z-50 md:py-3 py-1.5 relative hover:before:bg-primary hover:before:absolute hover:before:top-0 hover:before:bottom-0 hover:before:contents hover:before:md:skew-y-[0deg] hover:before:md:skew-x-[30deg] hover:md:before:right-6 hover:before:right-0 hover:before:md:left-6 hover:before:left-0 hover:before:-z-50 before:transition before:duration-700 hover:before:md:rounded-none hover:before:rounded">Decor collections +</a>
+                          </li>
+                          <li class="md:mt-0">
+                              <a href="#" class="text-base md:text-base block md:inline-block text-white px-2 sm:px-2 z-50 md:py-3 py-1.5 relative hover:before:bg-primary hover:before:absolute hover:before:top-0 hover:before:bottom-0 hover:before:contents hover:before:md:skew-y-[0deg] hover:before:md:skew-x-[30deg] hover:md:before:right-6 hover:before:right-0 hover:before:md:left-6 hover:before:left-0 hover:before:-z-50 before:transition before:duration-700 hover:before:md:rounded-none hover:before:rounded">Services +</a>
+                          </li>
+                          <li class="md:mt-0">
+                              <a href="#" class="text-base md:text-base block md:inline-block text-white px-2 sm:px-2 z-50 md:py-3 py-1.5 relative hover:before:bg-primary hover:before:absolute hover:before:top-0 hover:before:bottom-0 hover:before:contents hover:before:md:skew-y-[0deg] hover:before:md:skew-x-[30deg] hover:md:before:right-6 hover:before:right-0 hover:before:md:left-6 hover:before:left-0 hover:before:-z-50 before:transition before:duration-700 hover:before:md:rounded-none hover:before:rounded">Products +</a>
+                          </li>
+                          <li class="md:mt-0">
+                              <a href="#" class="text-base md:text-base block md:inline-block text-white px-2 sm:px-2 z-50 md:py-3 py-1.5 relative hover:before:bg-primary hover:before:absolute hover:before:top-0 hover:before:bottom-0 hover:before:contents hover:before:md:skew-y-[0deg] hover:before:md:skew-x-[30deg] hover:md:before:right-6 hover:before:right-0 hover:before:md:left-6 hover:before:left-0 hover:before:-z-50 before:transition before:duration-700 hover:before:md:rounded-none hover:before:rounded">Showroom +</a>
+                          </li>
+                          <li class="md:mt-0">
+                              <a href="#" class="text-base md:text-base block md:inline-block text-white px-2 sm:px-2 z-50 md:py-3 py-1.5 relative hover:before:bg-primary hover:before:absolute hover:before:top-0 hover:before:bottom-0 hover:before:contents hover:before:md:skew-y-[0deg] hover:before:md:skew-x-[30deg] hover:md:before:right-6 hover:before:right-0 hover:before:md:left-6 hover:before:left-0 hover:before:-z-50 before:transition before:duration-700 hover:before:md:rounded-none hover:before:rounded">Shop online +</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <div class="flex">
+              <!-- <form action="" class="relative mx-auto w-max">
+                  <input type="search" 
+                        class="peer cursor-pointer relative p-0 z-10 h-12 w-12 rounded-full text-white  bg-transparent pl-9 outline-none focus:w-full focus:cursor-text focus:border focus:border-primary focus:pl-16 focus:pr-4" />
+                        <img src="assets/images/search-icon.webp" alt="" class="absolute inset-y-0 my-auto left-6 h-5 w-5">
+                </form> -->
+              <a href="#" class="mr-6">
+                  <img src="assets/images/search-icon.webp" alt="" class="">
+              </a>
+              <a href="#">
+                  <img src="assets/images/cart-icon.webp" alt="">
+              </a>
+          </div>
+      </div>
+      
+ </nav>
+ <!-- Navbar End-->
+
+ <!-- Inner Banner Section -->
+ <div class="relative">
+  <img src="assets/images/collections-banner.webp" alt="" class="h-[240px] md:h-auto object-cover">
+  <div class="absolute top-1/2 w-full -translate-y-1/2 text-center">
+      <span class="font-semibold text-white text-2xl md:text-4xl lg:text-6xl uppercase">Decor collections</span>
+  </div>
+ </div>
+  <!-- Inner Banner Section End -->
+  <section class="section-one-stop py-10 md:py-20 pb-0 md:pb-0">
+      <div class="px-4 sm:container">
+          <div class="text-center px-1 overflow-hidden">
+              <!-- <div class="text-2xl md:text-3xl mb-2">
+                  Collections
+              </div> -->
+              <div class="bg-black mx-6 md:mx-28 skew-y-[0] skew-x-[35deg] relative">
+                  <div class="w-3 md:w-20 h-11 bg-primary absolute left-0 md:-left-24 bottom-0"></div>
+                  <div class="w-3 md:w-20 h-11 bg-primary absolute right-0 md:-right-24 top-0"></div>
+                  <h1 class="text-white text-xl/6 md:text-4xl lg:text-5xl font-bold -skew-x-[35deg] py-2 px-4 uppercase">Egger</h1>
+              </div>
+          
+          </div>
+      </div>
+  </section>
+  
+  <div>
+      <div class="px-4 sm:container">
+          <div class="grid lg:grid-cols-9 md:grid-cols-5 sm:grid-cols-4 gap-x-2 md:gap-y-2 sm:gap-y-2 gap-y-2 mt-10 mb-10">
+              <div>
+                  <input type="text" name="name" id="name" class="block w-full border-0 py-2 px-2.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary text-sm leading-6 focus:outline-none" placeholder="Code/Name">
+              </div>
+              <div>
+                  <select id="brand" name="brand" class="lock w-full border-0 py-2 px-2.5 text-primary shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary text-sm leading-6 focus:outline-none bg-white ">
+                      <option class="text-gray-500" value="1">Brand</option>
+                      <option class="text-gray-500" value="2">Two</option>
+                      <option class="text-gray-500" value="3">Three</option>
+                      <option class="text-gray-500" value="4">Four</option>
+                      <option class="text-gray-500" value="5">Five</option>
+                    </select>
+                 
+              </div>
+              <div>
+                  <select id="core" name="core" class="lock w-full border-0 py-2 px-2.5 text-primary shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary text-sm leading-6 focus:outline-none bg-white ">
+                      <option class="text-gray-500" value="1">Core</option>
+                      <option class="text-gray-500" value="2">Two</option>
+                      <option class="text-gray-500" value="3">Three</option>
+                      <option class="text-gray-500" value="4">Four</option>
+                      <option class="text-gray-500" value="5">Five</option>
+                    </select>
+              </div>
+              <div>
+                  <select id="thickness" name="thickness" class="lock w-full border-0 py-2 px-2.5 text-primary shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary text-sm leading-6 focus:outline-none bg-white ">
+                      <option class="text-gray-500" value="1">Thickness</option>
+                      <option class="text-gray-500" value="2">Two</option>
+                      <option class="text-gray-500" value="3">Three</option>
+                      <option class="text-gray-500" value="4">Four</option>
+                      <option class="text-gray-500" value="5">Five</option>
+                    </select>
+              </div>
+              <div>
+                  <select id="surface" name="surface" class="lock w-full border-0 py-2 px-2.5 text-primary shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary text-sm leading-6 focus:outline-none bg-white ">
+                      <option class="text-gray-500" value="1">Surface</option>
+                      <option class="text-gray-500" value="2">Two</option>
+                      <option class="text-gray-500" value="3">Three</option>
+                      <option class="text-gray-500" value="4">Four</option>
+                      <option class="text-gray-500" value="5">Five</option>
+                    </select>
+              </div>
+              <div>
+                  <select id="qualities" name="qualities" class="lock w-full border-0 py-2 px-2.5 text-primary shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary text-sm leading-6 focus:outline-none bg-white ">
+                      <option class="text-gray-500" value="1">Qualities</option>
+                      <option class="text-gray-500" value="2">Two</option>
+                      <option class="text-gray-500" value="3">Three</option>
+                      <option class="text-gray-500" value="4">Four</option>
+                      <option class="text-gray-500" value="5">Five</option>
+                    </select>
+              </div>
+              <div>
+                  <select id="design" name="design" class="lock w-full border-0 py-2 px-2.5 text-primary shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary text-sm leading-6 focus:outline-none bg-white ">
+                      <option class="text-gray-500" value="1">Design</option>
+                      <option class="text-gray-500" value="2">Two</option>
+                      <option class="text-gray-500" value="3">Three</option>
+                      <option class="text-gray-500" value="4">Four</option>
+                      <option class="text-gray-500" value="5">Five</option>
+                    </select>
+              </div>
+              <div>
+                  <select id="texture" name="texture" class="lock w-full border-0 py-2 px-2.5 text-primary shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary text-sm leading-6 focus:outline-none bg-white ">
+                      <option class="text-gray-500" value="1">Texture</option>
+                      <option class="text-gray-500" value="2">Two</option>
+                      <option class="text-gray-500" value="3">Three</option>
+                      <option class="text-gray-500" value="4">Four</option>
+                      <option class="text-gray-500" value="5">Five</option>
+                    </select>
+              </div>
+              <div>
+                  <select id="finish" name="finish" class="lock w-full border-0 py-2 px-2.5 text-primary shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary text-sm leading-6 focus:outline-none bg-white ">
+                      <option class="text-gray-500" value="1">Finish</option>
+                      <option class="text-gray-500" value="2">Two</option>
+                      <option class="text-gray-500" value="3">Three</option>
+                      <option class="text-gray-500" value="4">Four</option>
+                      <option class="text-gray-500" value="5">Five</option>
+                    </select>
+              </div>
+          </div>
+          <div class="pb-16">
+              <div>
+                  <div class="flex md:justify-end flex-col w-40 text-center ml-auto md:ml-auto md:mr-0 mr-auto">
+                      <p class="mb-3">Display options</p>
+                          <div class="flex justify-center">
+                              <!--Tabs navigation-->
+                              <ul class="mb-5 flex gap-3 list-none flex-row flex-wrap border-b-0 pl-0"
+                              role="tablist"
+                              data-te-nav-ref>
+                                  <li role="presentation">
+                                  <a href="#tabs-list"
+                                      class=""
+                                      data-te-toggle="pill"
+                                      data-te-target="#tabs-list"
+                                      data-te-nav-active
+                                      role="tab"
+                                      aria-controls="tabs-list"
+                                      aria-selected="true">
+                                      <div class="flex space-y-[3px] flex-col">
+                                          <span class="w-[39px] h-[7px] bg-primary rounded-full block"></span>
+                                          <span class="w-[39px] h-[7px] bg-primary rounded-full block"></span>
+                                          <span class="w-[39px] h-[7px] bg-primary rounded-full block"></span>
+                                          <span class="w-[39px] h-[7px] bg-[#afafaf] rounded-full block"></span>
+                                      </div>
+                                  </a>
+                                  </li>
+                                  <li role="presentation">
+                                  <a href="#tabs-grid"
+                                      class=""
+                                      data-te-toggle="pill"
+                                      data-te-target="#tabs-grid"
+                                      role="tab"
+                                      aria-controls="tabs-grid"
+                                      aria-selected="false">
+                                      <div class="grid grid-cols-2 gap-1">
+                                          <span class="w-[16px] h-[16px] bg-primary rounded-sm block"></span>
+                                          <span class="w-[16px] h-[16px] bg-primary rounded-sm block"></span>
+                                          <span class="w-[16px] h-[16px] bg-primary rounded-sm block"></span>
+                                          <span class="w-[16px] h-[16px] bg-[#afafaf] rounded-sm block"></span>
+                                      </div>
+                                      
+                                  </a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                      <!--Tabs content-->
+                      <div class="">
+                          <div class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+                              id="tabs-list"
+                              role="tabpanel"
+                              aria-labelledby="tabs-list-tab"
+                              data-te-tab-active>
+                              <div class="text-black text-center font-semibold text-3xl mb-8 md:-mt-[50px]">PerfectSense Matt</div>
+                              
+                              <div class="egerTable overflow-auto">
+                                  <table class="w-full">
+                                      <colgroup>
+                                          <col span="1" class="col-Decor">
+                                          <col span="1" class="col-Texture">
+                                          <col span="1" class="col-Grain">
+                                          <col span="1" class="col-Decor-code">
+                                          <col span="1" class="col-Decor-name">
+                                          <col span="1" class="col-Core">
+                                          <col span="1" class="col-Length">
+                                          <col span="1" class="col-Width">
+                                          <col span="1" class="col-Thickness">
+                                      </colgroup>
+                                      <thead>
+                                          <th class="col-Decor border-r-[2px] border-bg-white text-white text-base font-medium bg-primary whitespace-normal">Decor</th>
+                                          <th class="col-Texture border-r-[2px] border-bg-white text-white text-base font-medium bg-black whitespace-normal">Texture</th>
+                                          <th class="col-Grainborder-r-[2px] border-bg-white text-white text-base font-medium bg-primary whitespace-normal">Grain</th>
+                                          <th class="col-Decor-code border-r-[2px] border-bg-white text-white text-base font-medium bg-black whitespace-normal">Decor code</th>
+                                          <th class="col-Decor-name border-r-[2px] border-bg-white text-white text-base font-medium bg-primary whitespace-normal">Decor name</th>
+                                          <th class="col-Core border-r-[2px] border-bg-white text-white text-base font-medium bg-black whitespace-normal">Core</th>
+                                          <th class="col-Length border-r-[2px] border-bg-white text-white text-base font-medium bg-primary whitespace-normal">Length</th>
+                                          <th class="col-Width border-r-[2px] border-bg-white text-white text-base font-medium bg-black whitespace-normal">Width</th>
+                                          <th class="col-Thickness border-r-[2px] border-bg-white text-white text-base font-medium bg-primary whitespace-normal">Thickness</th>
+                                      </thead>
+                                      <tbody>
+                                          <tr>
+                                              <td>
+                                                  <div class="text-center flex items-center justify-center">
+                                                      <a data-fancybox="gallery" href="assets/images/img-01.webp" class="ltbx-thumb inline-block">
+                                                          <img class="rounded-full" src="assets/images/img-01.webp" alt="" />
+                                                      </a>
+                                                      <div style="display:none">
+                                                          <a data-fancybox="gallery" href="assets/images/img-02.webp">
+                                                            <img src="assets/images/img-02.webp" />
+                                                          </a>
+                                                          <a data-fancybox="gallery" href="assets/images/img-03.webp">
+                                                            <img src="assets/images/img-03.webp" />
+                                                          </a>
+                                                          <a data-fancybox="gallery" href="assets/images/img-04.webp">
+                                                            <img src="assets/images/img-04.webp" />
+                                                          </a>
+                                                      </div>
+                                                  </div>
+                                              </td>
+                                              <td>
+                                                  <div class="text-center flex items-center justify-center">
+                                                      <a data-fancybox="texture" href="assets/images/img-04.webp" class="ltbx-thumb inline-block">
+                                                          <img class="rounded-full" src="assets/images/img-04.webp" alt="" />
+                                                      </a>
+                                                      <div style="display:none">
+                                                          <a data-fancybox="texture" href="assets/images/img-02.webp">
+                                                            <img src="assets/images/img-02.webp" />
+                                                          </a>
+                                                          <a data-fancybox="texture" href="assets/images/img-03.webp">
+                                                            <img src="assets/images/img-03.webp" />
+                                                          </a>
+                                                          <a data-fancybox="texture" href="assets/images/img-01.webp">
+                                                            <img src="assets/images/img-01.webp" />
+                                                          </a>
+                                                      </div>
+                                                  </div>
+                                              </td>
+                                              <td>
+                                                  <div class="grain-icon text-center block">
+                                                      <div 
+                                                      class="
+                                                      relative before:content-[attr(data-tip)] 
+                                                      before:absolute before:px-3 before:py-2
+                                                      before:left-1/2 before:-top-3 before:w-max 
+                                                      before:max-w-xs before:-translate-x-1/2  
+                                                      before:-translate-y-full before:bg-gray-700 
+                                                      before:text-white
+                                                      before:rounded-md before:opacity-0 
+                                                      before:transition-all after:absolute 
+
+                                                      after:left-1/2 after:-top-3 after:w-0 
+                                                      after:h-0 after:-translate-x-1/2 after:border-8  
+                                                      after:border-t-gray-700  after:border-l-transparent 
+                                                      after:border-b-transparent
+                                                      after:border-r-transparent after:opacity-0 
+                                                      after:transition-all  
+                                                      
+                                                      hover:before:opacity-100 
+                                                      hover:after:opacity-100 
+                                                      text-[14px]" data-tip="Length oriented grain">
+
+                                                          <button><img src="assets/images/cross-icon.webp" alt=""></button>
+                                                      </div>
+                                                  </div>
+                                              </td>
+                                              <td>
+                                                  <div class="text-[#707070] text-[15px] text-center whitespace-nowrap">F120-PM</div>
+                                              </td>
+                                              <td>
+                                                  <div class="border border-[#959595] border-dashed rounded-md px-3 py-3 font-medium text-[15px] text-center text-primary whitespace-nowrap">
+                                                      Light Grey Metal Rock
+                                                  </div>
+                                              </td>
+                                              <td>
+                                                  <div class="text-[#707070] text-[15px] text-center">MDF</div>
+                                              </td>
+                                              <td>
+                                                  <div class="text-[#707070] text-[15px] text-center">2800</div>
+                                              </td>
+                                              <td>
+                                                  <div class="text-[#707070] text-[15px] text-center">2070</div>
+                                              </td>
+                                              <td class="col-Thickness">
+                                                  <div class="flex flex-row gap-x-1">
+                                                      <div class="flex 2xl:grid 2xl:grid-cols-5 gap-x-[2px]">
+                                                          <div class="text-[14px] text-[#707070] w-[20%] border border-primary h-[39px] flex items-center justify-center px-[20px] py-[10px]">19</div>
+                                                          <div class="bg-primary text-white text-[14px] w-[20%] border border-primary h-[39px] flex items-center justify-center px-[20px] py-[10px]">38</div>
+                                                          <div class="w-[20%] border border-primary h-[39px] flex items-center justify-center px-[20px] py-[10px]"></div>
+                                                          <div class="w-[20%] border border-primary h-[39px] flex items-center justify-center px-[20px] py-[10px]"></div>
+                                                          <div class="w-[20%] border border-primary h-[39px] flex items-center justify-center px-[20px] py-[10px]"></div>
+                                                      </div>
+                                                      <div class="flex items-center justify-center">
+                                                          <a href="#lightGreyMetalRock" class="popup-modal px-6 py-[8px] font-medium text-[15px] bg-black text-white">Buy</a>
+                                                      </div>
+                                                  </div>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td class="border-t border-[#b9b9b9]">
+                                                  <div class="text-center flex items-center justify-center">
+                                                      <a data-fancybox="gallery-1" href="assets/images/img-01.webp" class="ltbx-thumb inline-block">
+                                                          <img class="rounded-full" src="assets/images/img-01.webp" alt="" />
+                                                      </a>
+                                                      <div style="display:none">
+                                                          <a data-fancybox="gallery-1" href="assets/images/img-02.webp">
+                                                            <img src="assets/images/img-02.webp" />
+                                                          </a>
+                                                          <a data-fancybox="gallery-1" href="assets/images/img-03.webp">
+                                                            <img src="assets/images/img-03.webp" />
+                                                          </a>
+                                                          <a data-fancybox="gallery-1" href="assets/images/img-04.webp">
+                                                            <img src="assets/images/img-04.webp" />
+                                                          </a>
+                                                      </div>
+                                                  </div>
+                                              </td>
+                                              <td class="border-t border-[#b9b9b9]">
+                                                  <div class="text-center flex items-center justify-center">
+                                                      <a data-fancybox="texture-1" href="assets/images/img-04.webp" class="ltbx-thumb inline-block">
+                                                          <img class="rounded-full" src="assets/images/img-04.webp" alt="" />
+                                                      </a>
+                                                      <div style="display:none">
+                                                          <a data-fancybox="texture-1" href="assets/images/img-02.webp">
+                                                            <img src="assets/images/img-02.webp" />
+                                                          </a>
+                                                          <a data-fancybox="texture-1" href="assets/images/img-03.webp">
+                                                            <img src="assets/images/img-03.webp" />
+                                                          </a>
+                                                          <a data-fancybox="texture-1" href="assets/images/img-01.webp">
+                                                            <img src="assets/images/img-01.webp" />
+                                                          </a>
+                                                      </div>
+                                                  </div>
+                                              </td>
+                                              <td class="border-t border-[#b9b9b9]">
+                                                  <div class="grain-icon text-center block">
+                                                      <div 
+                                                      class="
+                                                      relative before:content-[attr(data-tip)] 
+                                                      before:absolute before:px-3 before:py-2
+                                                      before:left-1/2 before:-top-3 before:w-max 
+                                                      before:max-w-xs before:-translate-x-1/2  
+                                                      before:-translate-y-full before:bg-gray-700 
+                                                      before:text-white
+                                                      before:rounded-md before:opacity-0 
+                                                      before:transition-all after:absolute 
+
+                                                      after:left-1/2 after:-top-3 after:w-0 
+                                                      after:h-0 after:-translate-x-1/2 after:border-8  
+                                                      after:border-t-gray-700  after:border-l-transparent 
+                                                      after:border-b-transparent
+                                                      after:border-r-transparent after:opacity-0 
+                                                      after:transition-all  
+                                                      
+                                                      hover:before:opacity-100 
+                                                      hover:after:opacity-100 
+                                                      text-[14px]" data-tip="Length oriented grain">
+
+                                                          <button><img src="assets/images/length-line.webp" alt=""></button>
+                                                      </div>
+                                                  </div>
+                                              </td>
+                                              <td class="border-t border-[#b9b9b9]">
+                                                  <div class="text-[#707070] text-[15px] text-center whitespace-nowrap">F120-PM</div>
+                                              </td>
+                                              <td class="border-t border-[#b9b9b9]">
+                                                  <div class="border border-[#959595] border-dashed rounded-md px-3 py-3 font-medium text-[15px] text-center text-primary">
+                                                      Black Pietra Grigia
+                                                  </div>
+                                              </td>
+                                              <td class="border-t border-[#b9b9b9]">
+                                                  <div class="text-[#707070] text-[15px] text-center">MDF</div>
+                                              </td>
+                                              <td class="border-t border-[#b9b9b9]">
+                                                  <div class="text-[#707070] text-[15px] text-center">2800</div>
+                                              </td>
+                                              <td class="border-t border-[#b9b9b9]">
+                                                  <div class="text-[#707070] text-[15px] text-center">2070</div>
+                                              </td>
+                                              <td class="border-t border-[#b9b9b9]">
+                                                  <div class="flex flex-row">
+                                                      <div class="grid grid-cols-5 gap-x-[2px]">
+                                                          <div class="text-[14px] text-[#707070] w-[20%] border border-primary h-[39px] flex items-center justify-center px-[20px] py-[10px]">19</div>
+                                                          <div class="bg-primary text-white text-[14px] w-[20%] border border-primary h-[39px] flex items-center justify-center px-[20px] py-[10px]">38</div>
+                                                          <div class="w-[20%] border border-primary h-[39px] flex items-center justify-center px-[20px] py-[10px]"></div>
+                                                          <div class="w-[20%] border border-primary h-[39px] flex items-center justify-center px-[20px] py-[10px]"></div>
+                                                          <div class="w-[20%] border border-primary h-[39px] flex items-center justify-center px-[20px] py-[10px]"></div>
+                                                      </div>
+                                                      <div class="flex items-center justify-center">
+                                                          <a href="#" class="px-6 py-[8px] font-medium text-[15px] bg-black text-white">Buy</a>
+                                                      </div>
+                                                  </div>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td class="border-t border-[#b9b9b9]">
+                                                  <div class="text-center flex items-center justify-center">
+                                                      <a data-fancybox="gallery-2" href="assets/images/img-01.webp" class="ltbx-thumb inline-block">
+                                                          <img class="rounded-full" src="assets/images/img-01.webp" alt="" />
+                                                      </a>
+                                                      <div style="display:none">
+                                                          <a data-fancybox="gallery-2" href="assets/images/img-02.webp">
+                                                            <img src="assets/images/img-02.webp" />
+                                                          </a>
+                                                          <a data-fancybox="gallery-2" href="assets/images/img-03.webp">
+                                                            <img src="assets/images/img-03.webp" />
+                                                          </a>
+                                                          <a data-fancybox="gallery-2" href="assets/images/img-04.webp">
+                                                            <img src="assets/images/img-04.webp" />
+                                                          </a>
+                                                      </div>
+                                                  </div>
+                                              </td>
+                                              <td class="border-t border-[#b9b9b9]">
+                                                  <div class="text-center flex items-center justify-center">
+                                                      <a data-fancybox="texture-2" href="assets/images/img-04.webp" class="ltbx-thumb inline-block">
+                                                          <img class="rounded-full" src="assets/images/img-04.webp" alt="" />
+                                                      </a>
+                                                      <div style="display:none">
+                                                          <a data-fancybox="texture-2" href="assets/images/img-02.webp">
+                                                            <img src="assets/images/img-02.webp" />
+                                                          </a>
+                                                          <a data-fancybox="texture-2" href="assets/images/img-03.webp">
+                                                            <img src="assets/images/img-03.webp" />
+                                                          </a>
+                                                          <a data-fancybox="texture-2" href="assets/images/img-01.webp">
+                                                            <img src="assets/images/img-01.webp" />
+                                                          </a>
+                                                      </div>
+                                                  </div>
+                                              </td>
+                                              <td class="border-t border-[#b9b9b9]">
+                                                  <div class="grain-icon text-center block">
+                                                      <div 
+                                                      class="
+                                                      relative before:content-[attr(data-tip)] 
+                                                      before:absolute before:px-3 before:py-2
+                                                      before:left-1/2 before:-top-3 before:w-max 
+                                                      before:max-w-xs before:-translate-x-1/2  
+                                                      before:-translate-y-full before:bg-gray-700 
+                                                      before:text-white
+                                                      before:rounded-md before:opacity-0 
+                                                      before:transition-all after:absolute 
+
+                                                      after:left-1/2 after:-top-3 after:w-0 
+                                                      after:h-0 after:-translate-x-1/2 after:border-8  
+                                                      after:border-t-gray-700  after:border-l-transparent 
+                                                      after:border-b-transparent
+                                                      after:border-r-transparent after:opacity-0 
+                                                      after:transition-all  
+                                                      
+                                                      hover:before:opacity-100 
+                                                      hover:after:opacity-100 
+                                                      text-[14px]" data-tip="Length oriented grain">
+
+                                                          <button><img src="assets/images/cross-icon.webp" alt=""></button>
+                                                      </div>
+                                                  </div>
+                                              </td>
+                                              <td class="border-t border-[#b9b9b9]">
+                                                  <div class="text-[#707070] text-[15px] text-center whitespace-nowrap">F120-PM</div>
+                                              </td>
+                                              <td class="border-t border-[#b9b9b9]">
+                                                  <div class="border border-[#959595] border-dashed rounded-md px-3 py-3 font-medium text-[15px] text-center text-primary">
+                                                      Dark Steel
+                                                  </div>
+                                              </td>
+                                              <td class="border-t border-[#b9b9b9]">
+                                                  <div class="text-[#707070] text-[15px] text-center">MDF</div>
+                                              </td>
+                                              <td class="border-t border-[#b9b9b9]">
+                                                  <div class="text-[#707070] text-[15px] text-center">2800</div>
+                                              </td>
+                                              <td class="border-t border-[#b9b9b9]">
+                                                  <div class="text-[#707070] text-[15px] text-center">2070</div>
+                                              </td>
+                                              <td class="border-t border-[#b9b9b9]">
+                                                  <div class="flex flex-row">
+                                                      <div class="grid grid-cols-5 gap-x-[2px]">
+                                                          <div class="text-[14px] text-[#707070] w-[20%] border border-primary h-[39px] flex items-center justify-center px-[20px] py-[10px]">19</div>
+                                                          <div class="bg-primary text-white text-[14px] w-[20%] border border-primary h-[39px] flex items-center justify-center px-[20px] py-[10px]">38</div>
+                                                          <div class="w-[20%] border border-primary h-[39px] flex items-center justify-center px-[20px] py-[10px]"></div>
+                                                          <div class="w-[20%] border border-primary h-[39px] flex items-center justify-center px-[20px] py-[10px]"></div>
+                                                          <div class="w-[20%] border border-primary h-[39px] flex items-center justify-center px-[20px] py-[10px]"></div>
+                                                      </div>
+                                                      <div class="flex items-center justify-center">
+                                                          <a href="#" class="px-6 py-[8px] font-medium text-[15px] bg-black text-white">Buy</a>
+                                                      </div>
+                                                  </div>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td class="border-t border-[#b9b9b9]">
+                                                  <div class="text-center flex items-center justify-center">
+                                                      <a data-fancybox="gallery-3" href="assets/images/img-01.webp" class="ltbx-thumb inline-block">
+                                                          <img class="rounded-full" src="assets/images/img-01.webp" alt="" />
+                                                      </a>
+                                                      <div style="display:none">
+                                                          <a data-fancybox="gallery-3" href="assets/images/img-02.webp">
+                                                            <img src="assets/images/img-02.webp" />
+                                                          </a>
+                                                          <a data-fancybox="gallery-3" href="assets/images/img-03.webp">
+                                                            <img src="assets/images/img-03.webp" />
+                                                          </a>
+                                                          <a data-fancybox="gallery-3" href="assets/images/img-04.webp">
+                                                            <img src="assets/images/img-04.webp" />
+                                                          </a>
+                                                      </div>
+                                                  </div>
+                                              </td>
+                                              <td class="border-t border-[#b9b9b9]">
+                                                  <div class="text-center flex items-center justify-center">
+                                                      <a data-fancybox="texture-3" href="assets/images/img-04.webp" class="ltbx-thumb inline-block">
+                                                          <img class="rounded-full" src="assets/images/img-04.webp" alt="" />
+                                                      </a>
+                                                      <div style="display:none">
+                                                          <a data-fancybox="texture-3" href="assets/images/img-02.webp">
+                                                            <img src="assets/images/img-02.webp" />
+                                                          </a>
+                                                          <a data-fancybox="texture-3" href="assets/images/img-03.webp">
+                                                            <img src="assets/images/img-03.webp" />
+                                                          </a>
+                                                          <a data-fancybox="texture-3" href="assets/images/img-01.webp">
+                                                            <img src="assets/images/img-01.webp" />
+                                                          </a>
+                                                      </div>
+                                                  </div>
+                                              </td>
+                                              <td class="border-t border-[#b9b9b9]">
+                                                  <div class="grain-icon text-center block">
+                                                      <div 
+                                                      class="
+                                                      relative before:content-[attr(data-tip)] 
+                                                      before:absolute before:px-3 before:py-2
+                                                      before:left-1/2 before:-top-3 before:w-max 
+                                                      before:max-w-xs before:-translate-x-1/2  
+                                                      before:-translate-y-full before:bg-gray-700 
+                                                      before:text-white
+                                                      before:rounded-md before:opacity-0 
+                                                      before:transition-all after:absolute 
+
+                                                      after:left-1/2 after:-top-3 after:w-0 
+                                                      after:h-0 after:-translate-x-1/2 after:border-8  
+                                                      after:border-t-gray-700  after:border-l-transparent 
+                                                      after:border-b-transparent
+                                                      after:border-r-transparent after:opacity-0 
+                                                      after:transition-all  
+                                                      
+                                                      hover:before:opacity-100 
+                                                      hover:after:opacity-100 
+                                                      text-[14px]" data-tip="Length oriented grain">
+
+                                                          <button><img src="assets/images/vert-length-line.webp" alt=""></button>
+                                                      </div>
+                                                  </div>
+                                              </td>
+                                              <td class="border-t border-[#b9b9b9]">
+                                                  <div class="text-[#707070] text-[15px] text-center whitespace-nowrap">F120-PM</div>
+                                              </td>
+                                              <td class="border-t border-[#b9b9b9]">
+                                                  <div class="border border-[#959595] border-dashed rounded-md px-3 py-3 font-medium text-[15px] text-center text-primary">
+                                                      White Levanto Marble
+                                                  </div>
+                                              </td>
+                                              <td class="border-t border-[#b9b9b9]">
+                                                  <div class="text-[#707070] text-[15px] text-center">MDF</div>
+                                              </td>
+                                              <td class="border-t border-[#b9b9b9]">
+                                                  <div class="text-[#707070] text-[15px] text-center">2800</div>
+                                              </td>
+                                              <td class="border-t border-[#b9b9b9]">
+                                                  <div class="text-[#707070] text-[15px] text-center">2070</div>
+                                              </td>
+                                              <td class="border-t border-[#b9b9b9]">
+                                                  <div class="flex flex-row">
+                                                      <div class="grid grid-cols-5 gap-x-[2px]">
+                                                          <div class="text-[14px] text-[#707070] w-[20%] border border-primary h-[39px] flex items-center justify-center px-[20px] py-[10px]">19</div>
+                                                          <div class="bg-primary text-white text-[14px] w-[20%] border border-primary h-[39px] flex items-center justify-center px-[20px] py-[10px]">38</div>
+                                                          <div class="w-[20%] border border-primary h-[39px] flex items-center justify-center px-[20px] py-[10px]"></div>
+                                                          <div class="w-[20%] border border-primary h-[39px] flex items-center justify-center px-[20px] py-[10px]"></div>
+                                                          <div class="w-[20%] border border-primary h-[39px] flex items-center justify-center px-[20px] py-[10px]"></div>
+                                                      </div>
+                                                      <div class="flex items-center justify-center">
+                                                          <a href="#" class="px-6 py-[8px] font-medium text-[15px] bg-black text-white">Buy</a>
+                                                      </div>
+                                                  </div>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td class="border-t border-[#b9b9b9]">
+                                                  <div class="text-center flex items-center justify-center">
+                                                      <a data-fancybox="gallery-4" href="assets/images/img-01.webp" class="ltbx-thumb inline-block">
+                                                          <img class="rounded-full" src="assets/images/img-01.webp" alt="" />
+                                                      </a>
+                                                      <div style="display:none">
+                                                          <a data-fancybox="gallery-4" href="assets/images/img-02.webp">
+                                                            <img src="assets/images/img-02.webp" />
+                                                          </a>
+                                                          <a data-fancybox="gallery-4" href="assets/images/img-03.webp">
+                                                            <img src="assets/images/img-03.webp" />
+                                                          </a>
+                                                          <a data-fancybox="gallery-4" href="assets/images/img-04.webp">
+                                                            <img src="assets/images/img-04.webp" />
+                                                          </a>
+                                                      </div>
+                                                  </div>
+                                              </td>
+                                              <td class="border-t border-[#b9b9b9]">
+                                                  <div class="text-center flex items-center justify-center">
+                                                      <a data-fancybox="texture-4" href="assets/images/img-04.webp" class="ltbx-thumb inline-block">
+                                                          <img class="rounded-full" src="assets/images/img-04.webp" alt="" />
+                                                      </a>
+                                                      <div style="display:none">
+                                                          <a data-fancybox="texture-4" href="assets/images/img-02.webp">
+                                                            <img src="assets/images/img-02.webp" />
+                                                          </a>
+                                                          <a data-fancybox="texture-4" href="assets/images/img-03.webp">
+                                                            <img src="assets/images/img-03.webp" />
+                                                          </a>
+                                                          <a data-fancybox="texture-4" href="assets/images/img-01.webp">
+                                                            <img src="assets/images/img-01.webp" />
+                                                          </a>
+                                                      </div>
+                                                  </div>
+                                              </td>
+                                              <td class="border-t border-[#b9b9b9]">
+                                                  <div class="grain-icon text-center block">
+                                                      <div 
+                                                      class="
+                                                      relative before:content-[attr(data-tip)] 
+                                                      before:absolute before:px-3 before:py-2
+                                                      before:left-1/2 before:-top-3 before:w-max 
+                                                      before:max-w-xs before:-translate-x-1/2  
+                                                      before:-translate-y-full before:bg-gray-700 
+                                                      before:text-white
+                                                      before:rounded-md before:opacity-0 
+                                                      before:transition-all after:absolute 
+
+                                                      after:left-1/2 after:-top-3 after:w-0 
+                                                      after:h-0 after:-translate-x-1/2 after:border-8  
+                                                      after:border-t-gray-700  after:border-l-transparent 
+                                                      after:border-b-transparent
+                                                      after:border-r-transparent after:opacity-0 
+                                                      after:transition-all  
+                                                      
+                                                      hover:before:opacity-100 
+                                                      hover:after:opacity-100 
+                                                      text-[14px]" data-tip="Length oriented grain">
+
+                                                          <button><img src="assets/images/vert-length-line.webp" alt=""></button>
+                                                      </div>
+                                                  </div>
+                                              </td>
+                                              <td class="border-t border-[#b9b9b9]">
+                                                  <div class="text-[#707070] text-[15px] text-center whitespace-nowrap">U201-TM9</div>
+                                              </td>
+                                              <td class="border-t border-[#b9b9b9]">
+                                                  <div class="border border-[#959595] border-dashed rounded-md px-3 py-3 font-medium text-[15px] text-center text-primary overflow-hidden relative">
+                                                      <div class="px-7 pt-[18px] bg-primary text-white uppercase text-[14px] font-medium absolute rotate-[-35deg] left-[-31px] top-[-10px]">New</div>
+                                                      Pebble Grey
+                                                  </div>
+                                              </td>
+                                              <td class="border-t border-[#b9b9b9]">
+                                                  <div class="text-[#707070] text-[15px] text-center">Chipboard</div>
+                                              </td>
+                                              <td class="border-t border-[#b9b9b9]">
+                                                  <div class="text-[#707070] text-[15px] text-center">2800</div>
+                                              </td>
+                                              <td class="border-t border-[#b9b9b9]">
+                                                  <div class="text-[#707070] text-[15px] text-center">2070</div>
+                                              </td>
+                                              <td class="border-t border-[#b9b9b9]">
+                                                  <div class="flex flex-row gap-x-1">
+                                                      <div class="flex 2xl:grid 2xl:grid-cols-5 gap-x-[2px]">
+                                                          <div class="text-[14px] text-[#707070] w-[20%] border border-primary h-[39px] flex items-center justify-center px-[20px] py-[10px]">18</div>
+                                                          <div class="w-[20%] border border-primary h-[39px] flex items-center justify-center px-[20px] py-[10px]"></div>
+                                                          <div class="w-[20%] border border-primary h-[39px] flex items-center justify-center px-[20px] py-[10px]"></div>
+                                                          <div class="w-[20%] border border-primary h-[39px] flex items-center justify-center px-[20px] py-[10px]"></div>
+                                                          <div class="w-[20%] border border-primary h-[39px] flex items-center justify-center px-[20px] py-[10px]"></div>
+                                                      </div>
+                                                      <div class="flex items-center justify-center">
+                                                          <a href="#" class="px-6 py-[8px] font-medium text-[15px] bg-black text-white">Buy</a>
+                                                      </div>
+                                                  </div>
+                                              </td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                              </div>
+                          </div>
+                          <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+                              id="tabs-grid"
+                              role="tabpanel"
+                              aria-labelledby="tabs-grid-tab">
+                              
+                              <div>
+                                  <div class="grid grid-cols-2 gap-8">
+                                      <div class="text-center flex items-center justify-center">
+                                          <div>
+                                              <div class="relative">
+                                                  <a data-fancybox="gallery-f120" href="assets/images/img-01.webp">
+                                                      <img src="assets/images/img-01.webp" />
+                                                  </a>
+                                                  <div class="absolute hidden top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                                                      <img src="assets/images/grid-icon-hover.webp" />
+                                                  </div>
+                                                  <div style="display:none">
+                                                      <a data-fancybox="gallery-f120" href="assets/images/img-02.webp">
+                                                        <img src="assets/images/img-02.webp" />
+                                                      </a>
+                                                      <a data-fancybox="gallery-f120" href="assets/images/img-03.webp">
+                                                        <img src="assets/images/img-03.webp" />
+                                                      </a>
+                                                      <a data-fancybox="gallery-f120" href="assets/images/img-04.webp">
+                                                        <img src="assets/images/img-04.webp" />
+                                                      </a>
+                                                  </div>  
+                                                  <div class="absolute z-10 py-5 pl-5 pr-[75px] before:border-solid before:border-t-[bg-transparent] before:border-r-transparent before:border-b-[#f82f45] before:border-l-[bg-transparent] before:border-t-0 sm:before:border-r-[40px] before:border-b-[90px] before:border-l-0 before:absolute before:w-full before:h-full before:-top-2 before:md:top-0 before:left-0 before:-z-10 sm:w-[40%] lg:bottom-0 bottom-0">
+                                                      <div class="flex justify-between">
+                                                          <span class="font-medium text-2xl text-white">Egger</span>
+                                                          <spanc class="font-medium text-2xl text-white">F120 PM</span>
+                                                      </div>
+                                                      <div class="text-lg text-white text-left">Light Grey Metal Rock</div>
+                                                  </div>
+                                              </div>
+                                              <div class="relative border border-[#cccccc] px-7 py-6"> 
+                                                  <div class="bg-[#f4f4f4] border border-[#898989] px-[10px] py-2 inline-block flex w-max">
+                                                      <div class="flex items-center gap-x-4">
+                                                          No Grain <span><img src="assets/images/cross-icon.webp" alt=""></span>
+                                                      </div>
+                                                  </div>
+                                                  <div class="mt-3">
+                                                      <div class="grid grid-cols-2 text-left">
+                                                          <div class="text-lg text-black">Size: </div>
+                                                          <div class="text-lg text-primary">2800 x 2070 mm</div>
+                                                      </div>
+                                                      <div class="grid grid-cols-2 text-left">
+                                                          <div class="text-lg text-black">Thickness: </div>
+                                                          <div class="text-lg text-primary">19, 38 mm</div>
+                                                      </div>
+                                                      <div class="grid grid-cols-2 text-left">
+                                                          <div class="text-lg text-black">Core: </div>
+                                                          <div class="text-lg text-primary">MDF</div>
+                                                      </div>
+                                                      <div class="grid grid-cols-2 text-left">
+                                                          <div class="text-lg text-black">Surface:</div>
+                                                          <div class="text-lg text-primary">Lacquered Melamine</div>
+                                                      </div>
+                                                      <div class="grid grid-cols-2 text-left">
+                                                          <div class="text-lg text-black">Finish: </div>
+                                                          <div class="text-lg text-primary">Supermatt</div>
+                                                      </div>
+                                                      <div class="grid grid-cols-2 text-left">
+                                                          <div class="text-lg text-black">Design:</div>
+                                                          <div class="text-lg text-primary">Pattern</div>
+                                                      </div>
+                                                      <div class="grid grid-cols-2 text-left">
+                                                          <div class="text-lg text-black">Texture: </div>
+                                                          <div class="text-lg text-primary">Plain</div>
+                                                      </div>
+                                                  </div>
+                                                  <a href="#" class="bg-black -rotate-90 inline-block text-white text-lg font-semibold px-10 py-5 absolute bottom-[76px] right-[-76px]">More info - Buy</a>
+
+                                              </div>
+                                          </div>   
+                                      </div>
+                                      <div class="text-center flex items-center justify-center">
+                                          <div>
+                                              <div class="relative">
+                                                  <a data-fancybox="gallery-f206" href="assets/images/img-01.webp">
+                                                      <img src="assets/images/img-01.webp" />
+                                                  </a>
+                                                  <div class="absolute hidden top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                                                      <img src="assets/images/grid-icon-hover.webp" />
+                                                  </div>
+                                                  <div style="display:none">
+                                                      <a data-fancybox="gallery-f206" href="assets/images/img-02.webp">
+                                                        <img src="assets/images/img-02.webp" />
+                                                      </a>
+                                                      <a data-fancybox="gallery-f206" href="assets/images/img-03.webp">
+                                                        <img src="assets/images/img-03.webp" />
+                                                      </a>
+                                                      <a data-fancybox="gallery-f206" href="assets/images/img-04.webp">
+                                                        <img src="assets/images/img-04.webp" />
+                                                      </a>
+                                                  </div>  
+                                                  <div class="absolute z-10 py-5 pl-5 pr-[75px] before:border-solid before:border-t-[bg-transparent] before:border-r-transparent before:border-b-[#f82f45] before:border-l-[bg-transparent] before:border-t-0 sm:before:border-r-[40px] before:border-b-[90px] before:border-l-0 before:absolute before:w-full before:h-full before:-top-2 before:md:top-0 before:left-0 before:-z-10 sm:w-[40%] lg:bottom-0 bottom-0">
+                                                      <div class="flex justify-between">
+                                                          <span class="font-medium text-2xl text-white">Egger</span>
+                                                          <spanc class="font-medium text-2xl text-white">F206-PM</span>
+                                                      </div>
+                                                      <div class="text-lg text-white text-left">Black Pietra Grigia</div>
+                                                  </div>
+                                              </div>
+                                              <div class="relative border border-[#cccccc] px-7 py-6"> 
+                                                  <div class="bg-[#f4f4f4] border border-[#898989] px-[10px] py-2 inline-block flex w-max">
+                                                      <div class="flex items-center gap-x-4">
+                                                          Length oriented grain <span><img src="assets/images/length-line.webp" alt=""></span>
+                                                      </div>
+                                                  </div>
+                                                  <div class="mt-3">
+                                                      <div class="grid grid-cols-2 text-left">
+                                                          <div class="text-lg text-black">Size: </div>
+                                                          <div class="text-lg text-primary">2800 x 2070 mm</div>
+                                                      </div>
+                                                      <div class="grid grid-cols-2 text-left">
+                                                          <div class="text-lg text-black">Thickness: </div>
+                                                          <div class="text-lg text-primary">19, 38 mm</div>
+                                                      </div>
+                                                      <div class="grid grid-cols-2 text-left">
+                                                          <div class="text-lg text-black">Core: </div>
+                                                          <div class="text-lg text-primary">MDF</div>
+                                                      </div>
+                                                      <div class="grid grid-cols-2 text-left">
+                                                          <div class="text-lg text-black">Surface:</div>
+                                                          <div class="text-lg text-primary">Lacquered Melamine</div>
+                                                      </div>
+                                                      <div class="grid grid-cols-2 text-left">
+                                                          <div class="text-lg text-black">Finish: </div>
+                                                          <div class="text-lg text-primary">Supermatt</div>
+                                                      </div>
+                                                      <div class="grid grid-cols-2 text-left">
+                                                          <div class="text-lg text-black">Design:</div>
+                                                          <div class="text-lg text-primary">Pattern</div>
+                                                      </div>
+                                                      <div class="grid grid-cols-2 text-left">
+                                                          <div class="text-lg text-black">Texture: </div>
+                                                          <div class="text-lg text-primary">Plain</div>
+                                                      </div>
+                                                  </div>
+                                                  <a href="#lightGreyMetalRock" class="bg-black popup-modal -rotate-90 inline-block text-white text-lg font-semibold px-10 py-5 absolute bottom-[76px] right-[-76px]">More info - Buy</a>
+
+                                              </div>
+                                          </div>   
+                                      </div>
+                                      
+                                      
+                                  </div>
+                              </div>
+                              
+                          </div>
+                      </div>
+              </div>
+          
+          </div>
+      </div>
+  </div>
+
+
+<div id="lightGreyMetalRock" class="white-popup-block lgtgmbox lgtgmtPopup mfp-hide relative p-0">
+  <a class="popup-modal-dismiss absolute top-0 right-2" href="#"><i class="fa-solid fa-xmark"></i></a>
+    <div class="bg-[#fff]">
+       <div class="accordion-contents">
+        <div class="cart-datatable overflow-auto">
+            <table class="w-full">
+              <colgroup>
+              <col span="1" class="col-index">
+              <col span="1" class="col-material">
+              <col span="1" class="col-thick">
+              <col span="1" class="col-length">
+              <col span="1" class="col-width">
+              <col span="1" class="col-qty">
+              <col span="1" class="col-desc">
+              <col span="1" class="col-edge">
+              <col span="1" class="col-edge">
+              <col span="1" class="col-edge">
+              <col span="1" class="col-edge">
+              <col span="1" class="col-drilling">
+              <col span="1" class="col-spraying">
+              <col span="1" class="col-grain">
+              <col span="1" class="col-actions">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th colspan="7"></th>
+                  <th colspan="4" class="th-eb text-white text-center text-lg uppercase pt-9 ">Edgebanding details <br>
+                    <div class="Switch mt-[15px] px-6">
+                      <div class="Switch__bg w-full left-0 flex justify-between bg-primary rounded-md py-4 px-[10px]">
+                        <button class="text-white">
+                        <input class="hidden" type="radio" id="Login24" name="row1" />
+                        <label class="px-5 py-2" for="Login24">Standard</label>
+                        </button>
+                        <button class="text-white">
+                        <input class="hidden" type="radio" id="Login26" name="row1" />
+                        <label class="px-5 py-2" for="Login26">Expert</label>
+                        </button>
+                      </div>
+                    </div>
+                  </th>
+                  <th colspan="4"></th>
+                </tr>
+                <tr>
+                  <th class="th-index p-2 text-center text-black">#</th>
+                  <th class="text-left p-2 text-black">Material decor code / name</th>
+                  <th class="text-center p-2 text-black">Thick<br>
+                    [mm]</th>
+                  <th class="text-center p-2 text-black">Length<br>
+                    [mm]</th>
+                  <th class="text-center p-2 text-black">Width<br>
+                    [mm]</th>
+                  <th class="text-center p-2 text-black">Qty</th>
+                  <th class="text-center p-2 text-black">Part description</th>
+                  <th class="th-eb text-white p-2" colspan="1">L1</th>
+                  <th class="th-eb text-white p-2" colspan="1">L2</th>
+                  <th class="th-eb text-white p-2" colspan="1">W1</th>
+                  <th class="th-eb text-white p-2" colspan="1">W2</th>
+                  <th class="text-left p-2 text-black">Additional<br>
+                    machining</th>
+                  <th class="text-center p-2 text-black">Spray<br>
+                    coating</th>
+                  <th class="text-center p-2 text-black">Grain<br>
+                    match</th>
+                  <th class="text-center th-actions p-2 text-black">Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="center" class="td-index"><span class="text-base">1</span></td>
+                  <td class="td-index"><div class="input-wrapper">
+                      <input autocomplete="off" class="border shadow-2xl border-[#cacaca] text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" placeholder="Enter decor code or name" name="material_name" type="text" value="">
+                    </div></td>
+                  <td class="td-thic"><div>
+                      <input class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" type="text" name="thic" value="">
+                    </div></td>
+                  <td class=""><input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" name="length" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="off" placeholder="" value=""></td>
+                  <td class=""><input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" name="width" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="off" placeholder=""  value=""></td>
+                  <td class=""><input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" name="qty" inputmode="numeric" pattern="[0-9]*" maxlength="3" autocomplete="off" placeholder="" value=""></td>
+                  <td class=""><input type="text" class="border border-[#cacaca] shadow-2xl text-[15px] p-2 w-full focus:border-primary focus:outline-none rounded" name="description" autocomplete="off" placeholder="" value=""></td>
+                  <td class="td-eb"><input type="text" name="" data-tab-index="L1" placeholder="" autocomplete="off" class="border border-[#cacaca] text-[15px] p-2 w-full bg-[#474747] text-white focus:border-primary focus:outline-none rounded" value=""></td>
+                  <td class="td-eb"><input type="text" name="" data-tab-index="L2" placeholder="" autocomplete="off" class="border border-[#cacaca] text-[15px] p-2 w-full bg-[#474747] text-white focus:border-primary focus:outline-none rounded" value=""></td>
+                  <td class="td-eb"><input type="text" name="" data-tab-index="W1" placeholder="" autocomplete="off" class="border border-[#cacaca] text-[15px] p-2 w-full bg-[#474747] text-white focus:border-primary focus:outline-none rounded" value=""></td>
+                  <td class="td-eb"><input type="text" name="" data-tab-index="W2" placeholder="" autocomplete="off" class="border border-[#cacaca] text-[15px] p-2 w-full bg-[#474747] text-white focus:border-primary focus:outline-none rounded" value=""></td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+       </div>
+    </div>
+    <div class="md:flex">
+        <div class="basis-2/5 sm:px-10 px-3">
+            <div  class=" mt-2">
+                <select id="machining-type" name="machining type" class="lock w-full border-0 py-2 px-2.5 text-black shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary text-sm leading-6 focus:outline-none bg-white ">
+                    <option class="text-gray-500" value="1">Select machining type</option>
+                    <option class="text-gray-500" value="2">Two</option>
+                    <option class="text-gray-500" value="3">Three</option>
+                    <option class="text-gray-500" value="4">Four</option>
+                    <option class="text-gray-500" value="5">Five</option>
+                  </select>
+            </div>
+           
+        </div>
+        <div class="basis-3/5 relative sm:mt-0 mt-[25px]">
+            <img src="assets/assets/images/grain-panel-img.webp" alt="">
+            <div class="sm:absolute text-center bottom-0 right-0 mb-6 mr-6">
+                <button class="text-xl text-white bg-primary px-6 py-2">Save</button>
+              </div>
+        </div>
+    </div>
+    
+</div>
+ <!-- Footer -->
+  <footer class="bg-neutral-500">
+      <div class="px-4 sm:container">
+          <div class="ftr__title__grid relative pt-20 pb-10">
+              <h4 class="text-2xl font-semibold text-white mb-8">Contact Details</h4>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                  <div class="bg-neutral-400 text-center px-3 lg:p-5 flex flex-col justify-center align-middle min-h-[213px]">
+                      <img class="w-[39px] h-[49px] ml-auto mr-auto mb-6" src="assets/assets/images/map-icon.webp" alt="">
+                      <p class="text-white xxl:px-16">Unit 33 The IO Centre,
+                          Hearle Way, Hatfield, AL10 9EW</p>
+                  </div>
+                  <div class="bg-neutral-400 text-center lg:p-5 flex flex-col justify-center align-middle min-h-[213px]">
+                      <img class="w-[43px] h-[43px] ml-auto mr-auto mb-6" src="assets/assets/images/phone-ftr-icon.webp" alt="">
+                      <a href="tel:+44(0)1707907000" class="text-white xxl:px-16">+44 (0) 170 790 7000</a>
+                  </div>
+                  <div class="bg-neutral-400 text-center lg:p-5 flex flex-col justify-center align-middle min-h-[213px]">
+                      <img class="w-[57px] h-[41px] ml-auto mr-auto mb-6" src="assets/assets/images/envelop-icon.webp" alt="">
+                      <a href="mailto:hello@xcuts.co.uk" class="text-white xxl:px-16">hello@xcuts.co.uk</a>
+                  </div>
+              </div>
+          </div>
+          <div class="ftr__links flex flex-col md:flex-row space-y-14 md:space-y-0  md:space-x-6">
+              <div class="basis-full md:basis-[28%]">
+                  <h5 class="text-2xl font-semibold text-white mb-4">Collections</h5>
+                  <div class="flex justify-between space-x-6">
+                      <div class="mt-4 space-y-2 flex flex-col">
+                          <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Egger</a>
+                          <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Kronospan</a>
+                          <a href="#" class="text-white hover:text-primary font-light text-base transition-all">XyloCleaf</a>
+                          <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Saviola</a>
+                          <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Swiss Krono</a>
+                          <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Alvic</a>
+                      </div>
+                      <div class="mt-4 space-y-2 flex flex-col">
+                          <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Senoplast</a>
+                          <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Serica</a>
+                          <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Grooved boards</a>
+                          <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Veneered boards</a>
+                          <a href="#" class="text-white hover:text-primary font-light text-base transition-all">MDF boards</a>
+                          <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Plywood</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="basis-full md:basis-[19%]">
+                  <h5 class="text-2xl font-semibold text-white mb-4">Services</h5>
+                  <div class="flex gap-x-14">
+                      <div class="mt-4 space-y-2 flex flex-col">
+                          <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Board cutting</a>
+                          <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Panel edgebanding</a>
+                          <a href="#" class="text-white hover:text-primary font-light text-base transition-all">CNC cutting</a>
+                          <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Spray painting</a>
+                          <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Delivery</a>
+                          <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Samples</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="basis-full md:basis-[19%]">
+                  <h5 class="text-2xl font-semibold text-white mb-4">Products</h5>
+                  <div class="flex gap-x-14">
+                      <div class="mt-4 space-y-2 flex flex-col">
+                          <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Sliding wardrobe doors</a>
+                          <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Shaker style doors</a>
+                          <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Furniture fittings</a>
+                    
+                      </div>
+                  </div>
+              </div>
+              <div class="basis-full md:basis-[19%]">
+                  <h5 class="text-2xl font-semibold text-white mb-4">Company</h5>
+                  <div class="flex gap-x-14">
+                      <div class="mt-4 space-y-2 flex flex-col">
+                          <a href="#" class="text-white hover:text-primary font-light text-base  transition-all">About us</a>
+                          <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Showroom</a>
+                          <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Our guarantee</a>
+                          <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Privacy notice</a>
+                          <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Terms and conditions</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="basis-full md:basis-[15%]">
+                  <h5 class="text-2xl font-semibold text-white mb-4">Resources</h5>
+                  <div class="flex gap-x-14">
+                      <div class="mt-4 space-y-2 flex flex-col">
+                          <a href="#" class="text-white hover:text-primary font-light text-base transition-all">Inspiration hub</a>
+                          <a href="#" class="text-white hover:text-primary font-light text-base transition-all">How to</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="ftr__copy__right flex flex-col md:flex-row md:justify-between items-center py-8">
+              <div class="order-1 md:order-none">
+                  <a href="#" class="text-white text-base">Copyright © 2023 xcuts.co.uk. All rights reserved.</a>
+              </div>
+              <div class="mb-6 md:mb-0">
+                  <a href="#"><img src="assets/assets/images/ftr-logo.webp" alt=""></a>
+              </div>
+          </div>
+          
+
+      </div>
+  </footer>
+ <!-- Footer End-->
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script src="https://thecodeplayer.com/uploads/js/prefixfree-1.0.7.js"></script> 
+<script src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js'></script>
+
+<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<!-- Tailwind Elements JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<script>
+    jQuery(document).ready(($) => {
+        $('.quantity').on('click', '.plus', function(e) {
+            let $input = $(this).prev('input.qty');
+            let val = parseInt($input.val());
+            $input.val( val+1 ).change();
+        });
+ 
+        $('.quantity').on('click', '.minus', 
+            function(e) {
+            let $input = $(this).next('input.qty');
+            var val = parseInt($input.val());
+            if (val > 0) {
+                $input.val( val-1 ).change();
+            } 
+        });
+    });
+</script>
+<script>
+  Fancybox.bind('[data-fancybox="gallery"]', {
+      Thumbs : {
+        type: "classic"
+      }
+    }); 
+    Fancybox.bind('[data-fancybox="texture"]', {
+      Thumbs : {
+        type: "classic"
+      }
+    }); 
+    Fancybox.bind('[data-fancybox="gallery-1"]', {
+      Thumbs : {
+        type: "classic"
+      }
+    }); 
+    Fancybox.bind('[data-fancybox="texture-1"]', {
+      Thumbs : {
+        type: "classic"
+      }
+    }); 
+    
+    Fancybox.bind('[data-fancybox="gallery-2"]', {
+      Thumbs : {
+        type: "classic"
+      }
+    }); 
+    Fancybox.bind('[data-fancybox="texture-2"]', {
+      Thumbs : {
+        type: "classic"
+      }
+    }); 
+
+    Fancybox.bind('[data-fancybox="gallery-3"]', {
+      Thumbs : {
+        type: "classic"
+      }
+    }); 
+    Fancybox.bind('[data-fancybox="texture-3"]', {
+      Thumbs : {
+        type: "classic"
+      }
+    }); 
+
+    Fancybox.bind('[data-fancybox="gallery-4"]', {
+      Thumbs : {
+        type: "classic"
+      }
+    }); 
+    Fancybox.bind('[data-fancybox="texture-4"]', {
+      Thumbs : {
+        type: "classic"
+      }
+    }); 
+    Fancybox.bind('[data-fancybox="gallery-5"]', {
+      Thumbs : {
+        type: "classic"
+      }
+    }); 
+    Fancybox.bind('[data-fancybox="gallery-6"]', {
+      Thumbs : {
+        type: "classic"
+      }
+    });
+    
+    Fancybox.bind('[data-fancybox="gallery-f120"]', {
+      Thumbs : {
+        type: "classic"
+      }
+    });
+    Fancybox.bind('[data-fancybox="gallery-f206"]', {
+      Thumbs : {
+        type: "classic"
+      }
+    });
+
+    Fancybox.bind('[data-fancybox="gallery-f12019"]', {
+      Thumbs : {
+        type: "classic"
+      }
+    });
+
+    Fancybox.bind('[data-fancybox="gallery-f12020"]', {
+      Thumbs : {
+        type: "classic"
+      }
+    });
+    Fancybox.bind('[data-fancybox="gallery-f12021"]', {
+      Thumbs : {
+        type: "classic"
+      }
+    });
+    Fancybox.bind('[data-fancybox="gallery-f12022"]', {
+      Thumbs : {
+        type: "classic"
+      }
+    });
+    
+   
+</script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".glrSwiper", {
+      loop: true,
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper(".glrSwiper2", {
+      loop: true,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: swiper,
+      },
+    });
+  </script>
+<script>
+  jQuery('.popup-modal').magnificPopup({
+ type: 'inline',
+ preloader: false,
+ focus: '#username',
+ modal: true,
+ callbacks: {
+   open: function() {
+     var swiper = new Swiper('.swiper-container', {
+       navigation: {
+         nextEl: '.swiper-button-next',
+         prevEl: '.swiper-button-prev',
+       },
+     });
+   },
+   close: function() {
+     // Will fire when popup is closed
+   }
+ }
+});
+$(document).on('click', '.popup-modal-dismiss', function (e) {
+ e.preventDefault();
+ $.magnificPopup.close();
+});
+</script>
+
+<script src="main.js"></script>
+</body>
+</html>
