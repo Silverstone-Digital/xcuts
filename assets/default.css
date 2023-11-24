@@ -194,7 +194,95 @@
 	right: -50px;
   }
 
-
+  .slide-toggle{
+	display: none;
+  }
+  
+  .slidemenu{
+	font-family: arial, sans-serif;
+	margin: 30px auto;
+	overflow: hidden;
+  }
+  
+  .slidemenu label{
+	width: 9%;
+	text-align: center;
+	display: block;
+	float: left;
+	color: #333;
+	opacity: 0.8;
+  
+  }
+  .slidemenu label[for="slide-item-5"]{
+	width: 15%;
+  }
+  .slidemenu label:hover{
+	cursor: pointer;
+	
+  }
+  
+  .slidemenu label span{
+	display: block;
+	padding: 10px;    
+  }
+  
+  .slidemenu label .icon{
+	font-size: 20px;
+	border: solid 2px #333;
+	text-align: center;
+	height: 50px;
+	width: 50px;
+	display: block;
+	margin: 0 auto;
+	line-height: 50px;
+	border-radius: 50%;
+  }
+  
+  /*Bar Style*/
+  
+  .slider{
+	width: 100%;
+	height: 3px;
+	display: block;
+	background: #e9e9e9;
+	margin-top: 10px;
+	border-radius: 5px;
+	clear: both;
+  }
+  
+  .slider .bar{
+	width: 9%;
+	height: 3px;
+	background: #e11e26;
+	border-radius: 5px;
+  }
+  
+  /*Animations*/
+  .slidemenu label, .slider .bar {
+	transition: all 500ms ease-in-out;
+	-webkit-transition: all 500ms ease-in-out;
+	-moz-transition: all 500ms ease-in-out;
+  }
+  
+  /*Toggle*/
+  
+  .slidemenu .slide-toggle:checked + label{
+	opacity: 1;
+	color: #e11e26;
+  }
+  
+  
+  
+  .slidemenu #slide-item-1:checked ~ .slider .bar{ margin-left: 0; }
+  .slidemenu #slide-item-2:checked ~ .slider .bar{ margin-left: 9%; }
+  .slidemenu #slide-item-3:checked ~ .slider .bar{ margin-left: 18%; }
+  .slidemenu #slide-item-4:checked ~ .slider .bar{ margin-left: 27%; }
+  .slidemenu #slide-item-5:checked ~ .slider .bar{ margin-left: 39%; }
+  .slidemenu #slide-item-6:checked ~ .slider .bar{ margin-left: 51%; }
+  .slidemenu #slide-item-7:checked ~ .slider .bar{ margin-left: 60%; }
+  .slidemenu #slide-item-8:checked ~ .slider .bar{ margin-left: 69%; }
+  .slidemenu #slide-item-9:checked ~ .slider .bar{ margin-left: 78%; }
+  .slidemenu #slide-item-10:checked ~ .slider .bar{ margin-left: 87%; }
 
   /* For medium devices */
 @media screen and (min-width: 768px) {
