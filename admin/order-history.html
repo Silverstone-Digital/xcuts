@@ -89,8 +89,8 @@
                         </li>
                     </ul>
                 </div>
-                <div class="flex items-center gap-6">
-                    <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer xl:hidden"></ion-icon>
+                <div class="flex items-center gap-6 xl:hidden">
+                    <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer"></ion-icon>
                 </div>
             </div>
         </div>
@@ -118,18 +118,18 @@
         <div class="sm:container px-4">
             <div class="flex justify-between">
                 <div>
-                    <h3 class="text-2xl text-[#161616] font-semibold">Order history: 83414-AMR</h3>
-                    <p class="text-base">Starus: Quoted (07-02-2023 at 20:00)</p>
+                    <h3 class="text-[15px] text-[#161616] font-semibold md:text-2xl">Order history: 83414-AMR</h3>
+                    <p class="text-[12px] md:text-base">Starus: Quoted (07-02-2023 at 20:00)</p>
                 </div>
                 <div>
-                    <a href="#" class="bg-primary text-[15px] text-white font-medium py-[12px] px-[30px] block">Go back</a>
+                    <a href="#" class="bg-primary text-[15px] text-white font-medium py-[12px] px-[12px] lg:px-[30px] block">Go back</a>
                 </div>
             </div>
         </div>
     </div>
     <div class="mainContent">
         <div class="sm:container px-4">
-            <div class="relative overflow-x-auto">
+            <div class="relative overflow-x-auto hidden md:block">
                 <table class="table-auto w-full admin-table">
                     <thead>
                         <tr>
@@ -162,6 +162,60 @@
                         
                     </tbody>
                 </table>
+            </div>
+            <div class="grid grid-cols-1 gap-4 md:hidden pb-10">
+                <div class="bg-gray-100 p-4 rounded-lg shadow text-[15px] leading-8 ">
+                    <div class="flex items-center justify-between">
+                        <div>#</div>
+                        <div>1</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>Status</div>
+                        <div>Created</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>Date and time</div>
+                        <div>07-02-2023 at 19:40</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>User name</div>
+                        <div>Anne Van Mansvelt</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>Not quoted</div>
+                        <div>&nbsp;</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>View version</div>
+                        <div><i class="ri-search-line"></i></div>
+                    </div>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg shadow text-[15px] leading-8 ">
+                    <div class="flex items-center justify-between">
+                        <div>#</div>
+                        <div>2</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>Status</div>
+                        <div>Created</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>Date and time</div>
+                        <div>07-02-2023 at 19:40</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>User name</div>
+                        <div>Anne Van Mansvelt</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>Not quoted</div>
+                        <div>&nbsp;</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>View version</div>
+                        <div><i class="ri-search-line"></i></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
