@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>|! XCUTS !|</title>
+    <link rel="icon" type="image/ico" sizes="16x16" href="images/favicon.ico">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Tailwind Elements styles-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+  <!-- Demo styles -->
+
+</head>
+<body>
+   <!-- Header -->
+   <header class="bg-[#e1e1e1] py-[15px]">
+    <nav class="bg-white py-4 border-t border-b border-[#b7b7b7]">
+        <div class="sm:container px-4">
+            <div class="flex justify-between items-center">
+                <div class="admin___logo">
+                    <img src="images/admin-logo.webp" alt="">
+                </div>
+                <div class="admin-nav-links duration-500 xl:static xl:w-auto w-full bg-white xl:bg-transparent absolute left-0 top-[-100%] flex items-center px-5">
+                    <ul class="flex xl:flex-row flex-col xl:items-center xl:gap-[40px] gap-8">
+                        <li>
+                            <a class="hover:text-primary text-[15px] text-center block leading-none" href="#">
+                                <i class="ri-dashboard-3-line"></i> <br>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hover:text-primary text-[15px] text-center block leading-none" href="#">
+                                <i class="ri-shopping-bag-fill"></i> <br>
+                                Orders
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hover:text-primary text-[15px] text-center block leading-none" href="#">
+                                <i class="ri-folder-user-fill"></i> <br>
+                                Users
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hover:text-primary text-[15px] text-center block leading-none" href="#">
+                                <i class="ri-shopping-cart-line"></i> <br>
+                                Purchasing
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hover:text-primary text-[15px] text-center block leading-none" href="#">
+                                <i class="ri-archive-2-fill"></i> <br>
+                                Products
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hover:text-primary text-[15px] text-center block leading-none" href="#">
+                                <i class="ri-file-text-fill"></i> <br>
+                                Documents
+                            </a>
+                        </li>
+                        <li>
+                            <label class="relative inline-flex items-center cursor-pointer mt-2">
+                                <input type="checkbox" value="" class="sr-only peer" checked>
+                                <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:bg-none peer-focus:bg-none dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary"></div>
+                            </label>
+                        </li>
+                        <li>
+                            <a class="hover:text-primary text-[15px] text-center block leading-none" href="#">
+                                <i class="ri-file-search-line"></i> <br>
+                                Order view 
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hover:text-primary text-[15px] text-center block leading-none" href="#">
+                                <i class="ri-percent-line"></i> <br>
+                                Sales app
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hover:text-primary text-[15px] text-center block leading-none" href="#">
+                                <i class="ri-logout-circle-r-line"></i> <br>
+                                Logout
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex items-center gap-6">
+                    <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer xl:hidden"></ion-icon>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="admin-breadcrumb text-center mt-3">
+        <h4 class="text-base text-[#161616] uppercase font-semibold">orders</h4>
+        <ul class="flex space-x-2 justify-center text-[14px]">
+            <li>
+                <a href="#">Xcuts</a>
+            </li>
+            <i class="ri-arrow-right-s-line"></i>
+            <li>
+                <a href="#">Orders</a>
+            </li>
+            <i class="ri-arrow-right-s-line"></i>
+            <li class="text-primary">
+                History
+            </li>
+        </ul>
+    </div>
+    
+   </header>
+   <div class="main__Container">
+    <div class="pgHdr__section py-[30px]">
+        <div class="container">
+            <div class="flex justify-between">
+                <div>
+                    <h3 class="text-2xl text-[#161616] font-semibold">Conversation history: 83414-AMR</h3>
+                    <p class="text-base">Starus: Quoted (07-02-2023 at 20:00)</p>
+                </div>
+                <div>
+                    <a href="#" class="bg-primary text-[15px] text-white font-medium py-[12px] px-[30px] block">Go back</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mainContent">
+        <div class="container">
+            <div class="flex justify-center gap-4">
+                <a href="#" class="bg-black text-[15px] text-white text-center font-medium py-[12px] px-[30px] block w-[150px]">Emails</a>
+                <a href="#" class="bg-white text-[15px] text-primary border-2 border-black font-medium py-[12px] px-[30px] block w-[150px] text-center">SMS</a>
+            </div>
+        </div>
+    </div>
+   </div>
+   
+ 
+
+<!-- Tailwind Elements JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
+
+</body>
+</html>
