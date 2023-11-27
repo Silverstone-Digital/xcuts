@@ -285,6 +285,44 @@
   .slidemenu #slide-item-10:checked ~ .slider .bar{ margin-left: 87%; }
 
   /* For medium devices */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1400px) {
+	.slidemenu label{
+		width: 10%;
+	}
+	.slidemenu label span{
+		white-space: nowrap;
+	}
+
+
 
   }
+  @media screen and (max-width: 1200px) {
+	.slidemenu label{
+		width: 18%;
+	}
+	.slidemenu label span{
+		white-space: nowrap;
+	}
+
+
+
+  }
+  @media screen and (max-width: 767px) {
+	.slidemenu label {
+	  width: 50%;
+	  text-align: left;
+	  
+	}
+	.slidemenu label[for="slide-item-5"] {
+		width: 50%;
+	  }
+	  .slidemenu label span {
+		white-space: nowrap;
+		font-size: 16px;
+	  }
+
+
+
+  }
+
+
