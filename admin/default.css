@@ -424,6 +424,20 @@
 
 
   }
+
+@media(max-width: 1199px) {
+	.admin-nav-links{
+		box-shadow: 10px 7px 12px 0px rgba(0,0,0,0.1);
+	}
+	.admin-nav-links br{
+		display: none !important;
+	}
+	.admin-nav-links ul li a {
+		text-align: left !important;
+	}
+
+}
+
   @media screen and (max-width: 767px) {
 	.slidemenu label {
 	  width: 50%;
