@@ -115,20 +115,20 @@
    </header>
    <div class="main__Container">
     <div class="pgHdr__section py-[30px]">
-        <div class="container">
-            <div class="flex justify-between">
-                <div>
-                    <h3 class="text-2xl text-[#161616] font-semibold">Pricing history: 83414-AMR</h3>
-                    <p class="text-base">Starus: Quoted (07-02-2023 at 20:00)</p>
-                </div>
-                <div>
-                    <a href="#" class="bg-primary text-[15px] text-white font-medium py-[12px] px-[30px] block">Go back</a>
-                </div>
+      <div class="sm:container px-4">
+        <div class="md:flex justify-between">
+            <div class="text-center md:text-left mb-4 md:mb-0">
+                <h3 class="md:text-2xl text-[#161616] font-semibold">Pricing history: 83414-AMR</h3>
+                <p class="text-base">Starus: Quoted (07-02-2023 at 20:00)</p>
+            </div>
+            <div class="flex md:block justify-center md:flex-row">
+                <a href="#" class="bg-primary text-[15px] text-white font-medium py-[12px]  whitespace-nowrap px-[30px] inline md:block">Go back</a>
             </div>
         </div>
+      </div>
     </div>
     <div class="mainContent">
-        <div class="container">
+        <div class="sm:container px-4">
             <div class="pb-24">
                 <div id="accordionExample">
                     <div
@@ -167,7 +167,7 @@
                         aria-labelledby="headingOne"
                         data-te-parent="#accordionExample">
                         <div class="px-5 py-4">
-                            <div class="relative overflow-x-auto">
+                            <div class="relative overflow-x-auto hidden md:block">
                                 <table class="table-auto w-full admin-table">
                                     <thead>
                                         <tr>
@@ -221,6 +221,38 @@
                                         
                                     </tbody>
                                 </table>
+                            </div>
+                            <div class="grid grid-cols-1 gap-4 md:hidden pb-10">
+                                <div class="bg-gray-100 p-4 rounded-lg shadow text-[15px] leading-8 mt-10">
+                                  <div class="flex items-center justify-between">
+                                      <div class="text-primary">#</div>
+                                      <div>1</div>
+                                  </div>
+                                  <div class="flex items-center justify-between">
+                                      <div class="text-primary">Product code</div>
+                                      <div>W980-ST2-8</div>
+                                  </div>
+                                  <div class="flex items-center justify-between">
+                                      <div class="text-primary">Product size</div>
+                                      <div>2800 X 2070</div>
+                                  </div>
+                                  <div class="flex items-center justify-between">
+                                      <div class="text-primary">Created</div>
+                                      <div>07-02-2023 18:40:20</div>
+                                  </div>
+                                  <div class="flex items-center justify-between">
+                                      <div class="text-primary">Cutting charge</div>
+                                      <div>£56.15</div>
+                                  </div>
+                                  <div class="flex items-center justify-between">
+                                      <div>Price with cutting</div>
+                                      <div>£103.38</div>
+                                  </div>
+                                  <div class="flex items-center justify-between">
+                                      <div>Price without cutting</div>
+                                      <div>£88.20</div>
+                                  </div>
+                                </div>
                             </div>
                         </div>
                       </div>
