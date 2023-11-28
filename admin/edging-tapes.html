@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>|! XCUTS !|</title>
+    <link rel="icon" type="image/ico" sizes="16x16" href="images/favicon.ico">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Tailwind Elements styles-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+  <!-- Demo styles -->
+
+</head>
+<body>
+   <!-- Header -->
+   <header class="bg-[#e1e1e1] py-[15px]">
+    <nav class="bg-white py-4 border-t border-b border-[#b7b7b7]">
+        <div class="sm:container px-4">
+            <div class="flex justify-between items-center">
+                <div class="admin___logo">
+                    <img src="images/admin-logo.webp" alt="">
+                </div>
+                <div class="admin-nav-links duration-500 xl:static xl:w-auto w-full bg-white xl:bg-transparent absolute left-0 top-[-100%] flex items-center px-5 lx:py-0 py-4 xl:z-0 z-50">
+                  <ul class="flex xl:flex-row flex-col xl:items-center xl:gap-[40px] xl:gap-8 gap-4">
+                        <li>
+                            <a class="hover:text-primary text-[15px] text-center block leading-none" href="#">
+                                <i class="ri-dashboard-3-line"></i> <br>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hover:text-primary text-[15px] text-center block leading-none" href="#">
+                                <i class="ri-shopping-bag-fill"></i> <br>
+                                Orders
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hover:text-primary text-[15px] text-center block leading-none" href="#">
+                                <i class="ri-folder-user-fill"></i> <br>
+                                Users
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hover:text-primary text-[15px] text-center block leading-none" href="#">
+                                <i class="ri-shopping-cart-line"></i> <br>
+                                Purchasing
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hover:text-primary text-[15px] visited:text-primary text-center block leading-none" href="#">
+                                <i class="ri-archive-2-fill"></i> <br>
+                                Products
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hover:text-primary text-[15px] text-center block leading-none" href="#">
+                                <i class="ri-file-text-fill"></i> <br>
+                                Documents
+                            </a>
+                        </li>
+                        <li>
+                            <label class="relative inline-flex items-center cursor-pointer mt-2">
+                                <input type="checkbox" value="" class="sr-only peer" checked>
+                                <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:bg-none peer-focus:bg-none dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary"></div>
+                            </label>
+                        </li>
+                        <li>
+                            <a class="hover:text-primary text-[15px] text-center block leading-none" href="#">
+                                <i class="ri-file-search-line"></i> <br>
+                                Order view 
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hover:text-primary text-[15px] text-center block leading-none" href="#">
+                                <i class="ri-percent-line"></i> <br>
+                                Sales app
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hover:text-primary text-[15px] text-center block leading-none" href="#">
+                                <i class="ri-logout-circle-r-line"></i> <br>
+                                Logout
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex items-center gap-6 xl:hidden">
+                    <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer"></ion-icon>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="admin-breadcrumb text-center mt-3">
+        <h4 class="text-base text-[#161616] uppercase font-semibold">orders</h4>
+        <ul class="flex space-x-2 justify-center text-[14px]">
+            <li>
+                <a href="#">Xcuts</a>
+            </li>
+            <i class="ri-arrow-right-s-line"></i>
+            <li>
+                <a href="#">Orders</a>
+            </li>
+            <i class="ri-arrow-right-s-line"></i>
+            <li class="text-primary">
+              Edging tapes
+            </li>
+        </ul>
+    </div>
+    
+   </header>
+   <div class="main__Container">
+    <div class="pgHdr__section py-[30px]">
+      <div class="sm:container px-4">
+        <div class="md:flex justify-between">
+            <div>
+                <div class="xl:flex gap-4">
+                  <div class="mb-3 md:flex gap-3">
+                      <div class="relative mb-4 flex flex-row w-full items-stretch">
+                        <input
+                          type="search"
+                          class="relative m-0 -mr-0.5 block min-w-0 flex-auto border border-solid border-neutral-300 bg-transparent bg-clip-padding w-44 px-3 py-[8px] text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
+                          placeholder="Search"
+                          aria-label="Search"
+                          aria-describedby="button-addon1" />
+                    
+                        <!--Search button-->
+                        <button
+                          class="relative z-[2] flex items-center  bg-white px-4 py-2 text-xs font-medium uppercase leading-tight text-black transition duration-150 ease-in-out focus:outline-none focus:ring-0 border border-solid border-neutral-300"
+                          type="button"
+                          id="button-addon1"
+                          data-te-ripple-init
+                          data-te-ripple-color="light">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                            class="h-5 w-5">
+                            <path
+                              fill-rule="evenodd"
+                              d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
+                              clip-rule="evenodd" />
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="relative mb-4 flex w-full items-stretch">
+                        <input
+                          type="search"
+                          class="relative m-0 w-44 -mr-0.5 block min-w-0 flex-auto border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-[8px] text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
+                          placeholder="Search"
+                          aria-label="Search"
+                          aria-describedby="button-addon1" />
+                    
+                        <!--Search button-->
+                        <button
+                          class="relative z-[2] flex items-center  bg-white px-4 py-2 text-xs font-medium uppercase leading-tight text-black transition duration-150 ease-in-out focus:outline-none focus:ring-0 border border-solid border-neutral-300"
+                          type="button"
+                          id="button-addon1"
+                          data-te-ripple-init
+                          data-te-ripple-color="light">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                            class="h-5 w-5">
+                            <path
+                              fill-rule="evenodd"
+                              d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
+                              clip-rule="evenodd" />
+                          </svg>
+                        </button>
+                      </div>
+                  </div>
+                  <div>
+                      <button
+                          type="button"
+                          data-te-ripple-init
+                          data-te-ripple-color="light"
+                          class="inline-block bg-white px-6 pb-2 pt-2.5 text-[15px] font-normal border border-primary leading-normal text-[#161616]">
+                          Clear filters
+                      </button>
+                      <button
+                          type="button"
+                          data-te-ripple-init
+                          data-te-ripple-color="light"
+                          class="inline-block  bg-primary px-6 pb-2 pt-2.5 text-[15px] font-normal border border-primary leading-normal text-white">
+                          Apply filters
+                      </button>
+                  </div>
+                </div>
+            </div>
+            <div class="flex md:block justify-center md:flex-row mt-8 md:mt-0">
+                <a href="#" class="inline-block bg-white px-6 pb-2 pt-2.5 text-[15px] font-normal border border-primary leading-normal text-[#161616]">Show disabled products</a>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="mainContent">
+        <div class="sm:container px-4">
+            <div class="pb-24">
+                <div id="accordionExample">
+                    <div
+                      class="bg-white dark:border-neutral-600 dark:bg-neutral-800">
+                      <h2 class="mb-0" id="headingOne">
+                        <button
+                          class="group relative flex w-full items-center border-b-2 border-primary bg-white px-5 py-4 text-left text-[17px] font-semibold text-primary transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]: dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(225,30,38,1)]"
+                          type="button"
+                          data-te-collapse-init
+                          data-te-target="#collapseOne"
+                          aria-expanded="true"
+                          aria-controls="collapseOne">
+                          Standard ABS edging - S1
+                          <span
+                            class="ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              class="h-6 w-6">
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg>
+                          </span>
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseOne"
+                        class="!visible"
+                        data-te-collapse-item
+                        data-te-collapse-show
+                        aria-labelledby="headingOne"
+                        data-te-parent="#accordionExample">
+                        <div class="px-5 py-4">
+                          No Any Content...
+                        </div>
+                    </div>
+                    <div
+                      class="border border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-neutral-800">
+                      <h2 class="mb-0" id="headingTwo">
+                        <button
+                          class="group relative flex w-full items-center rounded-none border-b-2 border-primary bg-white px-5 py-4 text-left text-[17px] font-semibold text-primary transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]: dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-3px_0_rgba(75,85,99)]"
+                          type="button"
+                          data-te-collapse-init
+                          data-te-collapse-collapsed
+                          data-te-target="#collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo">
+                          Standard ABS edging - S2
+                          <span
+                            class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              class="h-6 w-6">
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg>
+                          </span>
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseTwo"
+                        class="!visible hidden"
+                        data-te-collapse-item
+                        aria-labelledby="headingTwo"
+                        data-te-parent="#accordionExample">
+                        <div class="px-5 py-4">
+                          <div class="relative overflow-x-auto hidden md:block">
+                            <table class="table-auto w-full admin-table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Code</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Radius</th>
+                                        <th scope="col">Bevel</th>
+                                        <th scope="col">Square</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>S2-0101-SM</td>
+                                    <td>Front White</td>
+                                    <td><img src="assets/images/circle-check.webp" alt=""></td>
+                                    <td><img src="assets/images/circle-check.webp" alt=""></td>
+                                    <td><i class="ri-circle-line"></i></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+                                    <td>S2-0101-SM</td>
+                                    <td>Front White</td>
+                                    <td><img src="assets/images/circle-check.webp" alt=""></td>
+                                    <td><img src="assets/images/circle-check.webp" alt=""></td>
+                                    <td><i class="ri-circle-line"></i></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td>S2-0101-SM</td>
+                                    <td>Front White</td>
+                                    <td><img src="assets/images/circle-check.webp" alt=""></td>
+                                    <td><img src="assets/images/circle-check.webp" alt=""></td>
+                                    <td><i class="ri-circle-line"></i></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">4</th>
+                                    <td>S2-0101-SM</td>
+                                    <td>Front White</td>
+                                    <td><img src="assets/images/circle-check.webp" alt=""></td>
+                                    <td><img src="assets/images/circle-check.webp" alt=""></td>
+                                    <td><i class="ri-circle-line"></i></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">5</th>
+                                    <td>S2-0101-SM</td>
+                                    <td>Front White</td>
+                                    <td><img src="assets/images/circle-check.webp" alt=""></td>
+                                    <td><img src="assets/images/circle-check.webp" alt=""></td>
+                                    <td><i class="ri-circle-line"></i></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">6</th>
+                                    <td>S2-0101-SM</td>
+                                    <td>Front White</td>
+                                    <td><img src="assets/images/circle-check.webp" alt=""></td>
+                                    <td><img src="assets/images/circle-check.webp" alt=""></td>
+                                    <td><i class="ri-circle-line"></i></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">7</th>
+                                    <td>S2-0101-SM</td>
+                                    <td>Front White</td>
+                                    <td><img src="assets/images/circle-check.webp" alt=""></td>
+                                    <td><img src="assets/images/circle-check.webp" alt=""></td>
+                                    <td><i class="ri-circle-line"></i></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">8</th>
+                                    <td>S2-0101-SM</td>
+                                    <td>Front White</td>
+                                    <td><img src="assets/images/circle-check.webp" alt=""></td>
+                                    <td><img src="assets/images/circle-check.webp" alt=""></td>
+                                    <td><i class="ri-circle-line"></i></td>
+                                  </tr>
+                                    
+                                </tbody>
+                            </table>
+                          </div>
+                          <div class="grid grid-cols-1 gap-4 md:hidden pb-10">
+                              <div class="bg-gray-100 p-4 rounded-lg shadow text-[15px] leading-8 mt-5">
+                                <div class="flex items-center justify-between">
+                                    <div>#</div>
+                                    <div>1</div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div >Code</div>
+                                    <div>S2-0101-SM</div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>Name</div>
+                                    <div>Front White</div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>Radius</div>
+                                    <div><img src="assets/images/circle-check.webp" alt=""></div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>Bevel</div>
+                                    <div><img src="assets/images/circle-check.webp" alt=""></div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>Square</div>
+                                    <div><i class="ri-circle-line"></i></div>
+                                </div>
+                              </div>
+                              <div class="bg-gray-100 p-4 rounded-lg shadow text-[15px] leading-8">
+                                <div class="flex items-center justify-between">
+                                    <div>#</div>
+                                    <div>2</div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div >Code</div>
+                                    <div>S2-0101-SM</div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>Name</div>
+                                    <div>Front White</div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>Radius</div>
+                                    <div><img src="assets/images/circle-check.webp" alt=""></div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>Bevel</div>
+                                    <div><img src="assets/images/circle-check.webp" alt=""></div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>Square</div>
+                                    <div><i class="ri-circle-line"></i></div>
+                                </div>
+                              </div>
+                              <div class="bg-gray-100 p-4 rounded-lg shadow text-[15px] leading-8">
+                                <div class="flex items-center justify-between">
+                                    <div>#</div>
+                                    <div>3</div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div >Code</div>
+                                    <div>S2-0101-SM</div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>Name</div>
+                                    <div>Front White</div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>Radius</div>
+                                    <div><img src="assets/images/circle-check.webp" alt=""></div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>Bevel</div>
+                                    <div><img src="assets/images/circle-check.webp" alt=""></div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>Square</div>
+                                    <div><i class="ri-circle-line"></i></div>
+                                </div>
+                              </div>
+                              <div class="bg-gray-100 p-4 rounded-lg shadow text-[15px] leading-8">
+                                <div class="flex items-center justify-between">
+                                    <div>#</div>
+                                    <div>4</div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div >Code</div>
+                                    <div>S2-0101-SM</div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>Name</div>
+                                    <div>Front White</div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>Radius</div>
+                                    <div><img src="assets/images/circle-check.webp" alt=""></div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>Bevel</div>
+                                    <div><img src="assets/images/circle-check.webp" alt=""></div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>Square</div>
+                                    <div><i class="ri-circle-line"></i></div>
+                                </div>
+                              </div>
+                              <div class="bg-gray-100 p-4 rounded-lg shadow text-[15px] leading-8">
+                                <div class="flex items-center justify-between">
+                                    <div>#</div>
+                                    <div>5</div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div >Code</div>
+                                    <div>S2-0101-SM</div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>Name</div>
+                                    <div>Front White</div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>Radius</div>
+                                    <div><img src="assets/images/circle-check.webp" alt=""></div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>Bevel</div>
+                                    <div><img src="assets/images/circle-check.webp" alt=""></div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>Square</div>
+                                    <div><i class="ri-circle-line"></i></div>
+                                </div>
+                              </div>
+                              <div class="bg-gray-100 p-4 rounded-lg shadow text-[15px] leading-8">
+                                <div class="flex items-center justify-between">
+                                    <div>#</div>
+                                    <div>6</div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div >Code</div>
+                                    <div>S2-0101-SM</div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>Name</div>
+                                    <div>Front White</div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>Radius</div>
+                                    <div><img src="assets/images/circle-check.webp" alt=""></div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>Bevel</div>
+                                    <div><img src="assets/images/circle-check.webp" alt=""></div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>Square</div>
+                                    <div><i class="ri-circle-line"></i></div>
+                                </div>
+                              </div>
+                              <div class="bg-gray-100 p-4 rounded-lg shadow text-[15px] leading-8">
+                                <div class="flex items-center justify-between">
+                                    <div>#</div>
+                                    <div>7</div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div >Code</div>
+                                    <div>S2-0101-SM</div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>Name</div>
+                                    <div>Front White</div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>Radius</div>
+                                    <div><img src="assets/images/circle-check.webp" alt=""></div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>Bevel</div>
+                                    <div><img src="assets/images/circle-check.webp" alt=""></div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>Square</div>
+                                    <div><i class="ri-circle-line"></i></div>
+                                </div>
+                              </div>
+                              <div class="bg-gray-100 p-4 rounded-lg shadow text-[15px] leading-8">
+                                <div class="flex items-center justify-between">
+                                    <div>#</div>
+                                    <div>8</div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div >Code</div>
+                                    <div>S2-0101-SM</div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>Name</div>
+                                    <div>Front White</div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>Radius</div>
+                                    <div><img src="assets/images/circle-check.webp" alt=""></div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>Bevel</div>
+                                    <div><img src="assets/images/circle-check.webp" alt=""></div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>Square</div>
+                                    <div><i class="ri-circle-line"></i></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="border border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-neutral-800">
+                      <h2 class="mb-0" id="headingTwo">
+                        <button
+                          class="group relative flex w-full items-center rounded-none border-b-2 border-primary bg-white px-5 py-4 text-left text-[17px] font-semibold text-primary transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+                          type="button"
+                          data-te-collapse-init
+                          data-te-collapse-collapsed
+                          data-te-target="#collapseThree"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo">
+                          Standard ABS edging - S1
+                          <span
+                            class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              class="h-6 w-6">
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg>
+                          </span>
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseThree"
+                        class="!visible hidden"
+                        data-te-collapse-item
+                        aria-labelledby="headingTwo"
+                        data-te-parent="#accordionExample">
+                        <div class="px-5 py-4">
+                          No Any Content...
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="border border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-neutral-800">
+                      <h2 class="mb-0" id="headingTwo">
+                        <button
+                          class="group relative flex w-full items-center rounded-none border-b-2 border-primary bg-white px-5 py-4 text-left text-[17px] font-semibold text-primary transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+                          type="button"
+                          data-te-collapse-init
+                          data-te-collapse-collapsed
+                          data-te-target="#collapseFour"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo">
+                          Standard ABS edging - S1
+                          <span
+                            class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              class="h-6 w-6">
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg>
+                          </span>
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseFour"
+                        class="!visible hidden"
+                        data-te-collapse-item
+                        aria-labelledby="headingTwo"
+                        data-te-parent="#accordionExample">
+                        <div class="px-5 py-4">
+                          No Any Content...
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="border border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-neutral-800">
+                      <h2 class="mb-0" id="headingTwo">
+                        <button
+                          class="group relative flex w-full items-center rounded-none border-b-2 border-primary bg-white px-5 py-4 text-left text-[17px] font-semibold text-primary transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+                          type="button"
+                          data-te-collapse-init
+                          data-te-collapse-collapsed
+                          data-te-target="#collapseFive"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo">
+                          Standard ABS edging - S1
+                          <span
+                            class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              class="h-6 w-6">
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg>
+                          </span>
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseFive"
+                        class="!visible hidden"
+                        data-te-collapse-item
+                        aria-labelledby="headingTwo"
+                        data-te-parent="#accordionExample">
+                        <div class="px-5 py-4">
+                          No Any Content...
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="border border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-neutral-800">
+                      <h2 class="mb-0" id="headingTwo">
+                        <button
+                          class="group relative flex w-full items-center rounded-none border-b-2 border-primary bg-white px-5 py-4 text-left text-[17px] font-semibold text-primary transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+                          type="button"
+                          data-te-collapse-init
+                          data-te-collapse-collapsed
+                          data-te-target="#collapseSix"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo">
+                          Standard ABS edging - S1
+                          <span
+                            class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              class="h-6 w-6">
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg>
+                          </span>
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseSix"
+                        class="!visible hidden"
+                        data-te-collapse-item
+                        aria-labelledby="headingTwo"
+                        data-te-parent="#accordionExample">
+                        <div class="px-5 py-4">
+                          No Any Content...
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="border border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-neutral-800">
+                      <h2 class="mb-0" id="headingTwo">
+                        <button
+                          class="group relative flex w-full items-center rounded-none border-b-2 border-primary bg-white px-5 py-4 text-left text-[17px] font-semibold text-primary transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+                          type="button"
+                          data-te-collapse-init
+                          data-te-collapse-collapsed
+                          data-te-target="#collapseSeven"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo">
+                          Standard ABS edging - S1
+                          <span
+                            class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              class="h-6 w-6">
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg>
+                          </span>
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseSeven"
+                        class="!visible hidden"
+                        data-te-collapse-item
+                        aria-labelledby="headingTwo"
+                        data-te-parent="#accordionExample">
+                        <div class="px-5 py-4">
+                          No Any Content...
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="border border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-neutral-800">
+                      <h2 class="mb-0" id="headingTwo">
+                        <button
+                          class="group relative flex w-full items-center rounded-none border-b-2 border-primary bg-white px-5 py-4 text-left text-[17px] font-semibold text-primary transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+                          type="button"
+                          data-te-collapse-init
+                          data-te-collapse-collapsed
+                          data-te-target="#collapseEight"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo">
+                          Standard ABS edging - S1
+                          <span
+                            class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              class="h-6 w-6">
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg>
+                          </span>
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseEight"
+                        class="!visible hidden"
+                        data-te-collapse-item
+                        aria-labelledby="headingTwo"
+                        data-te-parent="#accordionExample">
+                        <div class="px-5 py-4">
+                          No Any Content...
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="border border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-neutral-800">
+                      <h2 class="mb-0" id="headingTwo">
+                        <button
+                          class="group relative flex w-full items-center rounded-none border-b-2 border-primary bg-white px-5 py-4 text-left text-[17px] font-semibold text-primary transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-3px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-3px_0_rgba(75,85,99)]"
+                          type="button"
+                          data-te-collapse-init
+                          data-te-collapse-collapsed
+                          data-te-target="#collapseNine"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo">
+                          Standard ABS edging - S1
+                          <span
+                            class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              class="h-6 w-6">
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg>
+                          </span>
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseNine"
+                        class="!visible hidden"
+                        data-te-collapse-item
+                        aria-labelledby="headingTwo"
+                        data-te-parent="#accordionExample">
+                        <div class="px-5 py-4">
+                          No Any Content...
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="border border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-neutral-800">
+                      <h2 class="mb-0" id="headingTwo">
+                        <button
+                          class="group relative flex w-full items-center rounded-none border-b-2 border-primary bg-white px-5 py-4 text-left text-[17px] font-semibold text-primary transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+                          type="button"
+                          data-te-collapse-init
+                          data-te-collapse-collapsed
+                          data-te-target="#collapseTen"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo">
+                          Standard ABS edging - S1
+                          <span
+                            class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              class="h-6 w-6">
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg>
+                          </span>
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseTen"
+                        class="!visible hidden"
+                        data-te-collapse-item
+                        aria-labelledby="headingTwo"
+                        data-te-parent="#accordionExample">
+                        <div class="px-5 py-4">
+                          No Any Content...
+                        </div>
+                      </div>
+                    </div>
+                    
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+   </div>
+   
+ 
+
+<!-- Tailwind Elements JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
+
+</body>
+</html>
