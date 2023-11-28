@@ -115,7 +115,7 @@
     
    </header>
    <div class="main__Container">
-    <div class="container">
+    <div class="sm:container px-4">
         <nav class="slidemenu">
             <!-- Item 1 -->
             <input type="radio" name="slideItem" id="slide-item-1" class="slide-toggle" checked/>
@@ -164,10 +164,10 @@
               <div class="bar"></div>
             </div>
         </nav>
-        <div class="flex justify-between items-center mb-8">
+        <div class="md:flex justify-between items-center mb-8">
             <div class="relative" data-te-dropdown-ref>
                 <a
-                  class="flex items-center whitespace-nowrap  bg-[#e9e9e9] px-6 pb-2 pt-2.5 font-normal uppercase leading-normal text-[#161616] text-base  transition duration-150 ease-in-out "
+                  class="flex items-center whitespace-nowrap justify-between bg-[#e9e9e9] px-6 pb-2 pt-2.5 font-normal uppercase leading-normal text-[#161616] text-base  transition duration-150 ease-in-out mb-4 md:mb-0"
                   href="#"
                   type="button"
                   id="dropdownMenuButton2"
@@ -264,9 +264,9 @@
                 </li>
             </ul>
         </div>
-        <div class="flex gap-4">
+        <div class="md:flex gap-4">
             <div class="mb-3">
-                <div class="relative mb-4 flex w-full flex-wrap items-stretch">
+                <div class="relative mb-4 flex w-full items-stretch">
                   <input
                     type="search"
                     class="relative m-0 -mr-0.5 block min-w-0 flex-auto border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
@@ -306,8 +306,8 @@
         </div>
     </div>
     <div class="mainContent">
-        <div class="container">
-            <div class="relative overflow-x-auto">
+        <div class="sm:container px-4">
+            <div class="relative overflow-x-auto hidden md:block">
                 <table class="table-auto w-full admin-table completed-row">
                     <thead>
                         <tr>
@@ -482,6 +482,449 @@
                         
                     </tbody>
                 </table>
+            </div>
+            <div class="grid grid-cols-1 gap-4 md:hidden pb-10">
+                <div class="bg-gray-100 p-4 rounded-lg shadow text-[15px] leading-8 mt-10">
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Order no.</div>
+                        <div>85694-AMR</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Account no.</div>
+                        <div>1909-106</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Customer name</div>
+                        <div>Harry Townsend</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Company name</div>
+                        <div>Oakvine</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Trade</div>
+                        <div>Yes</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>Sales person</div>
+                        <div>Amir Navzami</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>Incl. VAT
+                            balance</div>
+                        <div>&nbsp;</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>excl. VAT
+                            order value</div>
+                        <div>£236.25</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Status & Time</div>
+                        <div>Cancelled
+                            12-02-2023 20:22</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Collection/Delivery</div>
+                        <div>Collection 4-02-2023</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div></div>
+                        <div><a href="#"><i class="ri-search-line"></i></a> </div>
+                    </div>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg shadow text-[15px] leading-8">
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Order no.</div>
+                        <div>85694-AMR</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Account no.</div>
+                        <div>1909-106</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Customer name</div>
+                        <div>Harry Townsend</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Company name</div>
+                        <div>&nbsp;</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Trade</div>
+                        <div>No</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>Sales person</div>
+                        <div>Amir Navzami</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>Incl. VAT
+                            balance</div>
+                        <div>&nbsp;</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>excl. VAT
+                            order value</div>
+                        <div>£815.00</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Status & Time</div>
+                        <div>Cancelled  
+                            12-02-2023 20:22</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Collection/Delivery</div>
+                        <div>Collection 4-02-2023</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div></div>
+                        <div><a href="#"><i class="ri-search-line"></i></a> </div>
+                    </div>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg shadow text-[15px] leading-8">
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Order no.</div>
+                        <div>85694-AMR</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Account no.</div>
+                        <div>1909-106</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Customer name</div>
+                        <div>Harry Townsend</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Company name</div>
+                        <div>Oakvine</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Trade</div>
+                        <div>Yes</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>Sales person</div>
+                        <div>Amir Navzami</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>Incl. VAT
+                            balance</div>
+                        <div>&nbsp;</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>excl. VAT
+                            order value</div>
+                        <div>£236.25</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Status & Time</div>
+                        <div>Cancelled
+                            12-02-2023 20:22</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Collection/Delivery</div>
+                        <div>Collection 4-02-2023</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div></div>
+                        <div><a href="#"><i class="ri-search-line"></i></a> </div>
+                    </div>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg shadow text-[15px] leading-8">
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Order no.</div>
+                        <div>85694-AMR</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Account no.</div>
+                        <div>1909-106</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Customer name</div>
+                        <div>Harry Townsend</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Company name</div>
+                        <div>ACM timber design</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Trade</div>
+                        <div>No</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>Sales person</div>
+                        <div>Amir Navzami</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>Incl. VAT
+                            balance</div>
+                        <div>&nbsp;</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>excl. VAT
+                            order value</div>
+                        <div>£815.00</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Status & Time</div>
+                        <div>Cancelled 
+                            12-02-2023 20:22</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Collection/Delivery</div>
+                        <div>Delivery 4-02-2023 </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div></div>
+                        <div><a href="#"><i class="ri-search-line"></i></a> </div>
+                    </div>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg shadow text-[15px] leading-8">
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Order no.</div>
+                        <div>85694-AMR</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Account no.</div>
+                        <div>1909-106</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Customer name</div>
+                        <div>Harry Townsend</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Company name</div>
+                        <div>&nbsp;</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Trade</div>
+                        <div>No</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>Sales person</div>
+                        <div>Amir Navzami</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>Incl. VAT
+                            balance</div>
+                        <div>&nbsp;</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>excl. VAT
+                            order value</div>
+                        <div>£815.00</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Status & Time</div>
+                        <div>Cancelled 
+                            12-02-2023 20:22</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Collection/Delivery</div>
+                        <div>Collection 4-02-2023 </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div></div>
+                        <div><a href="#"><i class="ri-search-line"></i></a> </div>
+                    </div>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg shadow text-[15px] leading-8">
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Order no.</div>
+                        <div>85694-AMR</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Account no.</div>
+                        <div>1909-106</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Customer name</div>
+                        <div>Harry Townsend</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Company name</div>
+                        <div>ACM timber design</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Trade</div>
+                        <div>No</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>Sales person</div>
+                        <div>Amir Navzami</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>Incl. VAT
+                            balance</div>
+                        <div>&nbsp;</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>excl. VAT
+                            order value</div>
+                        <div>£815.00</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Status & Time</div>
+                        <div>Cancelled 
+                            12-02-2023 20:22</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Collection/Delivery</div>
+                        <div>Delivery 4-02-2023 </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div></div>
+                        <div><a href="#"><i class="ri-search-line"></i></a> </div>
+                    </div>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg shadow text-[15px] leading-8">
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Order no.</div>
+                        <div>85694-AMR</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Account no.</div>
+                        <div>1909-106</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Customer name</div>
+                        <div>Harry Townsend</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Company name</div>
+                        <div>Oakvine</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Trade</div>
+                        <div>Yes</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>Sales person</div>
+                        <div>Amir Navzami</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>Incl. VAT
+                            balance</div>
+                        <div>&nbsp;</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>excl. VAT
+                            order value</div>
+                        <div>£236.25</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Status & Time</div>
+                        <div>Cancelled 
+                            12-02-2023 20:22</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Collection/Delivery</div>
+                        <div>Collection 4-02-2023 </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div></div>
+                        <div><a href="#"><i class="ri-search-line"></i></a> </div>
+                    </div>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg shadow text-[15px] leading-8">
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Order no.</div>
+                        <div>85694-AMR</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Account no.</div>
+                        <div>1909-106</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Customer name</div>
+                        <div>Harry Townsend</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Company name</div>
+                        <div>ACM timber design</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Trade</div>
+                        <div>No</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>Sales person</div>
+                        <div>Amir Navzami</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>Incl. VAT
+                            balance</div>
+                        <div>&nbsp;</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>excl. VAT
+                            order value</div>
+                        <div>£815.00</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Status & Time</div>
+                        <div>Cancelled 
+                            12-02-2023 20:22</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Collection/Delivery</div>
+                        <div>Delivery 4-02-2023 </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div></div>
+                        <div><a href="#"><i class="ri-search-line"></i></a> </div>
+                    </div>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg shadow text-[15px] leading-8">
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Order no.</div>
+                        <div>85694-AMR</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Account no.</div>
+                        <div>1909-106</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Customer name</div>
+                        <div>Harry Townsend</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Company name</div>
+                        <div>&nbsp;</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Trade</div>
+                        <div>No</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>Sales person</div>
+                        <div>Amir Navzami</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>Incl. VAT
+                            balance</div>
+                        <div>&nbsp;</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>excl. VAT
+                            order value</div>
+                        <div>£815.00</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Status & Time</div>
+                        <div>Cancelled 
+                            12-02-2023 20:22</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="text-primary">Collection/Delivery</div>
+                        <div>Delivery 4-02-2023 </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div></div>
+                        <div><a href="#"><i class="ri-search-line"></i></a> </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
