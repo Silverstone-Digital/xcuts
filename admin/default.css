@@ -284,6 +284,115 @@
   .slidemenu #slide-item-9:checked ~ .slider .bar{ margin-left: 78%; }
   .slidemenu #slide-item-10:checked ~ .slider .bar{ margin-left: 87%; }
 
+  .tab-nav{
+	padding: 30px 0 20px;
+  }
+  .tab-drop {
+	overflow: hidden;
+	border: none;
+	background-color:transparent;
+	transition: all 3s;
+	text-align: center;
+  }
+  .tab-drop button {
+	background-color: inherit;
+	float: none;
+	border-bottom:3px solid #e5e7eb;
+	outline: none;
+	cursor: pointer;
+	padding:10px 22px;
+	transition: 0.3s;
+	font-size: 17px;
+	margin-right: -5px;
+
+  }
+  .tab-drop button:hover {
+	background-color: transparent;
+  }
+  .tab-drop button.active {
+	background-color:transparent;
+	color: #e11e26;
+	border-bottom: 3px solid #e11e26;
+  }
+  
+  .tabcontent {
+	display: none;
+	padding:0;
+	border: none;
+	border-top: none;
+  }
+  
+  .is-hidden {
+	display: none !important;
+  }
+  
+  .is-desktop {
+	display: block;
+  }
+  .tab-container ul li input[type="checkbox"]{
+	border:1px solid #e11e26;
+  }
+  @media (max-width: 1199px) {
+	.is-desktop {
+	  display: none !important;
+	}
+  }
+  
+  .is-mobile {
+	display: none !important;
+  }
+  @media (max-width: 1199px) {
+	.is-mobile {
+	  display: block !important;
+	  padding: 10px 20px;
+	  font-size: 16px;
+	}
+	select option{
+		color: #3d3d3d;
+	}
+	.is-mobile.active{
+		color: #e11e26;
+	}
+
+  }
+  
+  select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	/* Remove default arrow */
+	width: 100%;
+	padding: 1rem;
+	font-size: 1.125rem;
+	background-color: #f0f0f0;
+	border: none;
+  }
+  
+  select::-ms-expand {
+	display: none;
+  }
+  
+  .select {
+	position: relative;
+  }
+  @media (max-width: 1199px) {
+	.select:after {
+	  content: "";
+	  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cg stroke='none'%3E%3Cpath d='M21.293,12.293,16,17.586l-5.293-5.293a1,1,0,0,0-1.414,1.414l6,6a1,1,0,0,0,1.414,0l6-6a1,1,0,0,0-1.414-1.414Z' fill='%23000000'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+	  background-position: center;
+	  background-size: contain;
+	  position: absolute;
+	  top: 50%;
+	  transform: translateY(-50%);
+	  right: 1rem;
+	  pointer-events: none;
+	  width: 32px;
+	  height: 32px;
+	}
+  }
+
+
+
   /* For medium devices */
 @media screen and (max-width: 1400px) {
 	.slidemenu label{
@@ -293,6 +402,14 @@
 		white-space: nowrap;
 	}
 
+
+
+  }
+@media (min-width: 1200px) and (max-width:1545px) {
+	.tab-drop button{
+		font-size: 16px;
+		padding: 10px 13px;
+	}
 
 
   }
