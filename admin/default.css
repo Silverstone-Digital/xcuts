@@ -284,14 +284,16 @@
   .slidemenu #slide-item-9:checked ~ .slider .bar{ margin-left: 78%; }
   .slidemenu #slide-item-10:checked ~ .slider .bar{ margin-left: 87%; }
 
-  figure.wrapper {
-	display: flex;
-	overscroll-behavior-x: contain;
-	overflow-x: auto;
-	margin-inline: calc(var(--page-gutter) * -1);
-	padding-inline: var(--page-gutter);
-	padding-block: 1rem;
-	padding: 10px;
+  @media(min-width:768px){
+	figure.wrapper {
+		display: flex;
+		overscroll-behavior-x: contain;
+		overflow-x: auto;
+		margin-inline: calc(var(--page-gutter) * -1);
+		padding-inline: var(--page-gutter);
+		padding-block: 1rem;
+		padding: 10px;
+	  }
   }
   figure.wrapper table {
 	border-spacing: 0;
