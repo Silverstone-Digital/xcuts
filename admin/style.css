@@ -1316,6 +1316,10 @@ table td{
   margin-bottom: 35px;
 }
 
+.mt-1{
+  margin-top: 0.25rem;
+}
+
 .block{
   display: block;
 }
@@ -2170,6 +2174,10 @@ table td{
   border-top-width: 0px;
 }
 
+.border-l-2{
+  border-left-width: 2px;
+}
+
 .border-solid{
   border-style: solid;
 }
@@ -2324,6 +2332,15 @@ table td{
 .border-\[\#c9c9c9\]{
   --tw-border-opacity: 1;
   border-color: rgb(201 201 201 / var(--tw-border-opacity));
+}
+
+.border-gray-200{
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+}
+
+.border-opacity-60{
+  --tw-border-opacity: 0.6;
 }
 
 .bg-\[\#474747\]{
@@ -3164,6 +3181,14 @@ table td{
   line-height: 1.25;
 }
 
+.leading-3{
+  line-height: .75rem;
+}
+
+.leading-10{
+  line-height: 2.5rem;
+}
+
 .text-\[\#161616\]{
   --tw-text-opacity: 1;
   color: rgb(22 22 22 / var(--tw-text-opacity));
@@ -3296,6 +3321,11 @@ table td{
 .text-\[\#7e7e7e\]{
   --tw-text-opacity: 1;
   color: rgb(126 126 126 / var(--tw-text-opacity));
+}
+
+.text-\[\#606060\]{
+  --tw-text-opacity: 1;
+  color: rgb(96 96 96 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -4712,6 +4742,10 @@ table td{
     width: 60%;
   }
 
+  .sm\:w-full{
+    width: 100%;
+  }
+
   .sm\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -5056,6 +5090,14 @@ table td{
     width: 182px;
   }
 
+  .md\:w-full{
+    width: 100%;
+  }
+
+  .md\:w-1\/3{
+    width: 33.333333%;
+  }
+
   .md\:max-w-\[1000px\]{
     max-width: 1000px;
   }
@@ -5377,6 +5419,10 @@ table td{
     font-size: 20px;
   }
 
+  .md\:text-\[18px\]{
+    font-size: 18px;
+  }
+
   .md\:text-white{
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -5579,6 +5625,10 @@ table td{
     margin-right: 1.25rem;
   }
 
+  .lg\:-mt-4{
+    margin-top: -1rem;
+  }
+
   .lg\:h-\[455px\]{
     height: 455px;
   }
@@ -5617,6 +5667,14 @@ table td{
 
   .lg\:w-\[567px\]{
     width: 567px;
+  }
+
+  .lg\:w-1\/2{
+    width: 50%;
+  }
+
+  .lg\:w-1\/4{
+    width: 25%;
   }
 
   .lg\:max-w-\[1000px\]{
@@ -5790,6 +5848,14 @@ table td{
 
   .xl\:w-auto{
     width: auto;
+  }
+
+  .xl\:w-1\/4{
+    width: 25%;
+  }
+
+  .xl\:w-1\/5{
+    width: 20%;
   }
 
   .xl\:max-w-\[1000px\]{
