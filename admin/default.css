@@ -294,6 +294,7 @@
 		padding-block: 1rem;
 		padding: 10px;
 	  }
+	   
   }
   figure.wrapper table {
 	border-spacing: 0;
@@ -347,8 +348,12 @@
 	width: 1px;
   }
 
-
-
+  figure.wrapper.wrpflex tbody tr {
+	border-bottom: none;
+  }
+  figure.wrapper.wrpflex table{
+	box-shadow: none;
+  }
   .tab-nav{
 	padding: 30px 0 20px;
   }
