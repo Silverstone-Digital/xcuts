@@ -462,7 +462,19 @@
   }
 
 
-
+  .cutingList table thead th{
+	text-align: left;
+	font-weight: 400;
+	font-size: 15px;
+  }
+  .cutingList table thead tr{
+	border-bottom: 1px solid #c1c1c1;
+  }
+  .cutingList table tbody td{
+	font-size: 15px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+  }
   /* For medium devices */
 @media screen and (max-width: 1400px) {
 	.slidemenu label{
