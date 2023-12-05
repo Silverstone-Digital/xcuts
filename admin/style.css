@@ -1316,6 +1316,14 @@ table td{
   margin-top: auto;
 }
 
+.mr-4{
+  margin-right: 1rem;
+}
+
+.mr-1{
+  margin-right: 0.25rem;
+}
+
 .block{
   display: block;
 }
@@ -1492,12 +1500,12 @@ table td{
   min-height: 215px;
 }
 
-.min-h-\[410px\]{
-  min-height: 410px;
-}
-
 .min-h-\[300px\]{
   min-height: 300px;
+}
+
+.min-h-\[410px\]{
+  min-height: 410px;
 }
 
 .w-1\/2{
@@ -1668,6 +1676,10 @@ table td{
 
 .flex-auto{
   flex: 1 1 auto;
+}
+
+.flex-shrink-0{
+  flex-shrink: 0;
 }
 
 .shrink-0{
@@ -3300,6 +3312,11 @@ table td{
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-indigo-500{
+  --tw-text-opacity: 1;
+  color: rgb(99 102 241 / var(--tw-text-opacity));
 }
 
 .underline{
