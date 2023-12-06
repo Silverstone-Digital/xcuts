@@ -284,6 +284,11 @@
   .slidemenu #slide-item-9:checked ~ .slider .bar{ margin-left: 78%; }
   .slidemenu #slide-item-10:checked ~ .slider .bar{ margin-left: 87%; }
 
+  figure.sprayTable.wrapper table th{
+	border-bottom: 1px solid #e11e26;
+  }
+ 
+
   @media(min-width:768px){
 	figure.wrapper {
 		display: flex;
@@ -302,7 +307,7 @@
 	inline-size: 100%;
 	text-align: left;
 	/* border: 1px solid lightgray; */
-	border-radius: 0.5rem;
+	/* border-radius: 0.5rem; */
 	box-shadow: 0px 4px 6px -2px rgba(14, 30, 37, 0.12);
 	
   }
