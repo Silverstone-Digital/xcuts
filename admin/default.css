@@ -297,7 +297,7 @@
 		margin-inline: calc(var(--page-gutter) * -1);
 		padding-inline: var(--page-gutter);
 		padding-block: 1rem;
-		padding: 10px;
+		/* padding: 10px; */
 	  }
 	   
   }
