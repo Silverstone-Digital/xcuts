@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>|! XCUTS !|</title>
+    <link rel="icon" type="image/ico" sizes="16x16" href="images/favicon.ico">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- Tailwind Elements styles-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+    <link rel="stylesheet" href="all.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="style.css">
+  <!-- Demo styles -->
+
+</head>
+<body>
+   <!-- Header -->
+   <header class="bg-[#e1e1e1] py-[15px]">
+    <nav class="bg-white py-4 border-t border-b border-[#b7b7b7]">
+        <div class="sm:container px-4">
+            <div class="flex justify-between items-center">
+                <div class="admin___logo">
+                    <img src="images/admin-logo.webp" alt="">
+                </div>
+                <div class="admin-nav-links duration-500 xl:static xl:w-auto w-full bg-white xl:bg-transparent absolute left-0 top-[-100%] flex items-center px-5 lx:py-0 py-4 xl:z-0 z-50">
+                    <ul class="flex xl:flex-row flex-col xl:items-center xl:gap-[40px] xl:gap-8 gap-4">
+                        <li>
+                            <a class="hover:text-primary text-[15px] text-center block leading-none" href="#">
+                                <i class="ri-dashboard-3-line"></i> <br>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hover:text-primary visited:text-primary text-[15px] text-center block leading-none" href="#">
+                                <i class="ri-shopping-bag-fill"></i> <br>
+                                Orders
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hover:text-primary text-[15px] text-center block leading-none" href="#">
+                                <i class="ri-folder-user-fill"></i> <br>
+                                Users
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hover:text-primary text-[15px] text-center block leading-none" href="#">
+                                <i class="ri-shopping-cart-line"></i> <br>
+                                Purchasing
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hover:text-primary text-[15px] text-center block leading-none" href="#">
+                                <i class="ri-archive-2-fill"></i> <br>
+                                Products
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hover:text-primary text-[15px] text-center block leading-none" href="#">
+                                <i class="ri-file-text-fill"></i> <br>
+                                Documents
+                            </a>
+                        </li>
+                        <li>
+                            <label class="relative inline-flex items-center cursor-pointer mt-2">
+                                <input type="checkbox" value="" class="sr-only peer" checked>
+                                <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:bg-none peer-focus:bg-none dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary"></div>
+                            </label>
+                        </li>
+                        <li>
+                            <a class="hover:text-primary text-[15px] text-center block leading-none" href="#">
+                                <i class="ri-file-search-line"></i> <br>
+                                Order view 
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hover:text-primary text-[15px] text-center block leading-none" href="#">
+                                <i class="ri-percent-line"></i> <br>
+                                Sales app
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hover:text-primary text-[15px] text-center block leading-none" href="#">
+                                <i class="ri-logout-circle-r-line"></i> <br>
+                                Logout
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex items-center gap-6 xl:hidden">
+                    <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer"></ion-icon>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="admin-breadcrumb text-center mt-3">
+        <h4 class="text-base text-[#161616] uppercase font-semibold">orders</h4>
+        <ul class="flex space-x-2 justify-center text-[14px]">
+            <li>
+                <a href="#">Xcuts</a>
+            </li>
+            <i class="ri-arrow-right-s-line"></i>
+            <li>
+                <a href="#">Orders</a>
+            </li>
+            <i class="ri-arrow-right-s-line"></i>
+            <li class="text-primary">
+                View
+            </li>
+        </ul>
+    </div>
+    
+   </header>
+    <div class="main__Container">
+        <div class="sm:container px-4">
+            <div class="md:flex justify-between items-center bg-[#ffdfe0] py-[18px] px-6 mt-4">
+                <h4 class="text-[#e11e26] font-semibold text-[17px]">The order is locked for customer to edit. It will auto unlock in 14:00.</h4>
+                <a href="#" class="bg-white block md:inline text-[15px] text-[#161616] border-2 border-[#e11e26] py-3 px-4 text-center">Unlock order now</a>
+            </div>
+            <div class="mt-4 md:flex justify-between">
+                <div>
+                    <h3 class="text-black font-semibold text-[20px]">Order: 83414-AMR-Maya bedroom</h3>
+                    <p class="text-[14px] text-black">Salesperson: Amir Navazani <br>
+                        Starus: Quoted (07-02-2023 at 20:00)</p>
+                </div>
+                <div>
+                    <p class="text-[15px] text-black md:text-right">CNC 42 min, P69,E83 83414-AMR. AVM Timber Design. <br>
+                        Panels to cut:69 <br>
+                        Merers to edge: 83.24</p>
+                </div>
+            </div>
+            <div class="flex flex-col gap-y-3 md:flex lg:block justify-center md:flex-col xl:block lg:text-right lg:flex-col md:w-full mt-4 md:mt-4"> 
+                <a href="#"
+                class="inline-block text-center bg-white px-6 pb-3 pt-2.5 text-[15px] xl:mt-1 font-normal border border-primary leading-normal text-[#161616] ">Order history</a> 
+                <a href="#"
+                class="inline-block text-center bg-white px-6 pb-3 pt-2.5 text-[15px] xl:mt-1 font-normal border border-primary leading-normal text-[#161616]">Pricing history</a> 
+                <a href="#"
+                class="inline-block text-center bg-white px-6 pb-3 pt-2.5 text-[15px] xl:mt-1 font-normal border border-primary leading-normal text-[#161616]">Conversation history</a> 
+                <a href="#"
+                class="inline-block text-center bg-white px-6 pb-3 pt-2.5 text-[15px] xl:mt-1 font-normal border border-primary leading-normal text-[#161616]">Quotation</a>
+                <a href="#"
+                class="inline-block text-center bg-white px-6 pb-3 pt-2.5 text-[15px] xl:mt-1 font-normal border border-primary leading-normal text-[#161616]">Sales</a>
+            </div>
+            <div class="flex flex-col gap-y-3 md:flex lg:block justify-center md:flex-col xl:block lg:text-right lg:flex-col md:w-full mt-1 md:mt-1"> 
+                <a href="#shaker-modal"
+                class="inline-block text-center bg-black px-6 pb-3 pt-2.5 text-[15px] xl:mt-1 font-normal leading-6 text-white popup-modal">Cutting plans</a> 
+                <a href="#"
+                class="inline-block text-center bg-black px-6 pb-3 pt-2.5 text-[15px] xl:mt-1 font-normal leading-6 text-white">Spray coating</a> 
+                <a href="#"
+                class="inline-block text-center bg-black px-6 pb-3 pt-2.5 text-[15px] xl:mt-1 font-normal leading-6 text-white">Cutting list</a> 
+                <a href="#"
+                class="inline-block text-center bg-black px-6 pb-3 pt-2.5 text-[15px] xl:mt-1 font-normal leading-6 text-white">Ardis file</a>
+                <a href="#"
+                class="inline-block text-center bg-black px-6 pb-3 pt-2.5 text-[15px] xl:mt-1 font-normal leading-6 text-white">Machining</a>
+            </div>
+            <div id="shaker-modal" class="white-popup-block md:max-w-[800px] lg:max-w-[1000px] 2xl:max-w-[1500px] mfp-hide relative p-0">
+                <a class="popup-modal-dismiss absolute top-0 right-2" href="#"><i class="fa-solid fa-xmark"></i></a>
+                <div class="block">
+                    <div class="border-b border-[#a3a3a3] py-[24px] px-10">
+                        <h4 class="text-[24px] text-black font-medium">Cutting list plans</h4>
+                    </div>
+                    <div class="px-10 py-10">
+                        <div class="swiper view-swiper px-10">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide relative group">
+                                    <h6 class="text-[16px] mb-3">Plan 1</h6>
+                                    <div class="border border-primary py-[25px] px-[30px] bg-[#f6f6f6]">
+                                        <img src="images/plan-01.webp" alt="">
+                                    </div>
+                                    <div class="md:flex md:justify-between mt-3">
+                                        <div>
+                                            <p class="text-[15px]">W980-ST2-18 Platinum-White <br>
+                                                2800 x 2070 x 18mm</p>
+                                        </div>
+                                        <div>
+                                            <h5 class="text-[28px] leading-7">X2</h5>
+                                            <p class="text-[15px]">sheet</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide relative group">
+                                    <h6 class="text-[16px] mb-3">Plan 2</h6>
+                                    <div class="border border-primary py-[25px] px-[30px] bg-[#f6f6f6]">
+                                        <img src="images/plan-02.webp" alt="">
+                                    </div>
+                                    <div class="md:flex md:justify-between mt-3">
+                                        <div>
+                                            <p class="text-[15px]">W980-ST2-18 Platinum-White <br>
+                                                2800 x 2070 x 18mm</p>
+                                        </div>
+                                        <div>
+                                            <h5 class="text-[28px] leading-7">X1</h5>
+                                            <p class="text-[15px]">sheet</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide relative group">
+                                    <h6 class="text-[16px] mb-3">Plan 3</h6>
+                                    <div class="border border-primary py-[25px] px-[30px] bg-[#f6f6f6]">
+                                        <img src="images/plan-03.webp" alt="">
+                                    </div>
+                                    <div class="md:flex md:justify-between mt-3">
+                                        <div>
+                                            <p class="text-[15px]">W980-ST2-18 Platinum-White <br>
+                                                2800 x 2070 x 18mm</p>
+                                        </div>
+                                        <div>
+                                            <h5 class="text-[28px] leading-7">X1</h5>
+                                            <p class="text-[15px]">sheet</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide relative group">
+                                    <h6 class="text-[16px] mb-3">Plan 2</h6>
+                                    <div class="border border-primary py-[25px] px-[30px] bg-[#f6f6f6]">
+                                        <img src="images/plan-02.webp" alt="">
+                                    </div>
+                                    <div class="md:flex md:justify-between mt-3">
+                                        <div>
+                                            <p class="text-[15px]">W980-ST2-18 Platinum-White <br>
+                                                2800 x 2070 x 18mm</p>
+                                        </div>
+                                        <div>
+                                            <h5 class="text-[28px] leading-7">X1</h5>
+                                            <p class="text-[15px]">sheet</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rltpBtn-next after:content-['next'] after:text-[16px] absolute right-[10px] top-1/2 -translate-y-1/2 z-10"></div>
+                            <div class="rltpBtn-prev after:content-['prev'] after:text-[16px] absolute left-[10px] top-1/2 -translate-y-1/2 z-10"></div> 
+                        </div>   
+                    </div>
+                </div>
+            </div>
+            <div class="mt-6">
+                <div>
+                    <div class="flex items-center border-b-2 border-[#c1c1c1] pb-2">
+                        <h4 class="text-[17px] text-primary font-semibold">Customer details </h4>
+                        <span class="h-4 w-4 ml-2 shrink-0 fill-[#e11e26] text-primary">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="h-5 w-5">
+                                <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="relative view__table hidden md:block">
+                        <table class="table-auto w-full admin-table">
+                            <thead>
+                                <tr>
+                                  <th scope="col" class="text-[14px]">Account No.</th>
+                                  <th scope="col" class="text-[14px]">Name</th>
+                                  <th scope="col" class="text-[14px]">E-mail</th>
+                                  <th scope="col" class="text-[14px]">Phone</th>
+                                  <th scope="col" class="text-[14px]">Billing address</th>
+                                  <th scope="col" class="text-[14px]">Trade discount</th>
+                                  <th scope="col" class="text-[14px]">Chnange order owner</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-[14px]">1607-250</td>
+                                    <td class="text-[14px]">Anna Van Macvell</td>
+                                    <td class="text-[14px]">Anna Van Macvell</td>
+                                    <td class="text-[14px]">020 659 6598</td>
+                                    <td class="text-[14px]">Lorem Ipsum dummy street</td>
+                                    <td class="text-[14px]">Lorem Ipsum 5%</td>
+                                    <td class="text-[14px]">
+                                        <a href="#" class="block text-center bg-black px-6 pb-3 pt-2.5 text-[15px] xl:mt-1 font-normal leading-6 text-white">Change order owner</a>
+                                        <a href="#" class="block text-center bg-white px-6 pb-3 pt-2.5 text-[15px] xl:mt-1 font-normal leading-6 text-primary border border-black">Contact customer</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="grid grid-cols-1 gap-4 md:hidden pb-5 mt-5">
+                        <div class="bg-gray-100 p-4 rounded-lg shadow text-[15px] leading-8">
+                            <div class="flex items-center justify-between">
+                                <div>Account No.</div>
+                                <div>1607-250</div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div>Name</div>
+                                <div>Anna Van Macvell</div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div>E-mail</div>
+                                <div>Anna Van Macvell</div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div>Phone</div>
+                                <div>020 659 6598</div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div>Billing address</div>
+                                <div>Lorem Ipsum dummy street</div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div>Trade discount</div>
+                                <div>Lorem Ipsum 5%</div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div>Chnange order owner</div>
+                                <div class="flex flex-col gap-2">
+                                    <a href="#" class="block text-center bg-black px-6 pb-3 pt-2.5 text-[15px] xl:mt-1 font-normal leading-6 text-white">Change order owner</a>
+                                    <a href="#" class="block text-center bg-white px-6 pb-3 pt-2.5 text-[15px] xl:mt-1 font-normal leading-6 text-primary border border-black">Contact customer</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-b-2 border-[#c1c1c1] mt-8"></div>
+                        <div class="mt-10 flex justify-end">
+                            <div class="flex items-center border-b-2 border-[#c1c1c1] pb-2 w-2/4 md:w-1/4">
+                                <h4 class="text-[17px] text-primary font-semibold">Additional files</h4>
+                                <span class="h-4 w-4 ml-2 shrink-0 fill-[#e11e26] text-primary">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke-width="1.5"
+                                        stroke="currentColor"
+                                        class="h-5 w-5">
+                                        <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="mt-8 mb-12">
+                            <div class="flex items-center border-b-2 border-[#c1c1c1] pb-2">
+                                <h4 class="text-[17px] text-primary font-semibold">Cutting list</h4>
+                                <span class="h-4 w-4 ml-2 shrink-0 fill-[#e11e26] text-primary">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke-width="1.5"
+                                        stroke="currentColor"
+                                        class="h-5 w-5">
+                                        <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="flex justify-end">
+                                <a href="#" class="text-center bg-black text-[15px] mt-2 font-normal text-white px-6 py-3 block 2xl:w-1/5">Download cutting list XLSX file</a>
+                            </div>
+                            <div class="mt-8">
+                                <h5 class="text-black text-[20px] font-semibold mb-6">Order summary</h5>
+                                <div class="flex items-center border-b-2 border-[#c1c1c1] pb-2 mb-8">
+                                    <h4 class="text-[17px] text-primary font-semibold">Boards</h4>
+                                    <span class="h-4 w-4 ml-2 shrink-0 fill-[#e11e26] text-primary">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="1.5"
+                                            stroke="currentColor"
+                                            class="h-5 w-5">
+                                            <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                        </svg>
+                                    </span>
+                                    <span class="ml-auto text-[17px] text-primary font-semibold">£ 968.77</span>
+                                </div>
+                                <div class="flex items-center border-b-2 border-[#c1c1c1] pb-2 mb-8">
+                                    <h4 class="text-[17px] text-primary font-semibold">Edging tatpes</h4>
+                                    <span class="h-4 w-4 ml-2 shrink-0 fill-[#e11e26] text-primary">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="1.5"
+                                            stroke="currentColor"
+                                            class="h-5 w-5">
+                                            <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                        </svg>
+                                    </span>
+                                    <span class="ml-auto text-[17px] text-primary font-semibold">£ 968.77</span>
+                                </div>
+                                <div class="flex items-center border-b-2 border-[#c1c1c1] pb-2 mb-8">
+                                    <h4 class="text-[17px] text-primary font-semibold">Spray coating</h4>
+                                    <span class="h-4 w-4 ml-2 shrink-0 fill-[#e11e26] text-primary">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="1.5"
+                                            stroke="currentColor"
+                                            class="h-5 w-5">
+                                            <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                        </svg>
+                                    </span>
+                                    <span class="ml-auto text-[17px] text-primary font-semibold">£ 968.77</span>
+                                </div>
+                                <div class="flex items-center border-b-2 border-[#c1c1c1] pb-2 mb-8">
+                                    <h4 class="text-[17px] text-primary font-semibold">Addtional services</h4>
+                                    <span class="h-4 w-4 ml-2 shrink-0 fill-[#e11e26] text-primary">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="1.5"
+                                            stroke="currentColor"
+                                            class="h-5 w-5">
+                                            <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                        </svg>
+                                    </span>
+                                    <span class="ml-auto text-[17px] text-primary font-semibold">£ 968.77</span>
+                                </div>
+                                <div class="text-right">
+                                    <h2 class="text-[24px] text-black font-semibold">£2,458.38</h2>
+                                    <p class="text-[14px] text-black leading-4">including VAT</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pb-[80px]">
+                            <h3 class="border-b-2 border-[#c1c1c1] pb-3 text-[20px] font-semibold text-black">Update order</h3>
+                            <form action="#" class="py-6 view-form">
+                                <div class="lg:flex">
+                                    <div class="lg:w-2/4">
+                                        <div class="md:flex md:gap-6 md:items-center mb-5">
+                                            <p class="text-[15px] w-full md:w-[22.2%] lg:w-1/6">Order name</p>
+                                            <div>
+                                                <input type="text" id="name" name="name" placeholder="Maya bedroom" class="border border-[#707070] p-3 w-full focus:outline-none">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="lg:w-2/4">
+                                        <div class="md:flex md:gap-6 md:items-center mb-4">
+                                            <p class="text-[15px] w-full md:w-[30%] lg:w-1/6">Starus</p>
+                                            <div class="w-full">
+                                                <div class="flex items-center justify-center h-full w-full">
+                                                    <!-- Select menu div contains custom arrow -->
+                                                    <div
+                                                         class="relative flex items-center after:w-[8px] after:h-[8px] after:border-primary after:border-b after:border-r after:transform after:rotate-45 after:absolute after:right-3 w-full">
+                                                      <!-- Select menu -->
+                                                      <select required
+                                                              class="text-black/70 text-[15px] bg-white px-3 py-2 transition-all cursor-pointer hover:border-primary border border-primary appearance-none invalid:text-black/30 w-full">
+                                                        <option value="" disabled selected>Select an option</option>
+                                                        <option value="option-1">Option 1</option>
+                                                        <option value="option-2">Option 2</option>
+                                                        <option value="option-3">Option 3</option>
+                                                      </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="md:flex md:gap-6 mb-4">
+                                            <p class="text-[15px] w-full md:w-[30%] lg:w-1/6">Additional
+                                                information</p>
+                                            <div class="w-full">
+                                                <textarea class="w-full text-[15px] p-4 border border-primary focus:outline-none" rows="6"></textarea>
+                                                <p class="text-[15px] text-right">Charecter left:500</p>
+                                            </div>
+                                        </div>
+                                        <div class="md:flex md:gap-6">
+                                            <p class="text-[15px] w-full md:w-[30%] lg:w-1/6">Additional
+                                                information for
+                                                spraycolor</p>
+                                            <div class="w-full">
+                                                <textarea class="w-full text-[15px] p-4 border border-primary focus:outline-none" rows="6"></textarea>
+                                                <p class="text-[15px] text-right">Charecter left:500</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-10 text-center">
+                                    <button class="bg-primary text-[15px] font-semibold text-white py-3 px-10">Update</button>
+                                </div>
+                            </form>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+ 
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src="https://thecodeplayer.com/uploads/js/prefixfree-1.0.7.js"></script> 
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js'></script>
+
+<!-- Tailwind Elements JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
+
+  <script>
+    jQuery('.popup-modal').magnificPopup({
+   type: 'inline',
+   preloader: false,
+   focus: '#username',
+   modal: true,
+   callbacks: {
+     open: function() {
+       var swiper = new Swiper('.swiper-container', {
+         navigation: {
+           nextEl: '.swiper-button-next',
+           prevEl: '.swiper-button-prev',
+         },
+       });
+     },
+     close: function() {
+       // Will fire when popup is closed
+     }
+   }
+ });
+ $(document).on('click', '.popup-modal-dismiss', function (e) {
+   e.preventDefault();
+   $.magnificPopup.close();
+ });
+ 
+
+ </script>
+
+</body>
+</html>

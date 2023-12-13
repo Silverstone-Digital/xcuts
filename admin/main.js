@@ -142,6 +142,33 @@ var swiper = new Swiper(".RelateProduct", {
     }
   }
 });
+var swiper = new Swiper(".view-swiper", {
+  slidesPerView: 3,
+  spaceBetween: 40,
+  loop: false,
+  centerSlide:'false',
+  fade:'true',
+  gragCursor: 'true',
+
+  navigation: {
+    nextEl: ".rltpBtn-next",
+    prevEl: ".rltpBtn-prev",
+  },
+  breakpoints:{
+    0:{
+      slidesPerView:1
+    },
+    576:{
+      slidesPerView:2
+    },
+    768:{
+      slidesPerView:3
+    },
+    992:{
+      slidesPerView:3
+    }
+  }
+});
 
 const accordionHeader= document.querySelectorAll('.accordion-header')
 

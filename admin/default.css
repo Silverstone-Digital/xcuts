@@ -287,8 +287,17 @@
   figure.sprayTable.wrapper table th{
 	border-bottom: 1px solid #e11e26;
   }
- 
-
+ .view__table .admin-table th{
+	border-bottom: none;
+ }
+ .view__table .admin-table td{
+	border-bottom: none;
+	padding-top: 0px;
+  	padding-bottom:0px;
+ }
+ .view-form select{
+	border: 1px solid #e11e26;
+ }
   @media(min-width:768px){
 	figure.wrapper {
 		display: flex;
